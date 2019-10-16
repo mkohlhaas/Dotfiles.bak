@@ -5,7 +5,7 @@
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
-    *) return;;
+      *) return;;
 esac
 
 # don't put duplicate lines or lines starting with space in the history.
@@ -65,11 +65,11 @@ unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
-    xterm*|rxvt*)
-	PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-	;;
-    *)
-	;;
+xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    ;;
+*)
+    ;;
 esac
 
 # enable color support of ls and also add handy aliases
@@ -109,50 +109,9 @@ fi
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
 if ! shopt -oq posix; then
-    if [ -f /usr/share/bash-completion/bash_completion ]; then
-	. /usr/share/bash-completion/bash_completion
-    elif [ -f /etc/bash_completion ]; then
-	. /etc/bash_completion
-    fi
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+  fi
 fi
-
-# Command name completion for Fossil.
-function _fossil() {
-    local cur commands
-    cur=${COMP_WORDS[COMP_CWORD]}
-    commands=$(fossil help --all)
-    if [ $COMP_CWORD -eq 1 ] || [ ${COMP_WORDS[1]} = help ]; then
-	# Command name completion for 1st argument or 2nd if help command.
-	COMPREPLY=( $(compgen -W "$commands" $cur) )
-    else
-	# File name completion for other arguments.
-	COMPREPLY=( $(compgen -f $cur) )
-    fi
-}
-complete -o default -F _fossil fossil f
-#alias f='fossil'
-
-function progressbar() {
-    local duration=${1}
-    # local str='▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒'
-    local str='▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉'
-    
-    tput civis                  # make cursor invisible
-
-    for i in $(seq 1 100); do    # for 1 to 100, save cursor, restore, output, restore
-        printf "\033[s\033[uWaiting for %d/%d seconds: %s %3d%% \033[u" $(echo $duration - $duration*$i/100| bc) "$duration" "${str:0:$(((i+1)/2))}" "$i"
-        sleep $(echo $duration/100 | bc -l)
-    done
-
-    printf "\033[K"             # clear to end-of-line
-    printf "\r";
-    tput cnorm                  # restore cursor to normal
-}
-
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/schmidh/.sdkman"
-[[ -s "/home/schmidh/.sdkman/bin/sdkman-init.sh" ]] && source "/home/schmidh/.sdkman/bin/sdkman-init.sh"
-
-# added by travis gem
-[ -f /home/schmidh/.travis/travis.sh ] && source /home/schmidh/.travis/travis.sh
