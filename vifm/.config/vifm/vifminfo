@@ -21,7 +21,7 @@
 # Bookmarks:
 
 # TUI:
-al
+ar
 q0
 v2
 ov
@@ -328,8 +328,8 @@ d/home/schmidh/.config
 	vifm
 18
 d/home/schmidh
-	.zshenv
-52
+	go
+15
 d
 
 # Right window history (oldest to newest):
@@ -448,8 +448,35 @@ D/home/schmidh/dotfiles/binaries
 	bin
 1
 D/home/schmidh/dotfiles/binaries/bin
-	videoLengts.sh
+	..
+0
+D/home/schmidh/dotfiles/binaries
+	..
+0
+D/home/schmidh/dotfiles
+	binaries
+3
+D/home/schmidh
+	dotfiles
+14
+D/home/schmidh/dotfiles
+	vifm
+3
+D/home/schmidh/dotfiles/vifm
+	..
+0
+D/home/schmidh/dotfiles
+	vifm
+4
+D/home/schmidh/dotfiles/vifm
+	.config
 1
+D/home/schmidh/dotfiles/vifm/.config
+	vifm
+1
+D/home/schmidh/dotfiles/vifm/.config/vifm
+	vifmrc
+5
 D
 
 # Command line history (oldest to newest):
@@ -459,6 +486,7 @@ D
 :tree!
 :tree
 :mkdir Temp
+:colorscheme iceberg
 
 # Search history (oldest to newest):
 /vif
@@ -529,7 +557,7 @@ t/home/schmidh/.local/share/vifm/Trash/002_bananamount.sh
 # State:
 f
 i1
-[.0
+[.1
 [F
 F
 I1
