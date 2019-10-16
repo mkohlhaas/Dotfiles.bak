@@ -1,4 +1,4 @@
-"eee $ sudo add-apt-repository ppa:jonathonf/vim-daily       # Add latest vim versions to Ubuntu's repository using command line.
+" $ sudo add-apt-repository ppa:jonathonf/vim-daily       # Add latest vim versions to Ubuntu's repository using command line.
 
 " Make sure plugin manager is automatically installed including the plugins themselves.
 if empty(glob('~/.vim/autoload/plug.vim')) 

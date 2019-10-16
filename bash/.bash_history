@@ -78,3 +78,91 @@ git push -f
 rm .zsh_history 
 cd dotfiles/
 stow zsh
+
+ls -al
+cd
+vim
+vim --versin
+vim --version
+git push -fvim
+vim
+python3
+cd
+cd .vim/
+find -name You*
+cd plugged/YouCompleteMe/
+ll
+less README.md 
+./install.py --clangd-completer
+sudo xbps-install python2.7
+less install.py 
+./install.py --clangd-completer
+which python/
+python
+sudo xbps-install python-devel
+./install.py --clangd-completer
+sudo xbps-install make
+./install.py --clangd-completer
+sudo xbps-install vim-huge
+which vim
+vim --version
+vim-huge --version
+sudo xbps-install vim-huge-python3
+vim-huge-python3 --version
+sudo xbps-install update-alternatives
+vim-huge-python3 
+wget
+sudo xbps-install wget
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sudo xbps-install stow
+sudo xbps-install stow
+git clone https://github.com/schmidh/dotfiles.git
+sudo xbps-install git
+git clone https://github.com/schmidh/dotfiles.git
+cd dotfiles/
+ll
+ls -al
+stow bash
+less ../.bash_logout 
+less ../.bashrc 
+rm ../.bashrc
+rm ../.bash_logout
+stow bash
+stow binaries/
+stow golang/
+stow vifm
+stow vim
+stow ysh
+stow zsh
+sudo xbps-install vifm
+vifm
+sudo xbps-install ysh
+sudo xbps-install zsh
+l
+ls
+stow binaries/
+vim
+sudo xbps-install vim
+vim
+vim
+vim
+sudo xbps-install curl
+vim
+vim
+sudo xbps-install clangd
+sudo xbps-install clang
+sudo xbps-install clangd
+sudo xbps-install gcc
+sudo xbps-install cmake
+man xbps-remove
+xbps-remove firefox-er
+sudo xbps-remove firefox-esr
+sudo xbps-install firefox
+firefox
+sudo xbps-install -Su
+sudo xbps-install -Su
+sudo vkpurge
+sudo vkpurge list
+sudo vkpurge list all
+man vkpurge
+firefox 
