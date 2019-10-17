@@ -325,14 +325,20 @@ d/home
 	schmidh
 1
 d/home/schmidh
-	Downloads
+	Dropbox
+3
+d/home/schmidh/Dropbox
+	Ausweis
 2
-d/home/schmidh/Downloads
-	Favorites.m3u
-1
 d
 
 # Right window history (oldest to newest):
+D/home/schmidh/Temp
+	apache-couchdb-2.3.1
+1
+D/home/schmidh/Temp/apache-couchdb-2.3.1
+	..
+0
 D/home/schmidh
 	..
 0

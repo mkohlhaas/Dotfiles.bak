@@ -166,3 +166,132 @@ sudo vkpurge list
 sudo vkpurge list all
 man vkpurge
 firefox 
+./configure --help
+./configure 
+make release
+erlang --version
+sudo vkpurge list 
+sudo xbps-install nodejs
+sudo xbps-install python3-Sphinx
+sudo xbps-install help2man
+sudo xbps-install libcurl
+sudo xbps-install openssl
+sudo xbps-install icu
+sudo xbps-install libcurl-devel
+lcoate
+locate
+sudo xbps-install locate
+sudo xbps-install mlocate
+locate
+locate reltool
+sudo updatedb
+locate reltool
+cd Temp/apache-couchdb-2.3.1/
+ll
+less INSTALL.Unix.md 
+vifm Downloads/
+ysh
+zsh
+ll
+la
+alias
+ls
+ll
+sudo xbps-install dropbox
+dropbox
+dropbox start
+dropbox start -i
+vifm
+dropbox status
+vifm
+cd dotfiles/
+l
+ll
+tree
+sudo xbps-install tree
+tree vifm
+tree -a vifm
+mkdir -p mpv/.config/mpv
+vim mpv/.config/mpv/mov.conf
+la ../.config/mpv/
+stow mpv
+la ../.config/mpv/mov.conf 
+stow -D mpv
+la ../.config/mpv/
+mv mpv/.config/mpv/mov.conf mpv/.config/mpv/mpv.conf 
+stow mpv
+mv mpv/.config/mpv/mov.conf mpv/.config/mpv/mpv.conf 
+git add --dry-run .
+vim ../.bash_history 
+git diff
+vim ../.bash_history 
+git add --dry-run .
+ag
+sudo xbps-install ag
+ag instead
+git add --dry-run .
+git diff
+tig
+git add .
+git status
+git commit -m 'changes files after installing Void Linux.'
+git push
+cd
+cd Downloads/dwm-6.2
+vim config.mk 
+make clean
+make
+sudo xbps-install -S font-symbola
+..
+cd
+la
+less .xinitrc 
+sudo xbps-install youtube-dl
+mkdir Video
+cd Video
+youtube-dl https://www.youtube.com/watch?v=IpDZUQKCsgc
+mpv How\ to\ install\ dwm-IpDZUQKCsgc.mp4 
+MPV
+
+sudo xbps-install mpv
+mpv
+vifm
+sudo xbps-install dmenu
+cat ~/Downloads/Favorites.m3u | grep 22000
+cat ~/Downloads/Favorites.m3u | grep 22000 | dmenu -i -l 10
+cat ~/Downloads/Favorites.m3u | grep 22000 | dmenu -i -l 10 | xargs mpv
+vifm
+cd Downloads/dwm-6.2
+ll
+sudo xbps-install -S base-devel libX11-devel libXft-devel libXinerama-devel
+vim config.mk 
+ll
+less README 
+make
+make clean
+cc --version
+make clean install
+sudo make install
+cd /usr/local/stow/
+ll
+sudo rm bin/
+sudo rm -rf bin/
+sudo rm -rf share/
+ll
+popd
+d
+cd 
+cd Downloads/dwm-6.2
+sudo make install
+popd
+cd /usr/local/stow/
+ll
+sudo stow dwm
+ll ..
+ll ../bin/
+ll ../share/
+ll dwm/share/man/man1/dwm.1 
+ll ../share/man/man1/
+man dwm
+rm ../.zsh_history 
+stow zsh
