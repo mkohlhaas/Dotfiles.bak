@@ -71,9 +71,9 @@ set relativenumber
 call mkdir($HOME . "/.vim/undodir", "p")                " Set up undos.
 set undodir=~/.vim/undodir
 set undofile
-
 call mkdir($HOME . "/.vim/swap", "p")                   " Set up swap directory. Does not work. Create directory manually.
 set directory=~/.vim/swap/
+set encoding=utf-8
 
 " Map the leader key to a spacebar.
 let mapleader = "\<space>"
