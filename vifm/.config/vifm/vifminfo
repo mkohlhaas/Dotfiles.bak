@@ -30,21 +30,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/schmidh/GitRepos/CXX-Concurrency-in-Action/build
-	..
-0
-d/home/schmidh/GitRepos/CXX-Concurrency-in-Action
-	..
-0
-d/home/schmidh/GitRepos
-	..
-0
-d/home/schmidh
-	GitRepos
-6
-d/home/schmidh/GitRepos
-	CXX-Concurrency-in-Action
-1
 d/home/schmidh/GitRepos/CXX-Concurrency-in-Action
 	src
 2
@@ -330,6 +315,21 @@ d/home/schmidh
 d/home/schmidh/Dropbox
 	Ausweis
 2
+d/home/schmidh
+	Dropbox
+4
+d/home
+	schmidh
+1
+d/home/schmidh
+	GitRepos
+5
+d/home/schmidh/GitRepos
+	ceph
+3
+d/home/schmidh/GitRepos/ceph
+	..
+0
 d
 
 # Right window history (oldest to newest):
@@ -483,6 +483,9 @@ D/home/schmidh/dotfiles/vifm/.config
 D/home/schmidh/dotfiles/vifm/.config/vifm
 	scripts
 2
+D/home/schmidh
+	..
+0
 D
 
 # Command line history (oldest to newest):
@@ -567,6 +570,6 @@ i1
 [F
 F
 I1
-].0
+].1
 ]F
 s0
