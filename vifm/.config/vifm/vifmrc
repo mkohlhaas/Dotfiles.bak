@@ -112,6 +112,9 @@ endif
 
 set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
 
+" Disable confirmation for delete with trash folder (dd) and without (DD)
+set confirm-=delete,permdelete
+
 " ------------------------------------------------------------------------------
 
 " :mark mark /full/directory/path [filename]
@@ -169,6 +172,37 @@ command! reload :write | restart
 "
 " You can also add %CLEAR if you want to clear screen before running FUSE
 " program.
+
+" put following rules before any other filetype and fileviewer groups
+
+filetype *.tar.gz,*.tgz,*.tar.bz,*.tbz,*.tar.bz2,*.tbz2,
+         \*.tar.Z,*.tZ,*.tar.lzo,*.tzo,*.tar.lz,*.tlz,*.tar.xz,*.txz,*.tar.7z,*.t7z,
+         \*.tar,
+         \*.zip,*.jar,*.war,*.rar,*.lha,*.lzh,
+         \*.alz,*.ace,*.a,*.arj,*.arc,
+         \*.rpm,*.deb,
+         \*.cab,
+         \*.gz,*.bz,*.bz2,
+         \*.Z,*.lzma,*.lzo,*.lz,*.xz,*.rz,*.lrz,*.7z,
+         \*.cpio
+         \ aunpack %f
+
+fileviewer *.tar.gz,*.tgz,*.tar.bz,*.tbz,*.tar.bz2,*.tbz2,
+         \*.tar.Z,*.tZ,*.tar.lzo,*.tzo,*.tar.lz,*.tlz,*.tar.xz,*.txz,*.tar.7z,*.t7z,
+         \*.tar,
+         \*.zip,*.jar,*.war,*.rar,*.lha,*.lzh,
+         \*.alz,*.ace,*.a,*.arj,*.arc,
+         \*.rpm,*.deb,
+         \*.cab,
+         \*.gz,*.bz,*.bz2,
+         \*.Z,*.lzma,*.lzo,*.lz,*.xz,*.rz,*.lrz,*.7z,
+         \*.cpio
+         \ als %f 2>/dev/null
+
+" unpack selected archivers
+command extract aunpack %f &>/dev/null &
+" archive the selection with :archive <filename.ext>
+command archive apack %a %f &>/dev/null &
 
 " Pdf
 filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c

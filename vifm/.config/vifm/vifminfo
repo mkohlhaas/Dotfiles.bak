@@ -17,11 +17,15 @@
 	/home/schmidh/GitRepos/Functional-Programming-Cpp/chapter-12/bookmark-service
 	main.cpp
 1570913980
+'v
+	/home/schmidh/.config/vifm
+	vifmrc
+1571465543
 
 # Bookmarks:
 
 # TUI:
-al
+ar
 q0
 v2
 ov
@@ -30,39 +34,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/schmidh/GitRepos/CXX-Concurrency-in-Action
-	src
-2
-d/home/schmidh/GitRepos/CXX-Concurrency-in-Action/src
-	c.10.cpp
-70
-d/home/schmidh/GitRepos/CXX-Concurrency-in-Action
-	build
-1
-d/home/schmidh/GitRepos/CXX-Concurrency-in-Action/build
-	..
-0
-d/home/schmidh/GitRepos/CXX-Concurrency-in-Action
-	build
-1
-d/home/schmidh/GitRepos
-	CXX-Concurrency-in-Action
-1
-d/home/schmidh
-	Dropbox
-5
-d/home/schmidh/Dropbox
-	Amtsgericht
-1
-d/home/schmidh/Dropbox/Amtsgericht
-	Widerspruch.odt
-1
-d/home/schmidh/Dropbox
-	Elly
-19
-d/home/schmidh/Dropbox/Elly
-	bestelluebersicht.pdf
-4
 d/home/schmidh/Dropbox
 	Elly
 19
@@ -330,6 +301,39 @@ d/home/schmidh/GitRepos
 d/home/schmidh/GitRepos/ceph
 	..
 0
+d/home/schmidh
+	.config
+2
+d/home/schmidh/.config
+	vifm
+15
+d/home/schmidh/.config/vifm
+	vifmrc
+5
+d/home/schmidh/Downloads/Unpack-5938/daslog-master
+	..
+0
+d/home/schmidh/Downloads/Unpack-5938
+	daslog-master
+1
+d/home/schmidh/Downloads
+	Unpack-5938
+1
+d/home/schmidh
+	.config
+2
+d/home/schmidh/.config
+	vifm
+15
+d/home/schmidh/.config/vifm
+	vifm-help.txt
+3
+d/home/schmidh
+	.config
+2
+d/home/schmidh/.config/vifm
+	vifmrc
+5
 d
 
 # Right window history (oldest to newest):
@@ -484,11 +488,152 @@ D/home/schmidh/dotfiles/vifm/.config/vifm
 	scripts
 2
 D/home/schmidh
+	Downloads
+3
+D/home/schmidh/Downloads
+	tool-master
+2
+D/home/schmidh/Downloads/tool-master
 	..
 0
+D/home/schmidh/Downloads
+	tool-master
+2
+D/home/schmidh/Downloads/tool-master
+	images
+1
+D/home/schmidh/Downloads/tool-master/images
+	shortcuts-youdao.png
+1
+D/home/schmidh/Downloads/tool-master
+	shell
+3
+D/home/schmidh/Downloads
+	Unpack-2649
+1
+D/home/schmidh/Downloads/Unpack-2649
+	..
+0
+D/home/schmidh/Downloads
+	daslog-master
+1
+D/home/schmidh/Downloads/daslog-master
+	example
+1
+D/home/schmidh/Downloads/daslog-master/example
+	..
+0
+D/home/schmidh/Downloads/daslog-master
+	example
+1
+D/home/schmidh/Downloads/daslog-master/example
+	main.go
+1
+D/home/schmidh/Downloads/daslog-master
+	example
+1
+D/home/schmidh/Downloads/daslog-master/example
+	main.go
+1
+D/home/schmidh/Downloads/daslog-master
+	example
+1
+D/home/schmidh/Downloads
+	daslog-master
+1
+D/home/schmidh
+	Downloads
+3
+D/home/schmidh/Downloads
+	Favorites.m3u
+1
+D/home/schmidh
+	Downloads
+3
+D/home
+	schmidh
+1
+D/home/schmidh
+	.config
+2
+D/home/schmidh/.config
+	vifm
+15
+D/home/schmidh/.config/vifm
+	vifmrc
+5
+D/home/schmidh/.config
+	vifm
+15
+D/home/schmidh
+	Downloads
+3
+D/home/schmidh/Downloads
+	daslog-master
+1
+D/home/schmidh/Downloads/daslog-master
+	daslog_bench_test.go
+5
+D/home/schmidh/Downloads
+	Unpack-5938
+1
+D/home/schmidh/Downloads/Unpack-5938
+	daslog-master
+1
+D/home/schmidh/Downloads/Unpack-5938/daslog-master
+	example
+1
+D/home/schmidh/Downloads/Unpack-5938/daslog-master/example
+	main.go
+1
+D/home/schmidh/Downloads/Unpack-5938/daslog-master
+	example
+1
+D/home/schmidh/Downloads/Unpack-5938
+	daslog-master
+1
+D/home/schmidh/Downloads
+	Unpack-5938
+1
+D/home/schmidh
+	Downloads
+3
+D/home/schmidh/Downloads/Unpack-5938/daslog-master
+	..
+0
+D/home/schmidh
+	Downloads
+3
+D/home/schmidh/Downloads
+	Unpack-5938
+1
+D/home/schmidh/Downloads/Unpack-5938
+	daslog-master
+1
+D/home/schmidh/Downloads/Unpack-5938/daslog-master
+	daslog_test.go
+2
+D/home/schmidh/Downloads/Unpack-5938
+	daslog-master
+1
+D/home/schmidh/Downloads
+	daslog-master
+1
+D/home/schmidh/Downloads/daslog-master
+	..
+0
+D/home/schmidh/Downloads
+	daslog-master.zip
+2
+D/home/schmidh
+	Downloads
+3
 D
 
 # Command line history (oldest to newest):
+:help dd
+:help\
+:help
 :colorscheme 
 :q
 :trashes
@@ -496,18 +641,22 @@ D
 :tree
 :mkdir Temp
 :colorscheme iceberg
+:sync
 
 # Search history (oldest to newest):
 /vif
+/asdf
+//
 
 # Prompt history (oldest to newest):
 p.vimrc.bak
 p.vimrc
+pdd
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/schmidh/go
+""/home/schmidh/.local/share/vifm/Trash/002_daslog-master
 
 # Directory stack (oldest to newest):
 
@@ -562,11 +711,53 @@ t/home/schmidh/.local/share/vifm/Trash/000_bananamount.sh
 	/home/schmidh/bin/bananamount.sh
 t/home/schmidh/.local/share/vifm/Trash/002_bananamount.sh
 	/home/schmidh/dotfiles/binaries/bin/bananamount.sh
+t/home/schmidh/.local/share/vifm/Trash/000_tool-master
+	/home/schmidh/Downloads/tool-master
+t/home/schmidh/.local/share/vifm/Trash/000_tool-master.zip
+	/home/schmidh/Downloads/tool-master.zip
+t/home/schmidh/.local/share/vifm/Trash/000_unifont-12.1.03.ttf
+	/home/schmidh/Downloads/unifont-12.1.03.ttf
+t/home/schmidh/.local/share/vifm/Trash/000_Unpack-2649
+	/home/schmidh/Downloads/Unpack-2649
+t/home/schmidh/.local/share/vifm/Trash/000_Unpack-2993
+	/home/schmidh/Downloads/Unpack-2993
+t/home/schmidh/.local/share/vifm/Trash/000_Unpack-5836
+	/home/schmidh/Downloads/Unpack-5836
+t/home/schmidh/.local/share/vifm/Trash/000_Unpack-6073
+	/home/schmidh/Downloads/Unpack-6073
+t/home/schmidh/.local/share/vifm/Trash/000_Unpack-7927
+	/home/schmidh/Downloads/Unpack-7927
+t/home/schmidh/.local/share/vifm/Trash/000_daslog-master
+	/home/schmidh/Downloads/daslog-master
+t/home/schmidh/.local/share/vifm/Trash/000_daslog-master.zip
+	/home/schmidh/Downloads/daslog-master.zip
+t/home/schmidh/.local/share/vifm/Trash/000_daslog_test.go
+	/home/schmidh/Downloads/daslog-master/daslog_test.go
+t/home/schmidh/.local/share/vifm/Trash/000_LICENSE
+	/home/schmidh/Downloads/Unpack-5938/daslog-master/LICENSE
+t/home/schmidh/.local/share/vifm/Trash/000_daslog.go
+	/home/schmidh/Downloads/Unpack-5938/daslog-master/daslog.go
+t/home/schmidh/.local/share/vifm/Trash/000_README.md
+	/home/schmidh/Downloads/Unpack-5938/daslog-master/README.md
+t/home/schmidh/.local/share/vifm/Trash/000_daslog_bench_test.go
+	/home/schmidh/Downloads/Unpack-5938/daslog-master/daslog_bench_test.go
+t/home/schmidh/.local/share/vifm/Trash/000_Unpack-5938
+	/home/schmidh/Downloads/Unpack-5938
+t/home/schmidh/.local/share/vifm/Trash/001_daslog_bench_test.go
+	/home/schmidh/Downloads/daslog-master/daslog_bench_test.go
+t/home/schmidh/.local/share/vifm/Trash/001_daslog.go
+	/home/schmidh/Downloads/daslog-master/daslog.go
+t/home/schmidh/.local/share/vifm/Trash/001_README.md
+	/home/schmidh/Downloads/daslog-master/README.md
+t/home/schmidh/.local/share/vifm/Trash/000_example
+	/home/schmidh/Downloads/daslog-master/example
+t/home/schmidh/.local/share/vifm/Trash/001_LICENSE
+	/home/schmidh/Downloads/daslog-master/LICENSE
 
 # State:
 f
 i1
-[.1
+[.0
 [F
 F
 I1
