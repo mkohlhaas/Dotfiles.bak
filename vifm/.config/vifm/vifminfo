@@ -18,14 +18,14 @@
 	main.cpp
 1570913980
 'v
-	/home/schmidh/.config/vifm
-	vifmrc
-1571465543
+	/mnt/Downloads
+	Movies
+1571499155
 
 # Bookmarks:
 
 # TUI:
-ar
+al
 q0
 v2
 ov
@@ -34,228 +34,6 @@ l2
 r2
 
 # Left window history (oldest to newest):
-d/home/schmidh/Dropbox
-	Elly
-19
-d/home/schmidh
-	Videos
-11
-d/home/schmidh/Videos
-	..
-0
-d/home/schmidh
-	Videos
-11
-d/home/schmidh/Videos
-	NA
-2
-d/home/schmidh/Videos/NA
-	..
-0
-d/home/schmidh/Videos
-	Mix - Gerhard Gundermann-Vater
-1
-d/home/schmidh/Videos/Mix - Gerhard Gundermann-Vater
-	012 - die zukunft von gerhard gundermann.mkv
-12
-d/home/schmidh
-	..
-0
-d/home
-	schmidh
-1
-d/home/schmidh
-	..
-0
-d/home
-	schmidh
-1
-d/home/schmidh
-	..
-0
-d/home
-	schmidh
-1
-d/home/schmidh
-	..
-0
-d/home
-	schmidh
-1
-d/home/schmidh
-	..
-0
-d/home
-	schmidh
-1
-d/home/schmidh
-	..
-0
-d/home
-	schmidh
-1
-d/home/schmidh
-	Downloads
-4
-d/home/schmidh/Downloads
-	Favorites.m3u
-1
-d/home/schmidh
-	Public
-9
-d/home/schmidh/Public
-	..
-0
-d/home/schmidh
-	Videos
-11
-d/home/schmidh/Videos
-	Mix - Gerhard Gundermann-Vater
-1
-d/home/schmidh
-	Videos
-11
-d/home/schmidh/Videos
-	Gundermann.2018.mkv
-2
-d/home/schmidh
-	.config
-2
-d/home/schmidh/.config
-	vifm
-17
-d/home/schmidh/.config/vifm
-	vifmrc
-5
-d/home/schmidh/.config
-	vifm
-17
-d/home/schmidh
-	Calibre Library
-1
-d/home/schmidh/Calibre Library
-	..
-0
-d/home/schmidh
-	GitRepos
-6
-d/home/schmidh/GitRepos
-	CXX-Concurrency-in-Action
-1
-d/home/schmidh
-	.config
-2
-d/home/schmidh/.config
-	vifm
-17
-d/home/schmidh/.config/vifm
-	vifmrc
-5
-d/home/schmidh/.config
-	vifm
-17
-d/home/schmidh
-	Videos
-12
-d/home/schmidh/Videos
-	Gundermann.2018.mkv
-2
-d/home/schmidh
-	Videos
-12
-d/home
-	schmidh
-1
-d/home/schmidh
-	Downloads
-4
-d/home/schmidh/Downloads
-	Favorites.m3u
-1
-d/home/schmidh
-	.config
-2
-d/home/schmidh/.config
-	vifm
-17
-d/home/schmidh
-	.config
-2
-d/home/schmidh/.config
-	vifm
-17
-d/home/schmidh/.config/vifm
-	vifmrc
-5
-d/home/schmidh/.config
-	vifm
-17
-d/home/schmidh/.config/vifm
-	vifmrc
-5
-d/home/schmidh/.config
-	vifm
-17
-d/home/schmidh/.config/vifm
-	colors
-1
-d/home/schmidh/.config/vifm/colors
-	..
-0
-d/home/schmidh/.config/vifm
-	colors
-1
-d/home/schmidh/.config/vifm/colors
-	..
-0
-d/home/schmidh/.config/vifm
-	colors
-1
-d/home/schmidh/.config
-	vifm
-17
-d/home/schmidh
-	.config
-2
-d/home/schmidh/.config
-	vifm
-17
-d/home/schmidh/.config/vifm
-	colors
-1
-d/home/schmidh/.config/vifm/colors
-	..
-0
-d/home/schmidh/.config/vifm
-	scripts
-2
-d/home/schmidh/.config/vifm/scripts
-	..
-0
-d/home/schmidh/.config/vifm
-	vifminfo
-4
-d/home/schmidh/.config
-	vifm
-17
-d/home/schmidh/.config/vifm
-	vifmrc
-5
-d/home/schmidh/.config
-	vifm
-17
-d/home/schmidh
-	bin
-27
-d/home/schmidh/bin
-	bananamount.sh
-1
-d/home/schmidh
-	bin
-27
-d/home/schmidh/bin
-	videoLengts.sh
-2
 d/home/schmidh
 	.config
 2
@@ -334,6 +112,228 @@ d/home/schmidh
 d/home/schmidh/.config/vifm
 	vifmrc
 5
+d/home/schmidh/Downloads
+	daslog-master
+1
+d/home/schmidh/Downloads/daslog-master
+	..
+0
+d/home/schmidh/Downloads
+	Favorites.m3u
+1
+d/home/schmidh
+	Dropbox
+4
+d/home/schmidh/Dropbox
+	Ausweis
+2
+d/home/schmidh
+	GitRepos
+5
+d/home/schmidh/GitRepos
+	ceph
+3
+d/home/schmidh
+	Temp
+6
+d/home/schmidh/Temp
+	..
+0
+d/home/schmidh
+	Video
+7
+d/home/schmidh/Video
+	..
+0
+d/home/schmidh
+	Video
+7
+d/home
+	schmidh
+1
+d/
+	mnt
+10
+d/mnt
+	Downloads
+1
+d/mnt/Downloads
+	Movies
+4
+d/mnt/Downloads/Movies
+	Interstellar (2014) (2014) [1080p]
+3
+d/mnt/Downloads/Movies/Interstellar (2014) (2014) [1080p]
+	Interstellar.2014.2014.1080p.BluRay.x264.YIFY.mp4
+1
+d/mnt/Downloads/Movies
+	Kong Skull Island (2017) [1080p] [YTS.AG]
+4
+d/mnt/Downloads/Movies/Kong Skull Island (2017) [1080p] [YTS.AG]
+	Kong.Skull.Island.2017.1080p.BluRay.x264-[YTS.AG].mp4
+1
+d/mnt/Downloads/Movies
+	The Collini Case (2019) [BluRay] [1080p] [YTS.LT]
+8
+d/mnt/Downloads/Movies/The Collini Case (2019) [BluRay] [1080p] [YTS.LT]
+	The.Collini.Case.2019.1080p.BluRay.x264-[YTS.LT].mp4
+1
+d/mnt/Downloads/Movies
+	The Collini Case (2019) [BluRay] [1080p] [YTS.LT]
+8
+d/mnt/Downloads
+	Movies
+4
+d/mnt/Downloads/Movies
+	Triple 9 (2016) [1080p] [YTS.AG]
+9
+d/mnt/Downloads/Movies/Triple 9 (2016) [1080p] [YTS.AG]
+	Triple.9.2016.1080p.BluRay.x264-[YTS.AG].mp4
+1
+d/mnt/Downloads/Movies
+	Triple 9 (2016) [1080p] [YTS.AG]
+9
+d/mnt/Downloads
+	Movies
+4
+d/mnt/Downloads/Movies
+	Triple 9 (2016) [1080p] [YTS.AG]
+9
+d/mnt/Downloads
+	Movies
+4
+d/mnt
+	Downloads
+1
+d/home/schmidh
+	Dotfiles
+2
+d/home
+	schmidh
+1
+d/
+	mnt
+10
+d/mnt
+	Downloads
+1
+d/mnt/Downloads
+	Movies
+4
+d/mnt/Downloads/Movies
+	Triple 9 (2016) [1080p] [YTS.AG]
+9
+d/home/schmidh
+	Dotfiles
+2
+d/mnt/Downloads/Movies
+	Triple 9 (2016) [1080p] [YTS.AG]
+9
+d/home/schmidh
+	Dotfiles
+2
+d/mnt/Downloads/Movies
+	Triple 9 (2016) [1080p] [YTS.AG]
+9
+d/mnt/Downloads
+	Movies
+4
+d/mnt/Downloads/Movies
+	Room (2015) [1080p] [YTS.AG]
+7
+d/mnt/Downloads
+	Movies
+4
+d/home/schmidh
+	Dotfiles
+2
+d/mnt/Downloads
+	Movies
+4
+d/mnt/Downloads/Movies
+	Room (2015) [1080p] [YTS.AG]
+7
+d/mnt/Downloads
+	Pictures
+5
+d/mnt/Downloads/Pictures
+	..
+0
+d/mnt/Downloads
+	Pictures
+5
+d/mnt/Downloads/Pictures
+	downloadWallpaper.sh
+4
+d/mnt/Downloads
+	Programming
+6
+d/mnt/Downloads/Programming
+	..
+0
+d/mnt/Downloads
+	Programming
+6
+d/mnt
+	Downloads
+1
+d/mnt/Downloads
+	Youtube
+12
+d/mnt/Downloads/Youtube
+	C++
+1
+d/mnt/Downloads/Youtube/C++
+	..
+0
+d/mnt/Downloads/Youtube
+	C++
+1
+d/mnt/Downloads
+	Youtube
+12
+d/mnt
+	Downloads
+1
+d/home/schmidh
+	Downloads
+3
+d/home/schmidh/Downloads
+	..
+0
+d/home/schmidh
+	Downloads
+3
+d/home/schmidh/Downloads
+	..
+0
+d/home/schmidh
+	Dotfiles
+2
+d/home/schmidh/Dotfiles
+	..
+0
+d/home/schmidh
+	Desktop
+1
+d/home/schmidh/Desktop
+	..
+0
+d/home/schmidh
+	go
+9
+d/home/schmidh/go
+	bin
+1
+d/home/schmidh/go/bin
+	scc
+1
+d/home/schmidh/go
+	bin
+1
+d/home/schmidh
+	go
+9
 d
 
 # Right window history (oldest to newest):
@@ -628,6 +628,15 @@ D/home/schmidh/Downloads
 D/home/schmidh
 	Downloads
 3
+D/home/schmidh/Downloads/daslog-master
+	
+3
+D/home/schmidh/Downloads
+	..
+0
+D/home/schmidh
+	Downloads
+3
 D
 
 # Command line history (oldest to newest):
@@ -656,7 +665,7 @@ pdd
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/schmidh/.local/share/vifm/Trash/002_daslog-master
+""/home/schmidh/.local/share/vifm/Trash/000_Mississippi Grind (2015) [BluRay] [1080p] [YTS.LT].torrent
 
 # Directory stack (oldest to newest):
 
@@ -753,11 +762,31 @@ t/home/schmidh/.local/share/vifm/Trash/000_example
 	/home/schmidh/Downloads/daslog-master/example
 t/home/schmidh/.local/share/vifm/Trash/001_LICENSE
 	/home/schmidh/Downloads/daslog-master/LICENSE
+t/home/schmidh/.local/share/vifm/Trash/000_China_Posts_Another_Below_Expectations_GDP_Number_We_Were_Warned_Flight_Capital_Out_of_China-9Lf5pGR4tFA.mp4
+	/home/schmidh/Video/China_Posts_Another_Below_Expectations_GDP_Number_We_Were_Warned_Flight_Capital_Out_of_China-9Lf5pGR4tFA.mp4
+t/home/schmidh/.local/share/vifm/Trash/000_Day 7 - dwm and suckless - I Hate The Patching!-0AmvYM_Ajd4.mp4
+	/home/schmidh/Video/Day 7 - dwm and suckless - I Hate The Patching!-0AmvYM_Ajd4.mp4
+t/home/schmidh/.local/share/vifm/Trash/000_Mission Impossible  - Fallout Trailer 21_9 4K-BUt0qOMSLAM.webm
+	/home/schmidh/Video/Mission Impossible  - Fallout Trailer 21_9 4K-BUt0qOMSLAM.webm
+t/home/schmidh/.local/share/vifm/Trash/000_UltraWide Video PsyXeon   3440 x 1440 CS GO Counter strike  Global Offensive 07 08 2016 2-WNaBS5kCCxc.webm
+	/home/schmidh/Video/UltraWide Video PsyXeon   3440 x 1440 CS GO Counter strike  Global Offensive 07 08 2016 2-WNaBS5kCCxc.webm
+t/mnt/.vifm-Trash-1000/000_China_Posts_Another_Below_Expectations_GDP_Number_We_Were_Warned_Flight_Capital_Out_of_China-9Lf5pGR4tFA.mp4
+	/mnt/Downloads/Youtube/China_Posts_Another_Below_Expectations_GDP_Number_We_Were_Warned_Flight_Capital_Out_of_China-9Lf5pGR4tFA.mp4
+t/mnt/.vifm-Trash-1000/000_Voice-of-America-2019-10-15.mp3
+	/mnt/Downloads/Youtube/Voice-of-America-2019-10-15.mp3
+t/home/schmidh/.local/share/vifm/Trash/000_American Woman (2018) [BluRay] [1080p] [YTS.LT].torrent
+	/home/schmidh/Downloads/American Woman (2018) [BluRay] [1080p] [YTS.LT].torrent
+t/home/schmidh/.local/share/vifm/Trash/000_The Lost City of Z (2016) [BluRay] [1080p] [YTS.LT].torrent
+	/home/schmidh/Downloads/The Lost City of Z (2016) [BluRay] [1080p] [YTS.LT].torrent
+t/home/schmidh/.local/share/vifm/Trash/000_Burnt (2015) [BluRay] [1080p] [YTS.LT].torrent
+	/home/schmidh/Downloads/Burnt (2015) [BluRay] [1080p] [YTS.LT].torrent
+t/home/schmidh/.local/share/vifm/Trash/000_Mississippi Grind (2015) [BluRay] [1080p] [YTS.LT].torrent
+	/home/schmidh/Downloads/Mississippi Grind (2015) [BluRay] [1080p] [YTS.LT].torrent
 
 # State:
 f
 i1
-[.0
+[.1
 [F
 F
 I1

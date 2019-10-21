@@ -13,8 +13,7 @@ set hidden                                              " If the active buffer i
 
 call plug#begin()                                       " Load plugins.
 Plug 'ctrlpvim/ctrlp.vim'                               " Fuzzy file, buffer, mru, tag, etc finder. Invokde with <Ctrl-P>.
-Plug 'easymotion/vim-easymotion'                        " Highlighs all possible choices and allows you to press one key to jump directly to the target.
-                                                        " Type <space> twice then movement key like w, f, t, b, e ,k, j etc. to invoke EasyMotion.
+Plug 'easymotion/vim-easymotion'                        " Highlighs all possible choices and allows you to press one key to jump directly to the target. Type <space> twice then movement key like w, f, t, b, e ,k, j etc. to invoke EasyMotion.
 Plug 'mileszs/ack.vim'                                  " File finder.
 Plug 'tpope/vim-vinegar'                                " File manager. Invoke with '-'.
 Plug 'junegunn/vim-plug'                                " Documentation for the plugin manager.
@@ -25,9 +24,6 @@ Plug 'tpope/vim-commentary'                             " Comment stuff out.
 Plug 'tpope/vim-surround'                               " Quoting/parenthesizing made simple.
 Plug 'nelstrom/vim-visual-star-search'                  " Start a * or # search from a visual block.
 Plug 'tpope/vim-abolish'                                " Easily search for, substitute, and abbreviate multiple variants of a word.
-Plug 'wincent/command-t'                                " Fast file navigation for VIM. For compiling the NECESSARY(!) C extension see: https://bit.ly/30eN5hq
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}         " Intellisense engine for vim8 & neovim, full language server protocol support as VSCode.
-" Plug 'vhdirk/vim-cmake'                                 " Vim plugin to make working with CMake a little nicer.
 Plug 'skywind3000/asyncrun.vim'                         " Run shell commands asyncronously and output to quickfix window.
 Plug 'kana/vim-smartinput'                              " Smart input for programmers: https://bit.ly/2ZdNJuF
 Plug 'kana/vim-textobj-user'                            " Dependency for kana/vim-textobj-entire.
@@ -39,7 +35,6 @@ Plug 'SirVer/ultisnips'                                 " The ultimate snippet s
 Plug 'schmidh/MyUltiSnips'                              " My personal snippets for UltiSnips.
 Plug 'honza/vim-snippets'                               " Default snippets.
 Plug 'Valloric/YouCompleteMe'                           " A code-completion engine for Vim.
-Plug 'casey/reap.vim'                                   " Read, evaluate, and annotate code in vim.
 call plug#end()
 
 colorscheme hybrid_reverse 
@@ -92,6 +87,10 @@ nnoremap Y y$
 " Move to next and previous buffers.
 noremap <M-Left> :bp<CR>
 noremap <M-Right> :bn<CR>
+noremap <M-Up> :tabprevious<CR>
+noremap <M-Down> :tabnext<CR>
+noremap <M-Home> :tabmove 0<CR>
+noremap <M-End> :tabmove<CR>
 " '%%' expands to the path of the active buffer. For example when opening a
 " file ':e %%'
 " Easy Expansion of the Active File Directory
