@@ -27,7 +27,7 @@
 # TUI:
 ar
 q0
-v2
+v1
 ov
 m-1
 l2
@@ -627,7 +627,16 @@ D/home/schmidh/Downloads
 2
 D/home/schmidh
 	Downloads
-3
+8
+D/home/schmidh/Downloads
+	gupnp-dlna-0.10.5
+1
+D/home/schmidh/Downloads/gupnp-dlna-0.10.5
+	..
+0
+D/home/schmidh/Downloads
+	2019sep24gold1.png
+1
 D
 
 # Command line history (oldest to newest):
@@ -642,6 +651,7 @@ D
 :mkdir Temp
 :colorscheme iceberg
 :sync
+:d
 
 # Search history (oldest to newest):
 /vif
@@ -656,7 +666,7 @@ pdd
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/schmidh/.local/share/vifm/Trash/002_daslog-master
+""/home/schmidh/.local/share/vifm/Trash/000_triple92016720pblurayx264-drones-english-84836.zip
 
 # Directory stack (oldest to newest):
 
@@ -753,6 +763,70 @@ t/home/schmidh/.local/share/vifm/Trash/000_example
 	/home/schmidh/Downloads/daslog-master/example
 t/home/schmidh/.local/share/vifm/Trash/001_LICENSE
 	/home/schmidh/Downloads/daslog-master/LICENSE
+t/home/schmidh/.local/share/vifm/Trash/000_[limetorrents.info]UFC.on.ESPN.6.720p.HDTV.x264-Daz[TGx].torrent
+	/home/schmidh/Downloads/[limetorrents.info]UFC.on.ESPN.6.720p.HDTV.x264-Daz[TGx].torrent
+t/home/schmidh/.local/share/vifm/Trash/000_[limetorrents.info]UFC.on.ESPN.6.Reyes.vs.Weidman.HDTV.x264-PUNCH[TGx].torrent
+	/home/schmidh/Downloads/[limetorrents.info]UFC.on.ESPN.6.Reyes.vs.Weidman.HDTV.x264-PUNCH[TGx].torrent
+t/home/schmidh/.local/share/vifm/Trash/000_data
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/data
+t/home/schmidh/.local/share/vifm/Trash/000_doc
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/doc
+t/home/schmidh/.local/share/vifm/Trash/000_libgupnp-dlna
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/libgupnp-dlna
+t/home/schmidh/.local/share/vifm/Trash/000_m4
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/m4
+t/home/schmidh/.local/share/vifm/Trash/000_tests
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/tests
+t/home/schmidh/.local/share/vifm/Trash/000_tools
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/tools
+t/home/schmidh/.local/share/vifm/Trash/000_vala
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/vala
+t/home/schmidh/.local/share/vifm/Trash/000_AUTHORS
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/AUTHORS
+t/home/schmidh/.local/share/vifm/Trash/000_COPYING
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/COPYING
+t/home/schmidh/.local/share/vifm/Trash/000_ChangeLog
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/ChangeLog
+t/home/schmidh/.local/share/vifm/Trash/000_INSTALL
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/INSTALL
+t/home/schmidh/.local/share/vifm/Trash/000_Makefile.am
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/Makefile.am
+t/home/schmidh/.local/share/vifm/Trash/000_Makefile.in
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/Makefile.in
+t/home/schmidh/.local/share/vifm/Trash/000_NEWS
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/NEWS
+t/home/schmidh/.local/share/vifm/Trash/000_README
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/README
+t/home/schmidh/.local/share/vifm/Trash/000_TODO
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/TODO
+t/home/schmidh/.local/share/vifm/Trash/000_aclocal.m4
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/aclocal.m4
+t/home/schmidh/.local/share/vifm/Trash/000_common.am
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/common.am
+t/home/schmidh/.local/share/vifm/Trash/000_config.h.in
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/config.h.in
+t/home/schmidh/.local/share/vifm/Trash/000_configure
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/configure
+t/home/schmidh/.local/share/vifm/Trash/000_configure.ac
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/configure.ac
+t/home/schmidh/.local/share/vifm/Trash/000_gtk-doc.make
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/gtk-doc.make
+t/home/schmidh/.local/share/vifm/Trash/000_gupnp-dlna-2.0.pc.in
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/gupnp-dlna-2.0.pc.in
+t/home/schmidh/.local/share/vifm/Trash/000_gupnp-dlna-gst-2.0.pc.in
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/gupnp-dlna-gst-2.0.pc.in
+t/home/schmidh/.local/share/vifm/Trash/000_gupnp-dlna-gst-legacy-2.0.pc.in
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/gupnp-dlna-gst-legacy-2.0.pc.in
+t/home/schmidh/.local/share/vifm/Trash/000_gupnp-dlna-metadata-2.0.pc.in
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/gupnp-dlna-metadata-2.0.pc.in
+t/home/schmidh/.local/share/vifm/Trash/000_build-aux
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5/build-aux
+t/home/schmidh/.local/share/vifm/Trash/000_gupnp-dlna-0.10.5
+	/home/schmidh/Downloads/gupnp-dlna-0.10.5
+t/home/schmidh/.local/share/vifm/Trash/000_Triple.9.2016.720p.BluRay.x264-DRONES.srt
+	/home/schmidh/Downloads/Triple.9.2016.720p.BluRay.x264-DRONES.srt
+t/home/schmidh/.local/share/vifm/Trash/000_triple92016720pblurayx264-drones-english-84836.zip
+	/home/schmidh/Downloads/triple92016720pblurayx264-drones-english-84836.zip
 
 # State:
 f

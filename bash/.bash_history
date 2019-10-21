@@ -337,3 +337,22 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; 
 # exec startkde
 # exec startxfce4
 # ...or the Window Manager of your choice
+stow -D zsh
+rm ../.zsh_history 
+stow -D zsh
+cd
+git clone https://github.com/schmidh/Dotfiles.git
+cd Dotfiles/
+ll
+ls -al
+stow bash
+stow binaries/
+stow golang/
+rm -rf ../go/
+stow golang/
+stow mpv
+rm -rf ../.config/mpv
+stow mpv
+stow vifm
+stow vim
+stow zsh
