@@ -377,3 +377,572 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; 
 # exec startkde
 # exec startxfce4
 # ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+make --help install
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+make checkconfig
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+fish
+chsh -s /usr/bin/bash 
+less /etc/shells 
+chsh -s /bin/zsh 
+less /etc/shells 
+sudo xbps-install fish-shell 
+fish
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice
+#!/bin/sh
+#
+# ~/.xinitrc
+#
+# Executed by startx (run your window manager from here)
+if [ -d /etc/X11/xinit/xinitrc.d ]; then   for f in /etc/X11/xinit/xinitrc.d/*; do     [ -x "$f" ] && . "$f";   done;   unset f; fi
+# exec gnome-session
+# exec startkde
+# exec startxfce4
+# ...or the Window Manager of your choice

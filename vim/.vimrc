@@ -15,7 +15,7 @@ call plug#begin()                                       " Load plugins.
 Plug 'ctrlpvim/ctrlp.vim'                               " Fuzzy file, buffer, mru, tag, etc finder. Invokde with <Ctrl-P>.
 Plug 'easymotion/vim-easymotion'                        " Highlighs all possible choices and allows you to press one key to jump directly to the target. Type <space> twice then movement key like w, f, t, b, e ,k, j etc. to invoke EasyMotion.
 Plug 'mileszs/ack.vim'                                  " File finder.
-Plug 'tpope/vim-vinegar'                                " File manager. Invoke with '-'.
+" Plug 'tpope/vim-vinegar'                                " File manager. Invoke with '-'.
 Plug 'junegunn/vim-plug'                                " Documentation for the plugin manager.
 Plug 'simnalamburt/vim-mundo'                           " Vim undo tree visualizer.
 Plug 'vim-airline/vim-airline'                          " Lean & mean status/tabline for vim that's light as air.
@@ -50,8 +50,8 @@ packadd! matchit                                        " This plugin makes the 
 set ignorecase                                          " Ignore case when searching.
 set smartcase                                           " Turn of ignorecase when search pattern contains uppercase character(s).
 set autoindent                                          " Respect indentation when starting a new line.
-set expandtab                                           " Expand tabs to spaces. Essential in Python.
-set tabstop=4                                           " Number of spaces tab is counted for.
+" set expandtab                                           " Expand tabs to spaces. Essential in Python.
+" set tabstop=4                                           " Number of spaces tab is counted for.
 set shiftwidth=4                                        " Number of spaces to use for autoindent.
 set backspace=2                                         " Fix backspace behavior on most terminals.
 set path+=**                                            " Search down in to subfolders. Applies to all file operations.
@@ -87,19 +87,19 @@ nnoremap Y y$
 " Move to next and previous buffers.
 noremap <M-Left> :bp<CR>
 noremap <M-Right> :bn<CR>
-noremap <M-Up> :tabprevious<CR>
-noremap <M-Down> :tabnext<CR>
-noremap <M-Home> :tabmove 0<CR>
-noremap <M-End> :tabmove<CR>
+" noremap <M-Up> :tabprevious<CR>
+" noremap <M-Down> :tabnext<CR>
+" noremap <M-Home> :tabmove 0<CR>
+" noremap <M-End> :tabmove<CR>
 " '%%' expands to the path of the active buffer. For example when opening a
 " file ':e %%'
 " Easy Expansion of the Active File Directory
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 " Disable arrow keys in normal mode.
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
+" noremap <Up> <Nop>
+" noremap <Down> <Nop>
+" noremap <Left> <Nop>
+" noremap <Right> <Nop>
 " Silence search highlighting.
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 

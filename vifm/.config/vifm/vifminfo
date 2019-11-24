@@ -30,91 +30,10 @@ q0
 v2
 ov
 m-1
-l2
+l1,2
 r2
 
 # Left window history (oldest to newest):
-d/home/schmidh
-	.config
-2
-d/home/schmidh/.config
-	vifm
-17
-d/home/schmidh/.config/vifm
-	vifmrc
-5
-d/home/schmidh/.config
-	vifm
-18
-d/home/schmidh/.config/vifm
-	colors
-1
-d/home/schmidh/.config
-	vifm
-18
-d/home/schmidh
-	Desktop
-1
-d/home
-	schmidh
-1
-d/home/schmidh
-	Dropbox
-3
-d/home/schmidh/Dropbox
-	Ausweis
-2
-d/home/schmidh
-	Dropbox
-4
-d/home
-	schmidh
-1
-d/home/schmidh
-	GitRepos
-5
-d/home/schmidh/GitRepos
-	ceph
-3
-d/home/schmidh/GitRepos/ceph
-	..
-0
-d/home/schmidh
-	.config
-2
-d/home/schmidh/.config
-	vifm
-15
-d/home/schmidh/.config/vifm
-	vifmrc
-5
-d/home/schmidh/Downloads/Unpack-5938/daslog-master
-	..
-0
-d/home/schmidh/Downloads/Unpack-5938
-	daslog-master
-1
-d/home/schmidh/Downloads
-	Unpack-5938
-1
-d/home/schmidh
-	.config
-2
-d/home/schmidh/.config
-	vifm
-15
-d/home/schmidh/.config/vifm
-	vifm-help.txt
-3
-d/home/schmidh
-	.config
-2
-d/home/schmidh/.config/vifm
-	vifmrc
-5
-d/home/schmidh/Downloads
-	daslog-master
-1
 d/home/schmidh/Downloads/daslog-master
 	..
 0
@@ -332,83 +251,92 @@ d/home/schmidh/go
 	bin
 1
 d/home/schmidh
-	go
-9
+	..
+0
+d/home
+	..
+0
+d/
+	mnt
+10
+d/mnt
+	Downloads
+1
+d/mnt/Downloads
+	Movies
+4
+d/mnt/Downloads/Movies
+	Gundermann.2018.1080p.BluRay.x264-JustWatch[EtHD]
+7
+d/mnt/Downloads/Movies/Gundermann.2018.1080p.BluRay.x264-JustWatch[EtHD]
+	Gundermann.2018.1080p.BluRay.x264-JustWatch[EtHD].mkv
+5
+d/home/schmidh
+	GitRepos
+5
+d/home/schmidh/GitRepos
+	CXX-17-STL-Cookbook
+1
+d/home/schmidh/GitRepos/CXX-17-STL-Cookbook
+	Chapter04
+4
+d/home/schmidh/GitRepos/CXX-17-STL-Cookbook/Chapter04
+	033-multicaller.cpp
+5
+d/home/schmidh
+	GitRepos
+5
+d/home/schmidh/GitRepos/ceph
+	install_void_linux.txt
+48
+d/home/schmidh/GitRepos/void-packages
+	srcpkgs
+6
+d/home/schmidh/GitRepos/void-packages/srcpkgs
+	dpdk
+71
+d/home/schmidh/GitRepos/void-packages/srcpkgs/dpdk
+	files
+1
+d/home/schmidh/GitRepos/void-packages/srcpkgs/dpdk/files
+	dkms_rte_kni.conf
+2
+d/home/schmidh/GitRepos/void-packages
+	hostdir
+3
+d/home/schmidh/GitRepos/void-packages/hostdir
+	binpkgs
+1
+d/home/schmidh/GitRepos/void-packages/hostdir/binpkgs
+	dpdk
+1
+d/home/schmidh/GitRepos/void-packages/hostdir/binpkgs/dpdk
+	..
+0
+d/home/schmidh/GitRepos/void-packages
+	..
+0
+d/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01
+	use.rs
+25
+d/home/schmidh
+	GitRepos
+6
+d/home/schmidh/GitRepos
+	lighttpd1.4
+1
+d/home/schmidh/GitRepos/lighttpd1.4
+	..
+0
+d/home/schmidh/GitRepos
+	seastar
+15
+d/home/schmidh/Temp
+	..
+0
 d
 
 # Right window history (oldest to newest):
-D/home/schmidh/Temp
-	apache-couchdb-2.3.1
-1
-D/home/schmidh/Temp/apache-couchdb-2.3.1
-	..
-0
-D/home/schmidh
-	..
-0
-D/home/schmidh/Videos
-	..
-0
-D/home/schmidh/Templates
-	..
-0
-D/home/schmidh/Videos
-	..
-0
-D/mnt/Downloads
-	Movies
-4
-D/mnt/Downloads/Movies
-	French Movies
-1
-D/mnt/Downloads/Movies/French Movies
-	[ www.Torrent9.Red ] Avatar Extended 1080p MULTI 2009 BluRay x264 [Pop]
-10
-D/home/schmidh
-	Downloads
-4
-D/home/schmidh/Downloads
-	Favorites.m3u
-1
-D/home/schmidh
-	Videos
-11
-D/home/schmidh/Videos
-	..
-0
-D/home/schmidh
-	dotfiles
-14
-D/home/schmidh/dotfiles
-	vifm
-2
-D/home/schmidh/dotfiles/vifm
-	.config
-1
-D/home/schmidh/dotfiles/vifm/.config
-	vifm
-1
-D/home/schmidh/dotfiles/vifm/.config/vifm
-	..
-0
-D/home/schmidh/dotfiles/vifm/.config
-	..
-0
-D/home/schmidh/dotfiles/vifm
-	.config
-1
-D/home/schmidh/dotfiles
-	bash
-2
-D/home/schmidh/dotfiles/bash
-	..
-0
-D/home/schmidh/dotfiles
-	vifm
-3
-D/home/schmidh/dotfiles/vifm
-	.config
-1
 D/home/schmidh/dotfiles
 	vim
 4
@@ -635,8 +563,80 @@ D/home/schmidh/Downloads
 	..
 0
 D/home/schmidh
+	Dropbox
+4
+D/home/schmidh/Dropbox
+	Books
+5
+D/home/schmidh/Dropbox/Books
+	Ceph
+7
+D/home/schmidh/Dropbox/Books/Ceph
+	..
+0
+D/home/schmidh/Dropbox/Books
+	Ceph
+7
+D/home/schmidh/Dropbox/Books/Ceph
+	..
+0
+D/home/schmidh/Dropbox/Books
+	Ceph
+7
+D/home/schmidh/Dropbox
+	Books
+5
+D/home/schmidh
+	Dropbox
+4
+D/home
+	schmidh
+1
+D/
+	mnt
+10
+D/mnt
 	Downloads
-3
+1
+D/mnt/Downloads
+	Youtube
+12
+D/mnt/Downloads/Youtube
+	dpdk-rte-kni-18.11.2
+7
+D/mnt/Downloads/Youtube/dpdk-rte-kni-18.11.2
+	dkms.conf
+5
+D/mnt
+	..
+0
+D/home/schmidh
+	GitRepos
+5
+D/home/schmidh/GitRepos
+	void-packages
+9
+D/home/schmidh/GitRepos/void-packages
+	srcpkgs
+5
+D/home/schmidh/GitRepos/void-packages/srcpkgs
+	dpdk
+71
+D/home/schmidh/GitRepos/void-packages/srcpkgs/dpdk
+	..
+0
+D/home/schmidh/GitRepos/void-packages/srcpkgs
+	dpdk
+71
+D/home/schmidh/GitRepos/void-packages/srcpkgs/dpdk
+	files
+1
+D/home/schmidh/GitRepos/void-packages/srcpkgs/dpdk/files
+	dkms_rte_kni.conf
+2
+D/home/schmidh/GitRepos/void-packages/srcpkgs
+	..
+0
 D
 
 # Command line history (oldest to newest):
@@ -651,21 +651,28 @@ D
 :mkdir Temp
 :colorscheme iceberg
 :sync
+:sort
 
 # Search history (oldest to newest):
 /vif
 /asdf
 //
+/install
+/dpdkl
+/dpdk
 
 # Prompt history (oldest to newest):
 p.vimrc.bak
 p.vimrc
 pdd
+pdkms.conf
+pdkms_igb_uio.conf
+pdkms_rte_kni.conf
 
 # Local filter history (oldest to newest):
 
 # Registers:
-""/home/schmidh/.local/share/vifm/Trash/000_Mississippi Grind (2015) [BluRay] [1080p] [YTS.LT].torrent
+""/home/schmidh/.local/share/vifm/Trash/000_seastar-seastar-19.06.0.tar.gz
 
 # Directory stack (oldest to newest):
 
@@ -782,6 +789,80 @@ t/home/schmidh/.local/share/vifm/Trash/000_Burnt (2015) [BluRay] [1080p] [YTS.LT
 	/home/schmidh/Downloads/Burnt (2015) [BluRay] [1080p] [YTS.LT].torrent
 t/home/schmidh/.local/share/vifm/Trash/000_Mississippi Grind (2015) [BluRay] [1080p] [YTS.LT].torrent
 	/home/schmidh/Downloads/Mississippi Grind (2015) [BluRay] [1080p] [YTS.LT].torrent
+t/home/schmidh/.local/share/vifm/Trash/000_dpdk-devel.sh
+	/home/schmidh/GitRepos/void-packages/srcpkgs/dpdk/files/dpdk-devel.sh
+t/home/schmidh/.local/share/vifm/Trash/000_template
+	/home/schmidh/GitRepos/void-packages/srcpkgs/dpdk/template
+t/home/schmidh/.local/share/vifm/Trash/000_arrays
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/arrays
+t/home/schmidh/.local/share/vifm/Trash/000_closures
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/closures
+t/home/schmidh/.local/share/vifm/Trash/000_enum_methods
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/enum_methods
+t/home/schmidh/.local/share/vifm/Trash/000_enums
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/enums
+t/home/schmidh/.local/share/vifm/Trash/000_exercise_word_counter
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/exercise_word_counter
+t/home/schmidh/.local/share/vifm/Trash/000_for_loops
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/for_loops
+t/home/schmidh/.local/share/vifm/Trash/000_function_mut
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/function_mut
+t/home/schmidh/.local/share/vifm/Trash/000_functions
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/functions
+t/home/schmidh/.local/share/vifm/Trash/000_greet
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/greet
+t/home/schmidh/.local/share/vifm/Trash/000_hashmaps
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/hashmaps
+t/home/schmidh/.local/share/vifm/Trash/000_if_assign
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/if_assign
+t/home/schmidh/.local/share/vifm/Trash/000_if_else
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/if_else
+t/home/schmidh/.local/share/vifm/Trash/000_if_else_no_value
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/if_else_no_value
+t/home/schmidh/.local/share/vifm/Trash/000_loop_labels
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/loop_labels
+t/home/schmidh/.local/share/vifm/Trash/000_loops
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/loops
+t/home/schmidh/.local/share/vifm/Trash/000_match_expression
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/match_expression
+t/home/schmidh/.local/share/vifm/Trash/000_slices
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/slices
+t/home/schmidh/.local/share/vifm/Trash/000_strings
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/strings
+t/home/schmidh/.local/share/vifm/Trash/000_struct_methods
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/struct_methods
+t/home/schmidh/.local/share/vifm/Trash/000_structs
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/structs
+t/home/schmidh/.local/share/vifm/Trash/000_tuple_struct
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/tuple_struct
+t/home/schmidh/.local/share/vifm/Trash/000_tuples
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/tuples
+t/home/schmidh/.local/share/vifm/Trash/000_unit_struct
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/unit_struct
+t/home/schmidh/.local/share/vifm/Trash/000_variables
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/variables
+t/home/schmidh/.local/share/vifm/Trash/000_vec
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/vec
+t/home/schmidh/.local/share/vifm/Trash/000_while
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/while
+t/home/schmidh/.local/share/vifm/Trash/000_while.rs
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/while.rs
+t/home/schmidh/.local/share/vifm/Trash/000_wordcount.txt
+	/home/schmidh/GitRepos/The-Complete-Rust-Programming-Reference-Guide-master/Chapter01/wordcount.txt
+t/home/schmidh/.local/share/vifm/Trash/000_seastar-seastar-19.06.0
+	/home/schmidh/Temp/seastar-seastar-19.06.0
+t/home/schmidh/.local/share/vifm/Trash/000_Borrow
+	/home/schmidh/Temp/Borrow
+t/home/schmidh/.local/share/vifm/Trash/000_examples
+	/home/schmidh/Temp/examples
+t/home/schmidh/.local/share/vifm/Trash/000_imgtool
+	/home/schmidh/Temp/imgtool
+t/home/schmidh/.local/share/vifm/Trash/000_myexponent
+	/home/schmidh/Temp/myexponent
+t/home/schmidh/.local/share/vifm/Trash/000_workspaces_demo
+	/home/schmidh/Temp/workspaces_demo
+t/home/schmidh/.local/share/vifm/Trash/000_seastar-seastar-19.06.0.tar.gz
+	/home/schmidh/Temp/seastar-seastar-19.06.0.tar.gz
 
 # State:
 f
