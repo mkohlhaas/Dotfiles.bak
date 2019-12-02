@@ -35,15 +35,20 @@ Plug 'SirVer/ultisnips'                                 " The ultimate snippet s
 Plug 'schmidh/MyUltiSnips'                              " My personal snippets for UltiSnips.
 Plug 'honza/vim-snippets'                               " Default snippets.
 Plug 'Valloric/YouCompleteMe'                           " A code-completion engine for Vim.
+Plug 'robertmeta/nofrils'				" An extremely minimalist colorscheme, even opting out of the second L in frills
+Plug 'arcticicestudio/nord-vim'				" An arctic, north-bluish clean and elegant Vim theme.
+Plug 'machakann/vim-highlightedyank'			" Make the yanked region apparent!
 call plug#end()
 
-colorscheme hybrid_reverse 
+" colorscheme hybrid_reverse 
+colorscheme nofrils-dark
 
 if executable('ag')                                     " Use silver searcher (if available) for finding files. Invoke with ':Ack'.
   let g:ackprg = 'ag --vimgrep'
 endif
 
 set mouse=a                                             " Enable mouse.
+set nowrap
 
 packadd! matchit                                        " This plugin makes the "%" command jump to matching HTML tags, if/else/endif in Vim scripts, etc.
 
