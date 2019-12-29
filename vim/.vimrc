@@ -23,9 +23,6 @@ Plug 'nelstrom/vim-visual-star-search'                  " Start a * or # search 
 Plug 'tpope/vim-abolish'                                " Easily search for, substitute, and abbreviate multiple variants of a word.
 Plug 'skywind3000/asyncrun.vim'                         " Run shell commands asyncronously and output to quickfix window.
 Plug 'kana/vim-smartinput'                              " Smart input for programmers: https://bit.ly/2ZdNJuF
-Plug 'kana/vim-textobj-user'                            " Dependency for kana/vim-textobj-entire.
-Plug 'kana/vim-textobj-entire'                          " Text objects for entire buffer.
-Plug 'deathlyfrantic/vim-textobj-blanklines'            " A Vim text object for selecting blank lines.
 Plug 'google/vim-searchindex'                           " Display number of search matches & index of a current match.
 Plug 'Valloric/YouCompleteMe'                           " A code-completion engine for Vim.
 Plug 'robertmeta/nofrils'				" An extremely minimalist colorscheme, even opting out of the second L in frills
@@ -36,8 +33,10 @@ Plug 'junegunn/fzf.vim'					" fzf loves vim.
 Plug 'romainl/vim-cool'					" A very simple plugin that makes hlsearch more useful.
 Plug 'rust-lang/rust.vim'				" Vim configuration for Rust.
 Plug 'andymass/vim-matchup'				" vim match-up: even better %. Navigate and highlight matching words. Modern matchit and matchparen replacement.
+Plug 'kana/vim-textobj-user'                            " Dependency for kana/vim-textobj-entire.
+Plug 'kana/vim-textobj-entire'                          " Text objects for entire buffer.
 Plug 'fvictorio/vim-textobj-backticks'			" Vim text objects for regions inside backticks.
-Plug 'thinca/vim-textobj-between'			" Text objects for a range between a character. af{char}/if{char} for a region between {char}s.
+" Plug 'thinca/vim-textobj-between'			" Text objects for a range between a character. af{char}/if{char} for a region between {char}s. Collides with schmidh/vim-textobj-function.
 Plug 'deathlyfrantic/vim-textobj-blanklines'		" A Vim text object for selecting blank lines. a<Space>/i<Space> for groups of blank (only whitespace) lines.
 Plug 'Julian/vim-textobj-brace'				" A text object for the closest inner () {} *or* []. aj/ij for the closest region between any of () [] or {}.
 Plug 'Chun-Yang/vim-textobj-chunk'			" ac/ic for all the lines contain one of {}, [], or () pairs.
@@ -58,6 +57,7 @@ Plug 'kana/vim-textobj-syntax'				" Text object for syntax highlighted items. ay
 Plug 'Julian/vim-textobj-variable-segment'		" av/iv for a region between either _s or camelCaseVariables.
 " Plug 'idbrii/textobj-word-column.vim'			" Adds text-objects for word-based columns in Vim. ac/ic/aC/iC for columns of text defined by word or WORD. Collides with plugin 'Chun-Yang/vim-textobj-chunk'.
 Plug 'whatyouhide/vim-textobj-xmlattr'			" A vim text object for XML/HTML attributes. ax/ix for XML/HTML attributes.
+Plug 'schmidh/vim-textobj-function'			" Text object for functions.
 call plug#end()
 
 colorscheme nofrils-dark
