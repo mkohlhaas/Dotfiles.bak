@@ -32,7 +32,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf' }		" A command-line fuzzy finder.
 Plug 'junegunn/fzf.vim'					" fzf loves vim.
 Plug 'romainl/vim-cool'					" A very simple plugin that makes hlsearch more useful.
 Plug 'rust-lang/rust.vim'				" Vim configuration for Rust.
-Plug 'andymass/vim-matchup'				" vim match-up: even better %. Navigate and highlight matching words. Modern matchit and matchparen replacement.
+" Plug 'andymass/vim-matchup'				" vim match-up: even better %. Navigate and highlight matching words. Modern matchit and matchparen replacement.
 Plug 'kana/vim-textobj-user'                            " Dependency for kana/vim-textobj-entire.
 Plug 'kana/vim-textobj-entire'                          " Text objects for entire buffer.
 Plug 'fvictorio/vim-textobj-backticks'			" Vim text objects for regions inside backticks.
@@ -77,7 +77,7 @@ endif
 set mouse=a                                             " Enable mouse.
 set nowrap
 
-" packadd! matchit                                        " This plugin makes the "%" command jump to matching HTML tags, if/else/endif in Vim scripts, etc.
+packadd! matchit                                        " This plugin makes the "%" command jump to matching HTML tags, if/else/endif in Vim scripts, etc.
 
 set ignorecase                                          " Ignore case when searching.
 set smartcase                                           " Turn of ignorecase when search pattern contains uppercase character(s).
