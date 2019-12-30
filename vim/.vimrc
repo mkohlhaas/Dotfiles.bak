@@ -12,6 +12,8 @@ syntax on                                               " Enable syntax highligh
 set hidden                                              " If the active buffer is modified, Vim will automatically hide it when we navigate away from it.
 
 call plug#begin()                                       " Load plugins.
+Plug 'ludovicchabant/vim-gutentags'			" Manages your tag files.
+Plug 'majutsushi/tagbar'				" Displays tags in a window, ordered by scope.
 Plug 'easymotion/vim-easymotion'                        " Highlighs all possible choices and allows you to press one key to jump directly to the target. Type <space> twice then movement key like w, f, t, b, e ,k, j etc. to invoke EasyMotion.
 Plug 'junegunn/vim-plug'                                " Documentation for the plugin manager.
 Plug 'simnalamburt/vim-mundo'                           " Vim undo tree visualizer.
@@ -61,6 +63,9 @@ Plug 'schmidh/vim-textobj-function'			" Text object for functions.
 call plug#end()
 
 colorscheme nofrils-dark
+
+" For majutsushi/tagbar plugin.
+nmap <F8> :TagbarToggle<CR>
 
 " Text object comment default key binding collide with chunck text object.
 let g:textobj_outer_comment_key = 'ab'
