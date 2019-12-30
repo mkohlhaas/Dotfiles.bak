@@ -37,7 +37,7 @@ Plug 'kana/vim-textobj-user'                            " Dependency for kana/vi
 Plug 'kana/vim-textobj-entire'                          " Text objects for entire buffer.
 Plug 'fvictorio/vim-textobj-backticks'			" Vim text objects for regions inside backticks.
 " Plug 'thinca/vim-textobj-between'			" Text objects for a range between a character. af{char}/if{char} for a region between {char}s. Collides with schmidh/vim-textobj-function.
-Plug 'deathlyfrantic/vim-textobj-blanklines'		" A Vim text object for selecting blank lines. a<Space>/i<Space> for groups of blank (only whitespace) lines.
+Plug 'deathlyfrantic/vim-textobj-blanklines'		" A Vim text object for selecting blank lines. a<Space>/i<Space> for groups of blank (only whitespace) lines. ip/ap (inner/outer paragraph) works out of the box for all blank lines.
 Plug 'Julian/vim-textobj-brace'				" A text object for the closest inner () {} *or* []. aj/ij for the closest region between any of () [] or {}.
 Plug 'Chun-Yang/vim-textobj-chunk'			" ac/ic for all the lines contain one of {}, [], or () pairs.
 Plug 'johntyree/vim-textobj-comment'			" Vim text objects for comments. ac/ic for a comment.
@@ -128,6 +128,12 @@ noremap <M-Left> :bp<CR>
 noremap <M-Right> :bn<CR>
 noremap <leader>d :bd<CR>
 noremap <leader>w :w<CR>
+
+" Squeeze blank lines,
+function! SqueezeBlankLines()
+    %!cat -s
+endfunction
+nnoremap <leader>s :call SqueezeBlankLines()<cr>
 
 " noremap <M-Up> :tabprevious<CR>
 " noremap <M-Down> :tabnext<CR>
