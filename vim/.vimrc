@@ -32,6 +32,7 @@ Plug 'machakann/vim-highlightedyank'			" Make the yanked region apparent!
 Plug 'airblade/vim-rooter'				" Changes Vim working directory to project root (identified by presence of known directory or file).
 Plug 'junegunn/fzf', { 'dir': '~/.fzf' }		" A command-line fuzzy finder.
 Plug 'junegunn/fzf.vim'					" fzf loves vim.
+Plug 'pbogut/fzf-mru.vim'				" Allows using awesome CtrlP MRU plugin with even more amazing FZF.
 Plug 'romainl/vim-cool'					" A very simple plugin that makes hlsearch more useful.
 Plug 'rust-lang/rust.vim'				" Vim configuration for Rust.
 " Plug 'andymass/vim-matchup'				" vim match-up: even better %. Navigate and highlight matching words. Modern matchit and matchparen replacement.
@@ -60,6 +61,8 @@ Plug 'Julian/vim-textobj-variable-segment'		" av/iv for a region between either 
 " Plug 'idbrii/textobj-word-column.vim'			" Adds text-objects for word-based columns in Vim. ac/ic/aC/iC for columns of text defined by word or WORD. Collides with plugin 'Chun-Yang/vim-textobj-chunk'.
 Plug 'whatyouhide/vim-textobj-xmlattr'			" A vim text object for XML/HTML attributes. ax/ix for XML/HTML attributes.
 Plug 'schmidh/vim-textobj-function'			" Text object for functions.
+" Plug 'zirrostig/vim-schlepp'				" Easily moving text selections around.
+" Plug 'chaoren/vim-wordmotion'				" More useful word motions for Vim.
 call plug#end()
 
 colorscheme nofrils-dark
@@ -155,17 +158,30 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 " noremap <Right> <Nop>
 " Silence search highlighting.
 
-command W :execute ':silent w !sudo tee % > /dev/null' | :edit!         " https://www.cyberciti.biz/faq/vim-vi-text-editor-save-file-without-root-permission/
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!         " https://www.cyberciti.biz/faq/vim-vi-text-editor-save-file-without-root-permission
 
-" Create compilation database and link it to the root of the project.
-" Important for clangd.
-" let g:cmake_export_compile_commands = 1
-" let g:cmake_ycm_symlinks = 1
+" Automatically reload .vimrc on write.
+augroup VimReload
+autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END
 
-" Setup snippets directory for UltiSnips. Important for schmidh/MyUltiSnips.
-" let g:UltiSnipsSnippetDirectories = ["UltiSnips", "MyUltiSnips"]
-let g:UltiSnipsListSnippets = '<leader>sl'
-" UltiSnips triggering
-let g:UltiSnipsExpandTrigger = '<C-j>'
-let g:UltiSnipsJumpForwardTrigger = '<C-j>'
-let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
+" Show help files in a new tab.
+let g:help_in_tabs = 1
+
+"nmap <silent> H  :let g:help_in_tabs = !g:help_in_tabs<CR>
+
+augroup HelpInTabs
+    autocmd!
+    autocmd BufEnter  *.txt   call HelpInNewTab()
+augroup END
+
+function! HelpInNewTab ()
+    if &buftype == 'help' && g:help_in_tabs
+        execute "normal \<C-W>T"
+    endif
+endfunction
+
+" let g:wordmotion_mappings = { 'w' : '<M-w>', 'b' : '<M-b>', 'e' : '<M-e>', 'ge' : 'g<M-e>', 'aw' : 'a<M-w>', 'iw' : 'i<M-w>', '<C-R><C-W>' : '<C-R><M-w>' }
+
+" CamelCaseACRONYMWords_underscore1239
