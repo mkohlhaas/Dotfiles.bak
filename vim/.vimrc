@@ -61,8 +61,8 @@ Plug 'Julian/vim-textobj-variable-segment'		" av/iv for a region between either 
 " Plug 'idbrii/textobj-word-column.vim'			" Adds text-objects for word-based columns in Vim. ac/ic/aC/iC for columns of text defined by word or WORD. Collides with plugin 'Chun-Yang/vim-textobj-chunk'.
 Plug 'whatyouhide/vim-textobj-xmlattr'			" A vim text object for XML/HTML attributes. ax/ix for XML/HTML attributes.
 Plug 'schmidh/vim-textobj-function'			" Text object for functions.
-" Plug 'zirrostig/vim-schlepp'				" Easily moving text selections around.
-" Plug 'chaoren/vim-wordmotion'				" More useful word motions for Vim.
+Plug 'zirrostig/vim-schlepp'				" Easily moving text selections around.
+Plug 'chaoren/vim-wordmotion'				" More useful word motions for Vim.
 call plug#end()
 
 colorscheme nofrils-dark
@@ -182,6 +182,7 @@ function! HelpInNewTab ()
     endif
 endfunction
 
-" let g:wordmotion_mappings = { 'w' : '<M-w>', 'b' : '<M-b>', 'e' : '<M-e>', 'ge' : 'g<M-e>', 'aw' : 'a<M-w>', 'iw' : 'i<M-w>', '<C-R><C-W>' : '<C-R><M-w>' }
-
-" CamelCaseACRONYMWords_underscore1239
+vmap <unique> <up>    <Plug>SchleppUp
+vmap <unique> <down>  <Plug>SchleppDown
+vmap <unique> <left>  <Plug>SchleppLeft
+vmap <unique> <right> <Plug>SchleppRight
