@@ -1,4 +1,6 @@
 .vim/
 .viminfo
+**/golang/go/src/
 
 bananapimount.sh
+tags

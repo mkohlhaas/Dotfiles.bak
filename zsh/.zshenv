@@ -2,6 +2,7 @@ path+=(
     ~/bin
     ~/.cargo/bin
     ~/.zfunc
+    ~/.nimble/bin
 )
 
 # test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"

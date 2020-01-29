@@ -1,3 +1,4 @@
+autocmd VimEnter * echom "( * ) ( * )"
 " $ sudo add-apt-repository ppa:jonathonf/vim-daily       # Add latest vim versions to Ubuntu's repository using command line.
 
 " Make sure plugin manager is automatically installed including the plugins themselves.
@@ -12,13 +13,14 @@ syntax on                                               " Enable syntax highligh
 set hidden                                              " If the active buffer is modified, Vim will automatically hide it when we navigate away from it.
 
 call plug#begin()                                       " Load plugins.
-Plug 'ludovicchabant/vim-gutentags'			" Manages your tag files.
-Plug 'majutsushi/tagbar'				" Displays tags in a window, ordered by scope.
+Plug 'ludovicchabant/vim-gutentags'			                " Manages your tag files.
+Plug 'majutsushi/tagbar'				                        " Displays tags in a window, ordered by scope.
 Plug 'easymotion/vim-easymotion'                        " Highlighs all possible choices and allows you to press one key to jump directly to the target. Type <space> twice then movement key like w, f, t, b, e ,k, j etc. to invoke EasyMotion.
 Plug 'junegunn/vim-plug'                                " Documentation for the plugin manager.
 Plug 'simnalamburt/vim-mundo'                           " Vim undo tree visualizer.
 Plug 'vim-airline/vim-airline'                          " Lean & mean status/tabline for vim that's light as air.
 Plug 'vim-airline/vim-airline-themes'                   " A collection of themes for vim-airline.
+Plug 'yorickpeterse/happy_hacking.vim'
 Plug 'tpope/vim-commentary'                             " Comment stuff out.
 Plug 'tpope/vim-surround'                               " Quoting/parenthesizing made simple.
 Plug 'nelstrom/vim-visual-star-search'                  " Start a * or # search from a visual block.
@@ -26,8 +28,8 @@ Plug 'tpope/vim-abolish'                                " Easily search for, sub
 Plug 'skywind3000/asyncrun.vim'                         " Run shell commands asyncronously and output to quickfix window.
 Plug 'kana/vim-smartinput'                              " Smart input for programmers: https://bit.ly/2ZdNJuF
 Plug 'google/vim-searchindex'                           " Display number of search matches & index of a current match.
-Plug 'Valloric/YouCompleteMe'                           " A code-completion engine for Vim.
-Plug 'robertmeta/nofrils'				" An extremely minimalist colorscheme, even opting out of the second L in frills
+" Plug 'Valloric/YouCompleteMe'                           " A code-completion engine for Vim.
+Plug 'dense-analysis/ale'				" Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support.
 Plug 'machakann/vim-highlightedyank'			" Make the yanked region apparent!
 Plug 'airblade/vim-rooter'				" Changes Vim working directory to project root (identified by presence of known directory or file).
 Plug 'junegunn/fzf', { 'dir': '~/.fzf' }		" A command-line fuzzy finder.
@@ -35,7 +37,7 @@ Plug 'junegunn/fzf.vim'					" fzf loves vim.
 Plug 'pbogut/fzf-mru.vim'				" Allows using awesome CtrlP MRU plugin with even more amazing FZF.
 Plug 'romainl/vim-cool'					" A very simple plugin that makes hlsearch more useful.
 Plug 'rust-lang/rust.vim'				" Vim configuration for Rust.
-" Plug 'andymass/vim-matchup'				" vim match-up: even better %. Navigate and highlight matching words. Modern matchit and matchparen replacement.
+Plug 'andymass/vim-matchup'				" vim match-up: even better %. Navigate and highlight matching words. Modern matchit and matchparen replacement.
 Plug 'kana/vim-textobj-user'                            " Dependency for kana/vim-textobj-entire.
 Plug 'kana/vim-textobj-entire'                          " Text objects for entire buffer.
 Plug 'fvictorio/vim-textobj-backticks'			" Vim text objects for regions inside backticks.
@@ -57,18 +59,26 @@ Plug 'reedes/vim-textobj-quote'				" aq/iq aQ/iQ for “typographic-quoted” st
 Plug 'saihoooooooo/vim-textobj-space'			" aS/iS for a region filled with various space characters.
 Plug 'kana/vim-textobj-syntax'				" Text object for syntax highlighted items. ay/iy for a syntax-highlighted item.
 " Plug 'lucapette/vim-textobj-underscore'			" Underscore text-object for Vim. a_/i_ for a region between _s such as bar in foo_bar_baz.
-Plug 'Julian/vim-textobj-variable-segment'		" av/iv for a region between either _s or camelCaseVariables.
+" Plug 'Julian/vim-textobj-variable-segment'		" av/iv for a region between either _s or camelCaseVariables. Collides with wordmotion plugin.
 " Plug 'idbrii/textobj-word-column.vim'			" Adds text-objects for word-based columns in Vim. ac/ic/aC/iC for columns of text defined by word or WORD. Collides with plugin 'Chun-Yang/vim-textobj-chunk'.
 Plug 'whatyouhide/vim-textobj-xmlattr'			" A vim text object for XML/HTML attributes. ax/ix for XML/HTML attributes.
 Plug 'schmidh/vim-textobj-function'			" Text object for functions.
-Plug 'zirrostig/vim-schlepp'				" Easily moving text selections around.
+" Plug 'zirrostig/vim-schlepp'				" Easily moving text selections around.
 Plug 'chaoren/vim-wordmotion'				" More useful word motions for Vim.
+Plug 'zah/nim.vim'					" Nim language plugin for vim.
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+Plug 'ajh17/VimCompletesMe'
 call plug#end()
 
-colorscheme nofrils-dark
+colorscheme happy_hacking
 
 " For majutsushi/tagbar plugin.
 nmap <F8> :TagbarToggle<CR>
+
+nnoremap <F2> :call LanguageClient_contextMenu()<CR>
+let g:LanguageClient_serverCommands = { 'nim': ['~/.nimble/bin/nimlsp'] }
+
+set completeopt=longest,menuone
 
 " Text object comment default key binding collide with chunck text object.
 let g:textobj_outer_comment_key = 'ab'
@@ -90,9 +100,9 @@ packadd! matchit                                        " This plugin makes the 
 set ignorecase                                          " Ignore case when searching.
 set smartcase                                           " Turn of ignorecase when search pattern contains uppercase character(s).
 set autoindent                                          " Respect indentation when starting a new line.
-" set expandtab                                           " Expand tabs to spaces. Essential in Python.
-" set tabstop=4                                           " Number of spaces tab is counted for.
-set shiftwidth=4                                        " Number of spaces to use for autoindent.
+set expandtab                                           " Expand tabs to spaces. Essential in Python/Nim.
+set tabstop=2                                           " Number of spaces tab is counted for. 2 is 2 is default for Nim.
+set shiftwidth=2                                        " Number of spaces to use for autoindent.
 set backspace=2                                         " Fix backspace behavior on most terminals.
 set path+=**                                            " Search down in to subfolders. Applies to all file operations.
 set wildmenu                                            " Show completions above status line.
@@ -100,7 +110,6 @@ set wildmode=full                                       " Behavior close to zsh 
 set hlsearch                                            " Highlight searches.
 set incsearch                                           " Highlight found searches while typing.
 set history=1000                                        " Set command history size.
-set runtimepath+=~/.vim/plugged/                        " Add search path for SirVer/ultisnips
 set number
 set relativenumber
 call mkdir($HOME . "/.vim/undodir", "p")                " Set up undos.
@@ -113,13 +122,23 @@ set encoding=utf-8
 " Map the leader key to a spacebar.
 let mapleader = "\<space>"
 
+" Move line down.
+map _ ddp
+" Move line up.
+map - ddkP
+" Uppercase word in normal mode.
+nmap <c-u> viwU
+" Uppercase word in insert mode.
+imap <c-u> <esc>viwUi
+
 " Remap fzf actions to be prefixed by a leader key.
 " Add namespace for fzf.vim exported commands.
 let g:fzf_command_prefix = 'Fzf'
 noremap <leader>f :FzfFiles<CR>
-noremap <leader>b :FzfBuffers<CR>
+noremap <leader>b :FzfBLines<CR>
 noremap <leader>m :FzfMarks<CR>
 noremap <leader>l :FzfBLines<CR>
+noremap <leader>h :FzfHelptags<CR>
 " File path completion in Insert mode using fzf
 imap <c-x><c-k> <plug>(fzf-complete-word)
 imap <c-x><c-f> <plug>(fzf-complete-path)
@@ -182,7 +201,7 @@ function! HelpInNewTab ()
     endif
 endfunction
 
-vmap <unique> <up>    <Plug>SchleppUp
-vmap <unique> <down>  <Plug>SchleppDown
-vmap <unique> <left>  <Plug>SchleppLeft
-vmap <unique> <right> <Plug>SchleppRight
+" vmap <up>    <Plug>SchleppUp
+" vmap <down>  <Plug>SchleppDown
+" vmap <left>  <Plug>SchleppLeft
+" vmap <right> <Plug>SchleppRight
