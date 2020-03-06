@@ -13,8 +13,8 @@ syntax on                                               " Enable syntax highligh
 set hidden                                              " If the active buffer is modified, Vim will automatically hide it when we navigate away from it.
 
 call plug#begin()                                       " Load plugins.
-Plug 'ludovicchabant/vim-gutentags'			                " Manages your tag files.
-Plug 'majutsushi/tagbar'				                        " Displays tags in a window, ordered by scope.
+" Plug 'ludovicchabant/vim-gutentags'			                " Manages your tag files.
+" Plug 'majutsushi/tagbar'				                        " Displays tags in a window, ordered by scope.
 Plug 'easymotion/vim-easymotion'                        " Highlighs all possible choices and allows you to press one key to jump directly to the target. Type <space> twice then movement key like w, f, t, b, e ,k, j etc. to invoke EasyMotion.
 Plug 'junegunn/vim-plug'                                " Documentation for the plugin manager.
 Plug 'simnalamburt/vim-mundo'                           " Vim undo tree visualizer.
@@ -68,12 +68,13 @@ Plug 'chaoren/vim-wordmotion'				" More useful word motions for Vim.
 Plug 'zah/nim.vim'					" Nim language plugin for vim.
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 Plug 'ajh17/VimCompletesMe'
+Plug 'ziglang/zig.vim'
 call plug#end()
 
 colorscheme happy_hacking
 
 " For majutsushi/tagbar plugin.
-nmap <F8> :TagbarToggle<CR>
+" nmap <F8> :TagbarToggle<CR>
 
 nnoremap <F2> :call LanguageClient_contextMenu()<CR>
 let g:LanguageClient_serverCommands = { 'nim': ['~/.nimble/bin/nimlsp'] }

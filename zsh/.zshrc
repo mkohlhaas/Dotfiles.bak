@@ -51,7 +51,8 @@ ZSH_THEME="blinks"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
+GIT_STATUS_IGNORE_SUBMODULES="git"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
