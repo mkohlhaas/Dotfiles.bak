@@ -132,6 +132,10 @@ nmap <c-u> viwU
 " Uppercase word in insert mode.
 imap <c-u> <esc>viwUi
 
+" Additional <ESC> mappings:
+" jk, in INSERT mode
+inoremap jk <ESC>
+
 " Block comment current line using asterisks
 noremap <leader>bc :normal! I*  <Esc>A  *<Esc>yyPVr*jpVr*
 
