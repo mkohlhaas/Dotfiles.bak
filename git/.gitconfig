@@ -1,0 +1,8 @@
+[url "https://c72d3cbd665c40f4b2c7bde2dba853ad688fed88:x-oauth-basic@github.com/"]
+	insteadOf = https://github.com/
+[user]
+	name = Hans-J. Schmid
+	email = knock@myopendoor.de
+[core]
+	pager = bat
+	editor = vim
