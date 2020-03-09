@@ -132,6 +132,9 @@ nmap <c-u> viwU
 " Uppercase word in insert mode.
 imap <c-u> <esc>viwUi
 
+" Block comment current line using asterisks
+noremap <leader>bc :normal! I*  <Esc>A  *<Esc>yyPVr*jpVr*
+
 " Remap fzf actions to be prefixed by a leader key.
 " Add namespace for fzf.vim exported commands.
 let g:fzf_command_prefix = 'Fzf'
