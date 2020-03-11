@@ -1,5 +1,3 @@
-[url "https://{GITHUB_TOKEN}:x-oauth-basic@github.com/"]
-	insteadOf = https://github.com/
 [user]
 	name = Hans-J. Schmid
 	email = knock@myopendoor.de
