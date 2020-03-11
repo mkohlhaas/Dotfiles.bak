@@ -4,13 +4,13 @@
 	name = Hans-J. Schmid
 	email = knock@myopendoor.de
 [alias]
-  st = status
-  ci = commit
-  br = branch
-  co = checkout
-  df = diff
-  he = help
-  cl = clone
+	st = status
+	ci = commit
+	br = branch
+	co = checkout
+	df = diff
+	he = help
+	cl = clone
 [core]
 	pager = bat
 	editor = vim
