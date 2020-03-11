@@ -163,6 +163,7 @@ noremap <M-Left> :bp<CR>
 noremap <M-Right> :bn<CR>
 noremap <leader>d :bd<CR>
 noremap <leader>w :w<CR>
+noremap <leader>q :q<CR>
 
 " Squeeze blank lines,
 function! SqueezeBlankLines()
