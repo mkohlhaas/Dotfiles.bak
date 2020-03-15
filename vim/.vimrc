@@ -68,7 +68,7 @@ Plug 'chaoren/vim-wordmotion'				" More useful word motions for Vim.
 Plug 'zah/nim.vim'					" Nim language plugin for vim.
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 Plug 'ajh17/VimCompletesMe'
-Plug 'ziglang/zig.vim'
+Plug 'wlangstroth/vim-racket'
 call plug#end()
 
 colorscheme happy_hacking
