@@ -3,6 +3,7 @@ path+=(
     ~/.cargo/bin
     ~/.zfunc
     ~/.nimble/bin
+    ~/racket/bin
 )
 
 alias info='pinfo'
