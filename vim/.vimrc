@@ -29,14 +29,14 @@ Plug 'skywind3000/asyncrun.vim'                         " Run shell commands asy
 Plug 'kana/vim-smartinput'                              " Smart input for programmers: https://bit.ly/2ZdNJuF
 Plug 'google/vim-searchindex'                           " Display number of search matches & index of a current match.
 " Plug 'Valloric/YouCompleteMe'                           " A code-completion engine for Vim.
-Plug 'dense-analysis/ale'				" Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support.
+" Plug 'dense-analysis/ale'				" Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support.
 Plug 'machakann/vim-highlightedyank'			" Make the yanked region apparent!
 Plug 'airblade/vim-rooter'				" Changes Vim working directory to project root (identified by presence of known directory or file).
 Plug 'junegunn/fzf', { 'dir': '~/.fzf' }		" A command-line fuzzy finder.
 Plug 'junegunn/fzf.vim'					" fzf loves vim.
 Plug 'pbogut/fzf-mru.vim'				" Allows using awesome CtrlP MRU plugin with even more amazing FZF.
 Plug 'romainl/vim-cool'					" A very simple plugin that makes hlsearch more useful.
-Plug 'rust-lang/rust.vim'				" Vim configuration for Rust.
+" Plug 'rust-lang/rust.vim'				" Vim configuration for Rust.
 Plug 'andymass/vim-matchup'				" vim match-up: even better %. Navigate and highlight matching words. Modern matchit and matchparen replacement.
 Plug 'kana/vim-textobj-user'                            " Dependency for kana/vim-textobj-entire.
 Plug 'kana/vim-textobj-entire'                          " Text objects for entire buffer.
@@ -65,13 +65,16 @@ Plug 'whatyouhide/vim-textobj-xmlattr'			" A vim text object for XML/HTML attrib
 Plug 'schmidh/vim-textobj-function'			" Text object for functions.
 " Plug 'zirrostig/vim-schlepp'				" Easily moving text selections around.
 Plug 'chaoren/vim-wordmotion'				" More useful word motions for Vim.
-Plug 'zah/nim.vim'					" Nim language plugin for vim.
-Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
-Plug 'ajh17/VimCompletesMe'
-Plug 'wlangstroth/vim-racket'
+" Plug 'zah/nim.vim'					" Nim language plugin for vim.
+" Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+" Plug 'ajh17/VimCompletesMe'
+" Plug 'wlangstroth/vim-racket'				" Superior Lisp Interaction Mode for Vim ("SLIME for Vim"). Supports also paredit mode for Racket files.
+Plug 'kovisoft/slimv'
 call plug#end()
 
 colorscheme happy_hacking
+
+highlight MatchParen ctermbg=darkgrey guibg=darkgrey
 
 " For majutsushi/tagbar plugin.
 " nmap <F8> :TagbarToggle<CR>
@@ -164,6 +167,9 @@ noremap <M-Right> :bn<CR>
 noremap <leader>d :bd<CR>
 noremap <leader>w :w<CR>
 noremap <leader>q :q<CR>
+
+" Indent whole buffer.
+map <C-i> gg=G<C-o><C-o>
 
 " Squeeze blank lines,
 function! SqueezeBlankLines()
