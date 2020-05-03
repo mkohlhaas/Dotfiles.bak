@@ -76,13 +76,11 @@ colorscheme happy_hacking
 
 highlight MatchParen ctermbg=darkgrey guibg=darkgrey
 
-" For majutsushi/tagbar plugin.
-" nmap <F8> :TagbarToggle<CR>
-
-nnoremap <F2> :call LanguageClient_contextMenu()<CR>
-let g:LanguageClient_serverCommands = { 'nim': ['~/.nimble/bin/nimlsp'] }
-
 set completeopt=longest,menuone
+
+let g:paredit_electric_return = 0
+let g:paredit_smartjump = 1
+let g:paredit_leader = ','
 
 " Text object comment default key binding collide with chunck text object.
 let g:textobj_outer_comment_key = 'ab'
@@ -131,9 +129,9 @@ map _ ddp
 " Move line up.
 map - ddkP
 " Uppercase word in normal mode.
-nmap <c-u> viwU
+nmap <s-u> viwU
 " Uppercase word in insert mode.
-imap <c-u> <esc>viwUi
+imap <s-u> <esc>viwUi
 
 " Additional <ESC> mappings:
 " jk, in INSERT mode
@@ -215,8 +213,3 @@ function! HelpInNewTab ()
         execute "normal \<C-W>T"
     endif
 endfunction
-
-" vmap <up>    <Plug>SchleppUp
-" vmap <down>  <Plug>SchleppDown
-" vmap <left>  <Plug>SchleppLeft
-" vmap <right> <Plug>SchleppRight
