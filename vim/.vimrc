@@ -21,9 +21,12 @@ Plug 'simnalamburt/vim-mundo'                           " Vim undo tree visualiz
 Plug 'vim-airline/vim-airline'                          " Lean & mean status/tabline for vim that's light as air.
 Plug 'vim-airline/vim-airline-themes'                   " A collection of themes for vim-airline.
 Plug 'yorickpeterse/happy_hacking.vim'
+Plug 'guns/vim-sexp'					" Precision Editing for S-expressions.
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'nelstrom/vim-visual-star-search'                  " Start a * or # search from a visual block.
 Plug 'tpope/vim-commentary'                             " Comment stuff out.
 Plug 'tpope/vim-surround'                               " Quoting/parenthesizing made simple.
-Plug 'nelstrom/vim-visual-star-search'                  " Start a * or # search from a visual block.
+Plug 'tpope/vim-repeat'					" Enable repeating supported plugin maps with .
 Plug 'tpope/vim-abolish'                                " Easily search for, substitute, and abbreviate multiple variants of a word.
 Plug 'skywind3000/asyncrun.vim'                         " Run shell commands asyncronously and output to quickfix window.
 Plug 'kana/vim-smartinput'                              " Smart input for programmers: https://bit.ly/2ZdNJuF
@@ -69,7 +72,7 @@ Plug 'chaoren/vim-wordmotion'				" More useful word motions for Vim.
 " Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 " Plug 'ajh17/VimCompletesMe'
 " Plug 'wlangstroth/vim-racket'				" Superior Lisp Interaction Mode for Vim ("SLIME for Vim"). Supports also paredit mode for Racket files.
-Plug 'kovisoft/slimv'
+" Plug 'kovisoft/slimv'
 call plug#end()
 
 colorscheme happy_hacking
@@ -78,9 +81,9 @@ highlight MatchParen ctermbg=darkgrey guibg=darkgrey
 
 set completeopt=longest,menuone
 
-let g:paredit_electric_return = 0
-let g:paredit_smartjump = 1
-let g:paredit_leader = ','
+" let g:paredit_electric_return = 0
+" let g:paredit_smartjump = 1
+" let g:paredit_leader = ','
 
 " Text object comment default key binding collide with chunck text object.
 let g:textobj_outer_comment_key = 'ab'
