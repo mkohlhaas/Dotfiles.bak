@@ -73,6 +73,7 @@ GIT_STATUS_IGNORE_SUBMODULES="git"
 plugins=(
     git
     fzf
+    autojump
 )
 
 source $ZSH/oh-my-zsh.sh
