@@ -146,15 +146,25 @@ noremap <leader>bc :normal! I*  <Esc>A  *<Esc>yyPVr*jpVr*
 " Remap fzf actions to be prefixed by a leader key.
 " Add namespace for fzf.vim exported commands.
 let g:fzf_command_prefix = 'Fzf'
-noremap <leader>f :FzfFiles<CR>
-noremap <leader>b :FzfBLines<CR>
-noremap <leader>m :FzfMarks<CR>
-noremap <leader>l :FzfBLines<CR>
-noremap <leader>h :FzfHelptags<CR>
+" let g:fzf_preview_window = 'right:60%'
+noremap 'f :FzfFiles<CR>
+noremap 'l :FzfLines<CR>
+noremap 'b :FzfBLines<CR>
+noremap 'm :FzfMarks<CR>
+noremap 'h :FzfHelptags<CR>
+noremap 'r :FzfRg<CR>
+noremap 'a :FzfAg<CR>
+noremap 'c :FzfCommits<CR>
+noremap 'g :FzfGFiles<CR>
+noremap 't :FzfTags<CR>
+noremap 'w :FzfWindows<CR>
+noremap 'y :FzfHistory:<CR>
+
 " File path completion in Insert mode using fzf
 imap <c-x><c-k> <plug>(fzf-complete-word)
 imap <c-x><c-f> <plug>(fzf-complete-path)
 imap <c-x><c-l> <plug>(fzf-complete-buffer-line)
+
 " Show undo tree with F5
 nnoremap <F5> :MundoToggle<CR>
 " Make Y yank till end of line
@@ -174,7 +184,7 @@ map <C-i> gg=G<C-o><C-o>
 
 " Squeeze blank lines,
 function! SqueezeBlankLines()
-    %!cat -s
+  %!cat -s
 endfunction
 nnoremap <leader>s :call SqueezeBlankLines()<cr>
 
@@ -197,8 +207,8 @@ command W :execute ':silent w !sudo tee % > /dev/null' | :edit!         " https:
 
 " Automatically reload .vimrc on write.
 augroup VimReload
-autocmd!
-    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+  autocmd!
+  autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END
 
 " Show help files in a new tab.
@@ -207,12 +217,12 @@ let g:help_in_tabs = 1
 "nmap <silent> H  :let g:help_in_tabs = !g:help_in_tabs<CR>
 
 augroup HelpInTabs
-    autocmd!
-    autocmd BufEnter  *.txt   call HelpInNewTab()
+  autocmd!
+  autocmd BufEnter  *.txt   call HelpInNewTab()
 augroup END
 
 function! HelpInNewTab ()
-    if &buftype == 'help' && g:help_in_tabs
-        execute "normal \<C-W>T"
-    endif
+  if &buftype == 'help' && g:help_in_tabs
+    execute "normal \<C-W>T"
+  endif
 endfunction
