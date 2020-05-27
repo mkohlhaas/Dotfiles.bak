@@ -1,0 +1,4 @@
+#! /bin/bash
+
+# https://vi.stackexchange.com/questions/410/terminal-borked-after-invoking-vim-with-xargs/17813#17813
+baloosearch "$@" | fzf  | xargs bash -c '</dev/tty vim "$@"' zero 

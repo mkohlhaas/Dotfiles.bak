@@ -4,6 +4,7 @@ path+=(
     ~/.zfunc
     ~/.nimble/bin
     ~/racket/bin
+    ~/.racket/7.7/bin
 )
 
 alias info='pinfo'
