@@ -2,5 +2,7 @@
 .viminfo
 **/golang/go/src/
 
+bananapimount
 bananapimount.sh
 tags
+watch_later
