@@ -1,0 +1,7 @@
+xterm*Background:               Black
+xterm*Foreground:               green
+xterm*cursorColor:              Magenta
+xterm*pointerShape:             arrow
+xterm*pointerColor:             blue
+xterm*saveLines:		10000000
+xterm*allowBoldFonts:		false
