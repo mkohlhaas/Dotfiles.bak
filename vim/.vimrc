@@ -131,10 +131,6 @@ let mapleader = "\<space>"
 map _ ddp
 " Move line up.
 map - ddkP
-" Uppercase word in normal mode.
-nmap <s-u> viwU
-" Uppercase word in insert mode.
-imap <s-u> <esc>viwUi
 
 " Additional <ESC> mappings:
 " jk, in INSERT mode
@@ -178,9 +174,6 @@ noremap <M-Right> :bn<CR>
 noremap <leader>d :bd<CR>
 noremap <leader>w :w<CR>
 noremap <leader>q :q<CR>
-
-" Indent whole buffer.
-map <C-i> gg=G<C-o><C-o>
 
 " Squeeze blank lines,
 function! SqueezeBlankLines()
