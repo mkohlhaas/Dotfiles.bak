@@ -1,1 +1,1 @@
-source ~/Gitrepos/pretty-printer-cii/atom-gdb.py
+source ~/.gdb/pretty-printer-cii/cii-gdb.py
