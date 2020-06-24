@@ -2,10 +2,9 @@ path+=(
     ~/bin
     ~/.cargo/bin
     ~/.zfunc
-    ~/.nimble/bin
-    ~/racket/bin
-    ~/.racket/7.7/bin
 )
+
+autoload -U zmv
 
 alias info='pinfo'
 alias deflate="perl -MCompress::Zlib -e 'undef $/; print uncompress(<>)'"
