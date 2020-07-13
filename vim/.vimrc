@@ -32,7 +32,7 @@ Plug 'skywind3000/asyncrun.vim'                         " Run shell commands asy
 Plug 'kana/vim-smartinput'                              " Smart input for programmers: https://bit.ly/2ZdNJuF
 Plug 'google/vim-searchindex'                           " Display number of search matches & index of a current match.
 " Plug 'Valloric/YouCompleteMe'                           " A code-completion engine for Vim.
-" Plug 'dense-analysis/ale'				" Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support.
+Plug 'dense-analysis/ale'				" Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support.
 Plug 'machakann/vim-highlightedyank'			" Make the yanked region apparent!
 Plug 'airblade/vim-rooter'				" Changes Vim working directory to project root (identified by presence of known directory or file).
 Plug 'junegunn/fzf', { 'dir': '~/.fzf' }		" A command-line fuzzy finder.
@@ -65,7 +65,7 @@ Plug 'kana/vim-textobj-syntax'				" Text object for syntax highlighted items. ay
 " Plug 'Julian/vim-textobj-variable-segment'		" av/iv for a region between either _s or camelCaseVariables. Collides with wordmotion plugin.
 " Plug 'idbrii/textobj-word-column.vim'			" Adds text-objects for word-based columns in Vim. ac/ic/aC/iC for columns of text defined by word or WORD. Collides with plugin 'Chun-Yang/vim-textobj-chunk'.
 Plug 'whatyouhide/vim-textobj-xmlattr'			" A vim text object for XML/HTML attributes. ax/ix for XML/HTML attributes.
-Plug 'schmidh/vim-textobj-function'			" Text object for functions.
+" Plug 'schmidh/vim-textobj-function'			" Text object for functions.
 " Plug 'zirrostig/vim-schlepp'				" Easily moving text selections around.
 Plug 'chaoren/vim-wordmotion'				" More useful word motions for Vim.
 " Plug 'zah/nim.vim'					" Nim language plugin for vim.
