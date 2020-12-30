@@ -105,8 +105,8 @@ packadd! matchit                                        " This plugin makes the 
 set ignorecase                                          " Ignore case when searching.
 set smartcase                                           " Turn of ignorecase when search pattern contains uppercase character(s).
 set autoindent                                          " Respect indentation when starting a new line.
-" set expandtab                                           " Expand tabs to spaces. Essential in Python/Nim.
-" set tabstop=2                                           " Number of spaces tab is counted for. 2 is 2 is default for Nim.
+set expandtab                                           " Expand tabs to spaces. Essential in Python/Nim.
+set tabstop=2                                           " Number of spaces tab is counted for. 2 is 2 is default for Nim.
 set shiftwidth=2                                        " Number of spaces to use for autoindent.
 set backspace=2                                         " Fix backspace behavior on most terminals.
 set path+=**                                            " Search down in to subfolders. Applies to all file operations.
