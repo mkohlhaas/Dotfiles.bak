@@ -2,6 +2,8 @@ path+=(
     ~/bin
     ~/.cargo/bin
     ~/.zfunc
+    ~/.local/bin/
+    ~/.npm/bin
 )
 
 autoload -U zmv
