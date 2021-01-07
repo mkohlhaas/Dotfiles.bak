@@ -1,5 +1,4 @@
 autocmd VimEnter * echom "( * ) ( * )"
-" $ sudo add-apt-repository ppa:jonathonf/vim-daily       # Add latest vim versions to Ubuntu's repository using command line.
 
 " Make sure plugin manager is automatically installed including the plugins themselves.
 if empty(glob('~/.vim/autoload/plug.vim')) 
@@ -7,73 +6,64 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-set nocompatible                                        " Turn off vi compatibility.
-filetype indent plugin on                               " Enable file type based indentation.
-syntax on                                               " Enable syntax highlighting
-set hidden                                              " If the active buffer is modified, Vim will automatically hide it when we navigate away from it.
+set nocompatible                                  " Turn off vi compatibility.
+filetype indent plugin on                         " Enable file type based indentation.
+syntax on                                         " Enable syntax highlighting
+set hidden                                        " If the active buffer is modified, Vim will automatically hide it when we navigate away from it.
 
-call plug#begin()                                       " Load plugins.
-" Plug 'ludovicchabant/vim-gutentags'			                " Manages your tag files.
-" Plug 'majutsushi/tagbar'				                        " Displays tags in a window, ordered by scope.
-Plug 'easymotion/vim-easymotion'                        " Highlighs all possible choices and allows you to press one key to jump directly to the target. Type <space> twice then movement key like w, f, t, b, e ,k, j etc. to invoke EasyMotion.
-Plug 'junegunn/vim-plug'                                " Documentation for the plugin manager.
-Plug 'simnalamburt/vim-mundo'                           " Vim undo tree visualizer.
-Plug 'vim-airline/vim-airline'                          " Lean & mean status/tabline for vim that's light as air.
-Plug 'vim-airline/vim-airline-themes'                   " A collection of themes for vim-airline.
+call plug#begin()                                 " Load plugins.
+Plug 'easymotion/vim-easymotion'                  " Highlighs all possible choices and allows you to press one key to jump directly to the target. Type <space> twice then movement key like w, f, t, b, e ,k, j etc. to invoke EasyMotion.
+Plug 'junegunn/vim-plug'                          " Documentation for the plugin manager.
+Plug 'simnalamburt/vim-mundo'                     " Vim undo tree visualizer.
+Plug 'vim-airline/vim-airline'                    " Lean & mean status/tabline for vim that's light as air.
+Plug 'vim-airline/vim-airline-themes'             " A collection of themes for vim-airline.
 Plug 'yorickpeterse/happy_hacking.vim'
-Plug 'guns/vim-sexp'					" Precision Editing for S-expressions.
+Plug 'guns/vim-sexp'					                    " Precision Editing for S-expressions.
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
-Plug 'nelstrom/vim-visual-star-search'                  " Start a * or # search from a visual block.
-Plug 'tpope/vim-commentary'                             " Comment stuff out.
-Plug 'tpope/vim-surround'                               " Quoting/parenthesizing made simple.
-Plug 'tpope/vim-repeat'					" Enable repeating supported plugin maps with .
-Plug 'tpope/vim-abolish'                                " Easily search for, substitute, and abbreviate multiple variants of a word.
-Plug 'skywind3000/asyncrun.vim'                         " Run shell commands asyncronously and output to quickfix window.
-Plug 'kana/vim-smartinput'                              " Smart input for programmers: https://bit.ly/2ZdNJuF
-Plug 'google/vim-searchindex'                           " Display number of search matches & index of a current match.
-" Plug 'Valloric/YouCompleteMe'                           " A code-completion engine for Vim.
-Plug 'dense-analysis/ale'				" Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support.
-Plug 'machakann/vim-highlightedyank'			" Make the yanked region apparent!
-Plug 'airblade/vim-rooter'				" Changes Vim working directory to project root (identified by presence of known directory or file).
-Plug 'junegunn/fzf', { 'dir': '~/.fzf' }		" A command-line fuzzy finder.
-Plug 'junegunn/fzf.vim'					" fzf loves vim.
-Plug 'pbogut/fzf-mru.vim'				" Allows using awesome CtrlP MRU plugin with even more amazing FZF.
-Plug 'romainl/vim-cool'					" A very simple plugin that makes hlsearch more useful.
-" Plug 'rust-lang/rust.vim'				" Vim configuration for Rust.
-Plug 'andymass/vim-matchup'				" vim match-up: even better %. Navigate and highlight matching words. Modern matchit and matchparen replacement.
-Plug 'kana/vim-textobj-user'                            " Dependency for kana/vim-textobj-entire.
-Plug 'kana/vim-textobj-entire'                          " Text objects for entire buffer.
-Plug 'fvictorio/vim-textobj-backticks'			" Vim text objects for regions inside backticks.
-" Plug 'thinca/vim-textobj-between'			" Text objects for a range between a character. af{char}/if{char} for a region between {char}s. Collides with schmidh/vim-textobj-function.
-Plug 'deathlyfrantic/vim-textobj-blanklines'		" A Vim text object for selecting blank lines. a<Space>/i<Space> for groups of blank (only whitespace) lines. ip/ap (inner/outer paragraph) works out of the box for all blank lines.
-Plug 'Julian/vim-textobj-brace'				" A text object for the closest inner () {} *or* []. aj/ij for the closest region between any of () [] or {}.
-Plug 'Chun-Yang/vim-textobj-chunk'			" ac/ic for all the lines contain one of {}, [], or () pairs.
-Plug 'johntyree/vim-textobj-comment'			" Vim text objects for comments. ac/ic for a comment.
-Plug 'kana/vim-textobj-datetime'			" ada/ida and others for date and timer. da = auto, df = full, dd = date, dt = time
-Plug 'glts/vim-textobj-indblock'			" Vim text objects for blocks of indentation whitespace. ao/io for a block of indentation (i.e.  spaces).
-" Plug 'vimtaku/vim-textobj-keyvalue'			" ak/iv for key/value, esp. useful for JSON files. Collides with plugin 'Julian/vim-textobj-variable-segment'.
-Plug 'kana/vim-textobj-lastpat'				" Text objects for the last searched pattern. a//i/ for a region matched to the last search pattern.
-Plug 'kana/vim-textobj-line'				" Text object for the current line. al/il for the current line.
-Plug 'sgur/vim-textobj-parameter'			" Provides text objects (a, and i, by default) to select parameters of functions. Use 'i2,' for trailing whitespace characters.
-Plug 'saaguero/vim-textobj-pastedtext'			" A convenient text object for last pasted text. By default it creates the following mapping: gb. vgb Select last pasted text.  =gb Re-indent last pasted text.  dgb Delete last pasted text.  gcgb Comment last pasted text
-Plug 'paulhybryant/vim-textobj-path'			" ap/ip for next file path (w/o basename), aP/iP for the previous file path (w/o basename).
-Plug 'beloglazov/vim-textobj-punctuation'		" au/iu for the text between the cursor position till the closest punctuation. 
-Plug 'reedes/vim-textobj-quote'				" aq/iq aQ/iQ for “typographic-quoted” strings.
-Plug 'saihoooooooo/vim-textobj-space'			" aS/iS for a region filled with various space characters.
-Plug 'kana/vim-textobj-syntax'				" Text object for syntax highlighted items. ay/iy for a syntax-highlighted item.
-" Plug 'lucapette/vim-textobj-underscore'			" Underscore text-object for Vim. a_/i_ for a region between _s such as bar in foo_bar_baz.
-" Plug 'Julian/vim-textobj-variable-segment'		" av/iv for a region between either _s or camelCaseVariables. Collides with wordmotion plugin.
-" Plug 'idbrii/textobj-word-column.vim'			" Adds text-objects for word-based columns in Vim. ac/ic/aC/iC for columns of text defined by word or WORD. Collides with plugin 'Chun-Yang/vim-textobj-chunk'.
-Plug 'whatyouhide/vim-textobj-xmlattr'			" A vim text object for XML/HTML attributes. ax/ix for XML/HTML attributes.
-" Plug 'schmidh/vim-textobj-function'			" Text object for functions.
-" Plug 'zirrostig/vim-schlepp'				" Easily moving text selections around.
-Plug 'chaoren/vim-wordmotion'				" More useful word motions for Vim.
-" Plug 'zah/nim.vim'					" Nim language plugin for vim.
-" Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
-" Plug 'ajh17/VimCompletesMe'
-" Plug 'wlangstroth/vim-racket'				" Superior Lisp Interaction Mode for Vim ("SLIME for Vim"). Supports also paredit mode for Racket files.
-" Plug 'kovisoft/slimv'
+Plug 'nelstrom/vim-visual-star-search'            " Start a * or # search from a visual block.
+Plug 'tpope/vim-commentary'                       " Comment stuff out.
+Plug 'tpope/vim-surround'                         " Quoting/parenthesizing made simple.
+Plug 'tpope/vim-repeat'					                  " Enable repeating supported plugin maps with .
+Plug 'tpope/vim-abolish'                          " Easily search for, substitute, and abbreviate multiple variants of a word.
+Plug 'skywind3000/asyncrun.vim'                   " Run shell commands asyncronously and output to quickfix window.
+Plug 'kana/vim-smartinput'                        " Smart input for programmers: https://bit.ly/2ZdNJuF
+Plug 'google/vim-searchindex'                     " Display number of search matches & index of a current match.
+Plug 'dense-analysis/ale'				                  " Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support.
+Plug 'machakann/vim-highlightedyank'			        " Make the yanked region apparent!
+Plug 'airblade/vim-rooter'				                " Changes Vim working directory to project root (identified by presence of known directory or file).
+Plug 'junegunn/fzf', { 'dir': '~/.fzf' }		      " A command-line fuzzy finder.
+Plug 'junegunn/fzf.vim'					                  " fzf loves vim.
+Plug 'pbogut/fzf-mru.vim'				                  " Allows using awesome CtrlP MRU plugin with even more amazing FZF.
+Plug 'romainl/vim-cool'					                  " A very simple plugin that makes hlsearch more useful.
+Plug 'andymass/vim-matchup'				                " vim match-up: even better %. Navigate and highlight matching words. Modern matchit and matchparen replacement.
+Plug 'kana/vim-textobj-user'                      " Dependency for kana/vim-textobj-entire.
+Plug 'kana/vim-textobj-entire'                    " Text objects for entire buffer.
+Plug 'fvictorio/vim-textobj-backticks'			      " Vim text objects for regions inside backticks.
+Plug 'deathlyfrantic/vim-textobj-blanklines'		  " A Vim text object for selecting blank lines. a<Space>/i<Space> for groups of blank (only whitespace) lines. ip/ap (inner/outer paragraph) works out of the box for all blank lines.
+Plug 'Julian/vim-textobj-brace'				            " A text object for the closest inner () {} *or* []. aj/ij for the closest region between any of () [] or {}.
+Plug 'Chun-Yang/vim-textobj-chunk'			          " ac/ic for all the lines contain one of {}, [], or () pairs.
+Plug 'johntyree/vim-textobj-comment'			        " Vim text objects for comments. ac/ic for a comment.
+Plug 'kana/vim-textobj-datetime'			            " ada/ida and others for date and timer. da = auto, df = full, dd = date, dt = time
+Plug 'glts/vim-textobj-indblock'			            " Vim text objects for blocks of indentation whitespace. ao/io for a block of indentation (i.e.  spaces).
+Plug 'kana/vim-textobj-lastpat'				            " Text objects for the last searched pattern. a//i/ for a region matched to the last search pattern.
+Plug 'kana/vim-textobj-line'				              " Text object for the current line. al/il for the current line.
+Plug 'sgur/vim-textobj-parameter'			            " Provides text objects (a, and i, by default) to select parameters of functions. Use 'i2,' for trailing whitespace characters.
+Plug 'saaguero/vim-textobj-pastedtext'			      " A convenient text object for last pasted text. By default it creates the following mapping: gb. vgb Select last pasted text.  =gb Re-indent last pasted text.  dgb Delete last pasted text.  gcgb Comment last pasted text
+Plug 'paulhybryant/vim-textobj-path'			        " ap/ip for next file path (w/o basename), aP/iP for the previous file path (w/o basename).
+Plug 'beloglazov/vim-textobj-punctuation'		      " au/iu for the text between the cursor position till the closest punctuation. 
+Plug 'reedes/vim-textobj-quote'				            " aq/iq aQ/iQ for “typographic-quoted” strings.
+Plug 'saihoooooooo/vim-textobj-space'			        " aS/iS for a region filled with various space characters.
+Plug 'kana/vim-textobj-syntax'				            " Text object for syntax highlighted items. ay/iy for a syntax-highlighted item.
+Plug 'whatyouhide/vim-textobj-xmlattr'			      " A vim text object for XML/HTML attributes. ax/ix for XML/HTML attributes.
+Plug 'chaoren/vim-wordmotion'				              " More useful word motions for Vim.
+Plug 'mileszs/ack.vim'                            " Run your favorite search tool from Vim, with an enhanced results list.
 call plug#end()
+
+" https://github.com/airblade/vim-rooter#how-to-identify-a-root-directory
+let g:rooter_patterns = ['.git', 'Makefile', '*.sln', 'build/env.sh']
+
+" Use syntaxerl for linting erlang files (https://github.com/ten0s/syntaxerl)
+let g:ale_linters = { 'erlang': ['syntaxerl'] }
 
 colorscheme happy_hacking
 
@@ -81,17 +71,10 @@ highlight MatchParen ctermbg=darkgrey guibg=darkgrey
 
 set completeopt=longest,menuone
 
-" let g:paredit_electric_return = 0
-" let g:paredit_smartjump = 1
-" let g:paredit_leader = ','
-
 " Text object comment default key binding collide with chunck text object.
 let g:textobj_outer_comment_key = 'ab'
 let g:textobj_inner_comment_key = 'ib'
 let g:textobj_outer_Comment_key = 'aB'
-
-" For plugin saaguero/vim-textobj-pastedtext:
-" let g:pastedtext_select_key = 'p'
 
 if executable('ag')                                     " Use silver searcher (if available) for finding files. Invoke with ':Ack'.
   let g:ackprg = 'ag --vimgrep'
@@ -219,3 +202,17 @@ function! HelpInNewTab ()
     execute "normal \<C-W>T"
   endif
 endfunction
+
+" Nitrogen
+" If this has ft=nitrogen in the modeline
+" tell the system that it's actually an erlang filetype
+" but override the indentation rules such that it expands tabs to spaces,
+" uses tab width of 4 and uses vim's 'smartindent', which works much
+" better indentation rules for nitrogen elements.
+if has("autocmd")
+	" smartindenting will remove leading spaces when typing in a # as the
+	" first character, so you don't want that with nitrogen, since *many,
+	" many* lines will match that.  So the inoremap below fixes it
+	autocmd Filetype nitrogen inoremap # X#
+	autocmd FileType nitrogen set filetype=erlang smartindent autoindent expandtab shiftwidth=4 tabstop=4 softtabstop=4 indentexpr=""
+endif
