@@ -1,4 +1,4 @@
-autocmd VimEnter * echom "( * ) ( * )"
+autocmd VimEnter * echomsg "( * ) ( * )"
 
 " Make sure plugin manager is automatically installed including the plugins themselves.
 if empty(glob('~/.vim/autoload/plug.vim')) 
@@ -15,8 +15,6 @@ call plug#begin()                                 " Load plugins.
 Plug 'easymotion/vim-easymotion'                  " Highlighs all possible choices and allows you to press one key to jump directly to the target. Type <space> twice then movement key like w, f, t, b, e ,k, j etc. to invoke EasyMotion.
 Plug 'junegunn/vim-plug'                          " Documentation for the plugin manager.
 Plug 'simnalamburt/vim-mundo'                     " Vim undo tree visualizer.
-Plug 'vim-airline/vim-airline'                    " Lean & mean status/tabline for vim that's light as air.
-Plug 'vim-airline/vim-airline-themes'             " A collection of themes for vim-airline.
 Plug 'yorickpeterse/happy_hacking.vim'
 Plug 'guns/vim-sexp'					                    " Precision Editing for S-expressions.
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
@@ -57,10 +55,15 @@ Plug 'kana/vim-textobj-syntax'				            " Text object for syntax highlight
 Plug 'whatyouhide/vim-textobj-xmlattr'			      " A vim text object for XML/HTML attributes. ax/ix for XML/HTML attributes.
 Plug 'chaoren/vim-wordmotion'				              " More useful word motions for Vim.
 Plug 'mileszs/ack.vim'                            " Run your favorite search tool from Vim, with an enhanced results list.
+Plug 'vim-erlang/vim-erlang-tags'                 " Creates a tags file from Erlang source files.
+Plug 'mkohlhaas/vim-mpc'                          " A music player client for Vim.
+Plug 'lsrdg/potion.vim'
 call plug#end()
 
 " https://github.com/airblade/vim-rooter#how-to-identify-a-root-directory
 let g:rooter_patterns = ['.git', 'Makefile', '*.sln', 'build/env.sh']
+" To stop Rooter echoing the project directory:
+let g:rooter_silent_chdir = 1
 
 " Use syntaxerl for linting erlang files (https://github.com/ten0s/syntaxerl)
 let g:ale_linters = { 'erlang': ['syntaxerl'] }
@@ -111,9 +114,9 @@ set encoding=utf-8
 let mapleader = "\<space>"
 
 " Move line down.
-map _ ddp
+" map _ ddp
 " Move line up.
-map - ddkP
+" map - ddkP
 
 " Additional <ESC> mappings:
 " jk, in INSERT mode
