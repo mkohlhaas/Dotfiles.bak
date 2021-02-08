@@ -117,3 +117,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+if [ -f /usr/share/doc/fzf/completion.bash ]; then
+  . /usr/share/doc/fzf/completion.bash
+fi
+if [ -f /usr/share/doc/fzf/key-bindings.bash ]; then
+  . /usr/share/doc/fzf/key-bindings.bash
+fi
