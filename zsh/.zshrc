@@ -83,6 +83,7 @@ plugins=(
     sudo
     tig
     web-search
+    colored-man-pages
 )
 
 source $ZSH/oh-my-zsh.sh
