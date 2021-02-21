@@ -148,3 +148,8 @@ export PATH=$PATH:~/bin
 # Install Icons-in-Terminal
 # https://github.com/sebastiencs/icons-in-terminal
 source ~/.local/share/icons-in-terminal/icons_bash.sh
+
+# Select TV channel
+sc () {
+  curl -s http://192.168.0.47:22000/play/sundtek.m3u | grep 22000 | dmenu -i -l 10 | xargs -r mpv & disown
+}

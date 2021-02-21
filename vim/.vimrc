@@ -58,6 +58,7 @@ Plug 'mileszs/ack.vim'                            " Run your favorite search too
 Plug 'vim-erlang/vim-erlang-tags'                 " Creates a tags file from Erlang source files.
 Plug 'mkohlhaas/vim-mpc'                          " A music player client for Vim.
 Plug 'lsrdg/potion.vim'
+Plug 'vimwiki/vimwiki'                            " Personal wiki for Vim
 call plug#end()
 
 " https://github.com/airblade/vim-rooter#how-to-identify-a-root-directory
