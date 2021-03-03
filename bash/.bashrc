@@ -143,7 +143,7 @@ export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 # Local binaries
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin:~/go/bin:~/.local/bin
 
 # Install Icons-in-Terminal
 # https://github.com/sebastiencs/icons-in-terminal

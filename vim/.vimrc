@@ -59,6 +59,8 @@ Plug 'vim-erlang/vim-erlang-tags'                 " Creates a tags file from Erl
 Plug 'mkohlhaas/vim-mpc'                          " A music player client for Vim.
 Plug 'lsrdg/potion.vim'
 Plug 'vimwiki/vimwiki'                            " Personal wiki for Vim
+Plug 'christoomey/vim-system-copy'                " System copy provides vim mappings for copying / pasting text to the os specific clipboard.
+Plug  'ycm-core/YouCompleteMe'                    " Code-completion engine for Vim
 call plug#end()
 
 " https://github.com/airblade/vim-rooter#how-to-identify-a-root-directory
@@ -147,6 +149,9 @@ noremap 'y :FzfHistory:<CR>
 imap <c-x><c-k> <plug>(fzf-complete-word)
 imap <c-x><c-f> <plug>(fzf-complete-path)
 imap <c-x><c-l> <plug>(fzf-complete-buffer-line)
+
+" Execute Javascript code with F3
+nnoremap <F3> :w<bar>! clear;node %<CR>
 
 " Show undo tree with F5
 nnoremap <F5> :MundoToggle<CR>
