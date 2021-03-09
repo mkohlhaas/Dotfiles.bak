@@ -225,3 +225,7 @@ if has("autocmd")
 	autocmd Filetype nitrogen inoremap # X#
 	autocmd FileType nitrogen set filetype=erlang smartindent autoindent expandtab shiftwidth=4 tabstop=4 softtabstop=4 indentexpr=""
 endif
+
+" Mouse support
+set ttymouse=xterm2
+set mouse=a
