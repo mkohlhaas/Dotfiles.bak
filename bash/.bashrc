@@ -70,6 +70,7 @@ aliases=(
 plugins=(
   git
   bashmarks
+  npm
 )
 
 source $OSH/oh-my-bash.sh
@@ -125,7 +126,7 @@ fi
 # mpc - Music Player Client - completions
 source /usr/share/doc/mpc/contrib/mpc-completion.bash
 # mpv - Media playser completions
-source /usr/share/bash-completion/completions/mpv
+# source /usr/share/bash-completion/completions/mpv
 
 # Activate extended globs
 shopt -s extglob

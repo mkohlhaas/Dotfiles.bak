@@ -53,6 +53,7 @@ Plug 'reedes/vim-textobj-quote'				            " aq/iq aQ/iQ for “typographic-
 Plug 'saihoooooooo/vim-textobj-space'			        " aS/iS for a region filled with various space characters.
 Plug 'kana/vim-textobj-syntax'				            " Text object for syntax highlighted items. ay/iy for a syntax-highlighted item.
 Plug 'whatyouhide/vim-textobj-xmlattr'			      " A vim text object for XML/HTML attributes. ax/ix for XML/HTML attributes.
+Plug 'kana/vim-textobj-function'                  " a Vim plugin to text objects for functions.
 Plug 'chaoren/vim-wordmotion'				              " More useful word motions for Vim.
 Plug 'mileszs/ack.vim'                            " Run your favorite search tool from Vim, with an enhanced results list.
 Plug 'vim-erlang/vim-erlang-tags'                 " Creates a tags file from Erlang source files.
