@@ -1,6 +1,7 @@
 local utils = require('utils')
 
 local cmd = vim.cmd
+local g = vim.g
 local o = vim.o
 local wo = vim.wo
 local bo = vim.bo
@@ -9,6 +10,7 @@ local indent = 4
 cmd 'syntax enable'
 cmd 'filetype plugin indent on'
 
+g.neovide_cursor_vfx_mode = 'pixiedust'
 bo.shiftwidth = indent
 bo.tabstop = indent
 bo.softtabstop = indent

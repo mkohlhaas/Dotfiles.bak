@@ -21,10 +21,10 @@ vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile' -- Auto compile when th
 require('plugins')
 
 -- Key mappings
--- require('keymappings')
+require('keymappings')
 
 -- LSP
--- require('lang')
+require('lsp')
 
 -- Another option is to groups configuration in one folder
 -- require('config')
