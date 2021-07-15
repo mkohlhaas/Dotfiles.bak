@@ -9,12 +9,12 @@ local indent = 4
 
 cmd 'syntax enable'
 cmd 'filetype plugin indent on'
+cmd 'colorscheme PaperColor'
 
 g.neovide_cursor_vfx_mode = 'pixiedust'
 bo.shiftwidth = indent
 bo.tabstop = indent
 bo.softtabstop = indent
-o.termguicolors = true
 o.hidden = true
 o.breakindent = true
 o.ignorecase = true
