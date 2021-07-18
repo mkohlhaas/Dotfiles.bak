@@ -127,6 +127,8 @@ fi
 source /usr/share/doc/mpc/contrib/mpc-completion.bash
 # mpv - Media playser completions
 # source /usr/share/bash-completion/completions/mpv
+# uftrace command completions
+source /usr/share/bash-completion/completions/uftrace
 
 # Activate extended globs
 shopt -s extglob
@@ -145,6 +147,10 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 # Local binaries
 export PATH=$PATH:~/bin:~/go/bin:~/.local/bin
+
+# Support for local raylib installation
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib64/pkgconfig
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib64
 
 # Install Icons-in-Terminal
 # https://github.com/sebastiencs/icons-in-terminal
