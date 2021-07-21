@@ -8,7 +8,7 @@
 
 /bin/bash --login -i ~/.xinitrc
 
-picom &
-setxkbmap eu &
-setxkbmap -option ctrl:nocaps &
-nitrogen --restore &
+# exec picom &
+# exec setxkbmap eu &
+exec setxkbmap -option ctrl:nocaps eu &
+exec nitrogen --restore &
