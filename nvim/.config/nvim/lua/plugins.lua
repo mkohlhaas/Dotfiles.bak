@@ -16,4 +16,5 @@ return require('packer').startup(function()
   use 'NLKNguyen/papercolor-theme'
   use 'nelstrom/vim-visual-star-search' -- Start a * or # search from a visual block.
   use 'romainl/vim-cool'                -- A very simple plugin that makes hlsearch more useful.
+  use 'machakann/vim-highlightedyank'   -- Make the yanked region apparent!
 end)
