@@ -16,13 +16,10 @@ vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile' -- Auto compile when th
 
 -- Sensible defaults
 require('settings')
-
 -- Install plugins
 require('plugins')
-
 -- Key mappings
 require('keymappings')
-
 -- LSP
 require('lsp')
 

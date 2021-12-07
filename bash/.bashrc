@@ -152,6 +152,10 @@ export PATH=$PATH:~/bin:~/go/bin:~/.local/bin
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib64/pkgconfig
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib64
 
+# Golang support
+export GOPATH=$HOME/Golang
+export PATH=$PATH:$GOPATH/bin
+
 # Install Icons-in-Terminal
 # https://github.com/sebastiencs/icons-in-terminal
 source ~/.local/share/icons-in-terminal/icons_bash.sh

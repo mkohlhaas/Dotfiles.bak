@@ -3,7 +3,7 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   -- LSP config
   use {'neovim/nvim-lspconfig'}
-  -- use { 'kabouzeid/nvim-lspinstall'}
+  use {'williamboman/nvim-lsp-installer'}
 
   -- Completion - use either one
   use {'hrsh7th/nvim-compe'}
@@ -17,4 +17,5 @@ return require('packer').startup(function()
   use 'nelstrom/vim-visual-star-search' -- Start a * or # search from a visual block.
   use 'romainl/vim-cool'                -- A very simple plugin that makes hlsearch more useful.
   use 'machakann/vim-highlightedyank'   -- Make the yanked region apparent!
+  use 'RRethy/nvim-align'               -- A simple, easy-to-use Vim alignment plugin.
 end)

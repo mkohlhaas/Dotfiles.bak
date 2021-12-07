@@ -96,6 +96,22 @@ _G.packer_plugins = {
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+  },
+  ["vim-cool"] = {
+    loaded = true,
+    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/vim-cool"
+  },
+  ["vim-easy-align"] = {
+    loaded = true,
+    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/vim-easy-align"
+  },
+  ["vim-highlightedyank"] = {
+    loaded = true,
+    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/vim-highlightedyank"
+  },
+  ["vim-visual-star-search"] = {
+    loaded = true,
+    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/vim-visual-star-search"
   }
 }
 
