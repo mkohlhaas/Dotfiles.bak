@@ -153,8 +153,16 @@ export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib64/pkgconfig
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib64
 
 # Golang support
+mkdir -p $HOME/Golang
 export GOPATH=$HOME/Golang
 export PATH=$PATH:$GOPATH/bin
+
+# Dart & Flutter support
+export PATH=$PATH:$HOME/Gitrepos/flutter/bin
+export CHROME_EXECUTABLE=/usr/bin/chromium
+
+# Android Studio SDK
+export PATH=$PATH:$HOME/Android-Studio/bin
 
 # Install Icons-in-Terminal
 # https://github.com/sebastiencs/icons-in-terminal
