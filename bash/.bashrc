@@ -160,6 +160,7 @@ export PATH=$PATH:$GOPATH/bin
 # Dart & Flutter support
 export PATH=$PATH:$HOME/Gitrepos/flutter/bin
 export CHROME_EXECUTABLE=/usr/bin/chromium
+export PATH=$PATH:$HOME/.pub-cache/bin
 
 # Android Studio SDK
 export PATH=$PATH:$HOME/Android-Studio/bin
