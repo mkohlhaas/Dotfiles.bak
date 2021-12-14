@@ -165,6 +165,9 @@ export PATH=$PATH:$HOME/.pub-cache/bin
 # Android Studio SDK
 export PATH=$PATH:$HOME/Android-Studio/bin
 
+# Purescript support
+export PATH=$PATH:$HOME/.npm/bin
+
 # Install Icons-in-Terminal
 # https://github.com/sebastiencs/icons-in-terminal
 source ~/.local/share/icons-in-terminal/icons_bash.sh
