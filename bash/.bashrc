@@ -167,6 +167,7 @@ export PATH=$PATH:$HOME/Android-Studio/bin
 
 # Purescript support
 export PATH=$PATH:$HOME/.npm/bin
+export PATH=$PATH:./node_modules/.bin/
 
 # Install Icons-in-Terminal
 # https://github.com/sebastiencs/icons-in-terminal
