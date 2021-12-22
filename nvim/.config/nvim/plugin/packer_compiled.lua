@@ -57,7 +57,7 @@ end
 time([[Luarocks path setup]], false)
 time([[try_loadstring definition]], true)
 local function try_loadstring(s, component, name)
-  local success, result = pcall(loadstring(s))
+  local success, result = pcall(loadstring(s), name, _G.packer_plugins[name])
   if not success then
     vim.schedule(function()
       vim.api.nvim_notify('packer.nvim: Error running ' .. component .. ' for ' .. name .. ': ' .. result, vim.log.levels.ERROR, {})
@@ -69,49 +69,65 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["nvim-align"] = {
+    loaded = true,
+    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/nvim-align",
+    url = "https://github.com/RRethy/nvim-align"
+  },
   ["nvim-compe"] = {
     loaded = true,
-    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/nvim-compe"
+    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/nvim-compe",
+    url = "https://github.com/hrsh7th/nvim-compe"
+  },
+  ["nvim-lsp-installer"] = {
+    loaded = true,
+    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/nvim-lsp-installer",
+    url = "https://github.com/williamboman/nvim-lsp-installer"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/packer.nvim"
+    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    url = "https://github.com/wbthomason/packer.nvim"
   },
   ["papercolor-theme"] = {
     loaded = true,
-    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/papercolor-theme"
+    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/papercolor-theme",
+    url = "https://github.com/NLKNguyen/papercolor-theme"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["popup.nvim"] = {
     loaded = true,
-    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/popup.nvim"
+    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["vim-cool"] = {
     loaded = true,
-    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/vim-cool"
-  },
-  ["vim-easy-align"] = {
-    loaded = true,
-    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/vim-easy-align"
+    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/vim-cool",
+    url = "https://github.com/romainl/vim-cool"
   },
   ["vim-highlightedyank"] = {
     loaded = true,
-    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/vim-highlightedyank"
+    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/vim-highlightedyank",
+    url = "https://github.com/machakann/vim-highlightedyank"
   },
   ["vim-visual-star-search"] = {
     loaded = true,
-    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/vim-visual-star-search"
+    path = "/home/schmidh/.local/share/nvim/site/pack/packer/start/vim-visual-star-search",
+    url = "https://github.com/nelstrom/vim-visual-star-search"
   }
 }
 
