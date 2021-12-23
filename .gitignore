@@ -1,7 +1,6 @@
 .vim/
 .viminfo
 **/golang/go/src/
-nvim/.config/nvim/plugin/**
 
 bananapimount
 bananapimount.sh

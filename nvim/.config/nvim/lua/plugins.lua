@@ -14,9 +14,9 @@ return require('packer').startup(function()
   }
 
   use 'NLKNguyen/papercolor-theme'
-  use 'nelstrom/vim-visual-star-search'   -- Start a * or # search from a visual block.
-  use 'romainl/vim-cool'                  -- A very simple plugin that makes hlsearch more useful.
-  use 'machakann/vim-highlightedyank'     -- Make the yanked region apparent!
-  use 'RRethy/nvim-align'                 -- A simple, easy-to-use Vim alignment plugin.
-  use 'purescript-contrib/purescript-vim' -- Purescript language support providing syntax highlighting and indentation
+  use 'nelstrom/vim-visual-star-search'     -- Start a * or # search from a visual block.
+  use 'romainl/vim-cool'                    -- A very simple plugin that makes hlsearch more useful.
+  use 'machakann/vim-highlightedyank'       -- Make the yanked region apparent!
+  use 'RRethy/nvim-align'                   -- A simple, easy-to-use Vim alignment plugin.
+  use 'purescript-contrib/purescript-vim'   -- Purescript language support providing syntax highlighting and indentation
 end)

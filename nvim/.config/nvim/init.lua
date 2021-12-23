@@ -14,6 +14,8 @@ end
 vim.cmd [[packadd packer.nvim]]
 vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile' -- Auto compile when there are changes in plugins.lua
 
+vim.cmd [[match errorMsg /\s\+$/]] -- show trailing whitespace
+
 -- Sensible defaults
 require('settings')
 -- Install plugins
