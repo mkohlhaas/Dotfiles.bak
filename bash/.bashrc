@@ -168,6 +168,19 @@ export PATH=$PATH:$HOME/Android-Studio/bin
 # Purescript support
 export PATH=$PATH:$HOME/.npm/bin
 export PATH=$PATH:./node_modules/.bin/
+export PURESCRIPT_PROJECTS="$HOME/Gitrepos"
+export CDPATH="$PURESCRIPT_PROJECTS:$CDPATH"
+
+new_ps () {
+  [[ ! -d "$PURESCRIPT_PROJECTS/$1" ]] &&
+  mkdir -p "$PURESCRIPT_PROJECTS/$1" &&
+  cd  $1 &&
+  npm init -y &&
+  npm install --save-dev spago purescript purty &&
+  git init &&
+  npx spago init &&
+  npx spago run
+}
 
 # Install Icons-in-Terminal
 # https://github.com/sebastiencs/icons-in-terminal
