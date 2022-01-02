@@ -104,6 +104,7 @@ source $OSH/oh-my-bash.sh
 # alias ohmybash="mate ~/.oh-my-bash"
 alias l1='ls -1l'
 alias vim='vim-huge'
+alias gaap='git add .; git commit --amend --no-edit ; git push --force'
 
 export VISUAL="vim-huge"
 # set -o vi
