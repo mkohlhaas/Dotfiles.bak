@@ -19,4 +19,5 @@ return require('packer').startup(function()
   use 'machakann/vim-highlightedyank'       -- Make the yanked region apparent!
   use 'RRethy/nvim-align'                   -- A simple, easy-to-use Vim alignment plugin.
   use 'purescript-contrib/purescript-vim'   -- Purescript language support providing syntax highlighting and indentation
+  use { 'numToStr/Comment.nvim', config = function() require('Comment').setup() end }
 end)

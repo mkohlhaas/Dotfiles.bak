@@ -7,6 +7,8 @@ utils.map('n', '<Leader>fh', '<cmd>Telescope help_tags<cr>')
 -- Move to next and previous buffers.
 utils.map('n', '<M-Right>', ':bn<CR>')
 utils.map('n', '<M-Left>',  ':bp<CR>')
+-- reselect pasted text
+utils.map('n', 'gp', '`[v`]')
 
 -- " Start interactive EasyAlign in visual mode (e.g. vipga)
 -- xmap ga <Plug>(EasyAlign)
