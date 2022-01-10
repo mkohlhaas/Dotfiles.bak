@@ -179,8 +179,10 @@ new_ps () {
   npm init -y &&
   npm install --save-dev spago purescript purty &&
   git init &&
-  npx spago init &&
-  npx spago run
+  npx spago init -C &&
+  npx spago run &&
+  git add . &&
+  git commit -m 'initializes repository.'
 }
 
 # Install Icons-in-Terminal
