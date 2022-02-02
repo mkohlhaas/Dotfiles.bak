@@ -20,4 +20,5 @@ return require('packer').startup(function()
   use 'RRethy/nvim-align'                   -- A simple, easy-to-use Vim alignment plugin.
   use 'purescript-contrib/purescript-vim'   -- Purescript language support providing syntax highlighting and indentation
   use { 'numToStr/Comment.nvim', config = function() require('Comment').setup() end }
+  use 'arcticicestudio/nord-vim'            -- An arctic, north-bluish clean and elegant Vim color theme.
 end)

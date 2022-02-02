@@ -11,8 +11,11 @@ local set = vim.opt   -- acts like the :set command in vimscript; set global, wi
 
 cmd 'syntax enable'
 cmd 'filetype plugin indent on'
+-- o.termguicolors    = true
+-- cmd 'colorscheme nord'
 cmd 'colorscheme PaperColor'
 
+-- set.background     = 'light'
 set.hidden         = true
 set.breakindent    = true
 set.number         = true

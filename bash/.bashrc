@@ -193,3 +193,8 @@ source ~/.local/share/icons-in-terminal/icons_bash.sh
 sc () {
   curl -s http://192.168.0.47:22000/play/sundtek.m3u | grep 22000 | dmenu -i -l 10 | xargs -r mpv & disown
 }
+
+
+# BEGIN_KITTY_SHELL_INTEGRATION
+if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
+# END_KITTY_SHELL_INTEGRATION
