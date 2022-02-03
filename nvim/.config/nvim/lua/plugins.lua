@@ -18,4 +18,10 @@ return require('packer').startup(function()
   use 'purescript-contrib/purescript-vim'   -- Purescript language support providing syntax highlighting and indentation
   use 'onsails/lspkind-nvim'                -- This plugin adds vscode-like pictograms to neovim's built-in lsp.
   use { 'numToStr/Comment.nvim', config = function() require('Comment').setup() end }
+  use { "blackCauldron7/surround.nvim", config = function() require"surround".setup {mappings_style = "sandwich"} end }
+  use { "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons", config = function() require("trouble").setup {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    } end }
 end)
