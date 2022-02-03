@@ -1,7 +1,27 @@
 -- Setup nvim-cmp.
 local cmp = require'cmp'
+local lspkind = require('lspkind')
+
+-- local signs = { Error = ' ', Warn = ' ', Hint = ' ', Info = ' ' }
+-- for type, icon in pairs(signs) do
+--   local hl = 'DiagnosticSign' .. type
+--   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = '' })
+-- end
 
 cmp.setup({
+  formatting = {
+    format = lspkind.cmp_format({
+      with_text = false, -- do not show text alongside icons
+      maxwidth = 50, -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
+
+      -- The function below will be called before any actual modifications from lspkind
+      -- so that you can provide more controls on popup customization. (See [#30](https://github.com/onsails/lspkind-nvim/pull/30))
+      -- before = function (entry, vim_item)
+      --   ...
+      --   return vim_item
+      -- end
+    })
+  },
   snippet = {
     -- REQUIRED - you must specify a snippet engine
     expand = function(args)
