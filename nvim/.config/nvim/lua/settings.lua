@@ -14,8 +14,10 @@ cmd 'filetype plugin indent on'
 -- o.termguicolors    = true
 -- cmd 'colorscheme nord'
 cmd 'colorscheme PaperColor'
-
 -- set.background     = 'light'
+
+set.completeopt    = 'menu,menuone,noselect'
+set.signcolumn     = 'yes'
 set.hidden         = true
 set.breakindent    = true
 set.number         = true

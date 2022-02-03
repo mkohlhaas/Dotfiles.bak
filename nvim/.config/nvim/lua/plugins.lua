@@ -1,24 +1,20 @@
 return require('packer').startup(function()
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
-  -- LSP config
-  use {'neovim/nvim-lspconfig'}
+  use 'wbthomason/packer.nvim' -- Packer can manage itself
   use {'williamboman/nvim-lsp-installer'}
-
-  -- Completion - use either one
-  use {'hrsh7th/nvim-compe'}
-  -- use { 'nvim-lua/completion-nvim' }
-
-  use {
-  'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}}
-  }
-
+  use {'neovim/nvim-lspconfig'} -- LSP config
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/vim-vsnip'
+  use 'hrsh7th/cmp-vsnip'
+  use { 'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} } -- File Manager
   use 'NLKNguyen/papercolor-theme'
+  use 'arcticicestudio/nord-vim'            -- An arctic, north-bluish clean and elegant Vim color theme.
   use 'nelstrom/vim-visual-star-search'     -- Start a * or # search from a visual block.
   use 'romainl/vim-cool'                    -- A very simple plugin that makes hlsearch more useful.
   use 'machakann/vim-highlightedyank'       -- Make the yanked region apparent!
-  use 'RRethy/nvim-align'                   -- A simple, easy-to-use Vim alignment plugin.
   use 'purescript-contrib/purescript-vim'   -- Purescript language support providing syntax highlighting and indentation
   use { 'numToStr/Comment.nvim', config = function() require('Comment').setup() end }
-  use 'arcticicestudio/nord-vim'            -- An arctic, north-bluish clean and elegant Vim color theme.
 end)

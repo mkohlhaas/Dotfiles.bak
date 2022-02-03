@@ -177,7 +177,7 @@ new_ps () {
   mkdir -p "$PURESCRIPT_PROJECTS/$1" &&
   cd  $1 &&
   npm init -y &&
-  npm install --save-dev spago purescript purty &&
+  npm install --save-dev spago purescript purty purescript-language-server &&
   git init &&
   npx spago init -C &&
   npx spago run &&
