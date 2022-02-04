@@ -180,11 +180,11 @@ new_ps () {
   npm install --save-dev spago purescript purty purs-tidy purescript-language-server &&
   npx spago init -C &&
   npx spago run &&
-  echo -e "Add bash completion:\n\`\`\`shell\nsource <(spago --bash-completion-script $(which spago))\n\`\`\`\n" >> README.md
-  echo -e "Automatic rebuild:\n\`\`\`shell\nspago build --watch\n\`\`\`\n" >> README.md
+  echo -e "Add spago bash completion:\n\`\`\`shell\nsource <(spago --bash-completion-script \$(which spago))\n\`\`\`\n" >> README.md &&
+  echo -e "Automatic rebuild:\n\`\`\`shell\nspago build --watch\n\`\`\`\n" >> README.md &&
   sed -i 's:\(/node_modules/\):\1**/*:' .gitignore
-  sed -i -E '/node_modules/a !/node_modules/.bin\n!/node_modules/.bin/*' .gitignore
-  git init &&
+  sed -i -E '/node_modules/a !/node_modules/.bin\n!/node_modules/.bin/*\n!/node_modules/spago\n!/node_modules/spago/**/*\n!/node_modules/purescript\n!/node_modules/purescript/**/*' .gitignore
+  git init
   git add . &&
   git commit -m 'initializes repository.'
 }
