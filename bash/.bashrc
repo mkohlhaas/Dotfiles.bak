@@ -146,9 +146,6 @@ export LESS_TERMCAP_so=$'\e[01;33m'
 export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
 
-# Local binaries
-export PATH=$PATH:~/bin:~/go/bin:~/.local/bin
-
 # Support for local raylib installation
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib64/pkgconfig
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib64
@@ -182,12 +179,14 @@ new_ps () {
   npx spago run &&
   echo -e "Add spago bash completion:\n\`\`\`shell\nsource <(spago --bash-completion-script \$(which spago))\n\`\`\`\n" >> README.md &&
   echo -e "Automatic rebuild:\n\`\`\`shell\nspago build --watch\n\`\`\`\n" >> README.md &&
-  sed -i 's:\(/node_modules/\):\1**/*:' .gitignore
-  sed -i -E '/node_modules/a !/node_modules/.bin\n!/node_modules/.bin/*\n!/node_modules/spago\n!/node_modules/spago/**/*\n!/node_modules/purescript\n!/node_modules/purescript/**/*' .gitignore
+  sed -i '/node_modules/d' .gitignore
   git init
   git add . &&
   git commit -m 'initializes repository.'
 }
+
+# Local binaries
+export PATH=$PATH:$HOME/bin:$HOME/local/bin
 
 # Install Icons-in-Terminal
 # https://github.com/sebastiencs/icons-in-terminal
