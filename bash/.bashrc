@@ -164,23 +164,23 @@ export PATH=$PATH:$HOME/.pub-cache/bin
 export PATH=$PATH:$HOME/Android-Studio/bin
 
 # Purescript support
-export PATH=$PATH:$HOME/.npm/bin
-export PATH=$PATH:./node_modules/.bin/
-export PURESCRIPT_PROJECTS="$HOME/Gitrepos"
-export CDPATH="$PURESCRIPT_PROJECTS:$CDPATH"
+export PATH=$HOME/.npm/bin:$PATH
+export PATH=./node_modules/.bin/:$PATH
+export PURESCRIPT_PROJECTS_DIR="$HOME/Gitrepos"
+export CDPATH="$PURESCRIPT_PROJECTS_DIR:$CDPATH"
 
-new_ps () {
-  [[ ! -d "$PURESCRIPT_PROJECTS/$1" ]] &&
-  mkdir -p "$PURESCRIPT_PROJECTS/$1" &&
+new-purescript-proj () {
+  [[ ! -d "$PURESCRIPT_PROJECTS_DIR/$1" ]] &&
+  mkdir -p "$PURESCRIPT_PROJECTS_DIR/$1" &&
   cd  $1 &&
   npm init -y &&
   npm install --save-dev spago purescript purty purs-tidy purescript-language-server &&
-  npx spago init -C &&
-  npx spago run &&
+  spago init -C &&
+  spago run &&
   echo -e "Add spago bash completion:\n\`\`\`shell\nsource <(spago --bash-completion-script \$(which spago))\n\`\`\`\n" >> README.md &&
   echo -e "Automatic rebuild:\n\`\`\`shell\nspago build --watch\n\`\`\`\n" >> README.md &&
-  sed -i '/node_modules/d' .gitignore
-  git init
+  sed -i '/node_modules/d' .gitignore &&
+  git init &&
   git add . &&
   git commit -m 'initializes repository.'
 }
