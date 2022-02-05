@@ -27,6 +27,7 @@ set.shiftwidth     = 2     -- set shift width to 4 spaces.
 set.tabstop        = 2     -- set tab width to 4 columns.
 set.expandtab      = true  -- Use space characters instead of tabs.
 set.scrolloff      = 8     -- Do not let cursor scroll below or above N number of lines when scrolling.
+set.scroll         = 4
 set.incsearch      = true  -- While searching though a file incrementally highlight matching characters as you type.
 set.ignorecase     = true  -- Ignore capital letters during search.
 set.smartcase      = true  -- Override the ignorecase option if searching for capital letters.
