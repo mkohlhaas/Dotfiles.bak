@@ -18,6 +18,7 @@ cmd 'colorscheme PaperColor'
 
 set.completeopt    = 'menu,menuone,noselect'
 set.signcolumn     = 'yes'
+set.spell          = true
 set.hidden         = true
 set.breakindent    = true
 set.number         = true
