@@ -8,17 +8,31 @@ local o   = vim.o     -- general settings
 local wo  = vim.wo    -- window-scoped options
 local bo  = vim.bo    -- buffer-scoped options
 local set = vim.opt   -- acts like the :set command in vimscript; set global, window and buffer settings
+local fn  = vim.fn
+
+-- Map leader to space
+g.mapleader      = ' '
+g.maplocalleader = ','
+
+-- automatic compile when plugins.lua changes
+cmd([[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+  augroup end
+]])
 
 cmd 'syntax enable'
 cmd 'filetype plugin indent on'
+cmd 'colorscheme PaperColor'
+cmd [[match errorMsg /\s\+$/]]  -- show trailing whitespace
 -- o.termguicolors    = true
 -- cmd 'colorscheme nord'
-cmd 'colorscheme PaperColor'
 -- set.background     = 'light'
 
 set.completeopt    = 'menu,menuone,noselect'
 set.signcolumn     = 'yes'
-set.spell          = true
+-- set.spell          = true
 set.hidden         = true
 set.breakindent    = true
 set.number         = true

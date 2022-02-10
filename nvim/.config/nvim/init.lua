@@ -1,22 +1,14 @@
--- Map leader to space
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ','
-
-local fn = vim.fn
-local execute = vim.api.nvim_command
-
 -- Auto install packer.nvim if not exists
-local install_path = fn.stdpath('data') .. '/site/pack/packer/opt/packer.nvim'
+local fn = vim.fn
+local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
-  execute('!git clone https://github.com/wbthomason/packer.nvim ' .. install_path)
+  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
 end
-
-vim.cmd [[packadd packer.nvim]]
+-- vim.cmd [[packadd packer.nvim]]
 -- vim.cmd [[autocmd BufWritePost plugins.lua PackerCompile]] -- Auto compile when there are changes in plugins.lua
-vim.cmd [[match errorMsg /\s\+$/]]                         -- show trailing whitespace
 
-require('settings')
 require('plugins')
+require('settings')
 require('keymappings')
 require('lsp')
 require('complete')

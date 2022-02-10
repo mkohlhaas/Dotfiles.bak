@@ -26,3 +26,5 @@ utils.map('n', 'G', 'Gzz')
 vim.cmd [[nmap <C-j> <Plug>(grammarous-open-info-window)]]
 vim.cmd [[nmap <C-n> <Plug>(grammarous-move-to-next-error)]]
 vim.cmd [[nmap <C-p> <Plug>(grammarous-move-to-previous-error)]]
+
+utils.map('n', '<C-s>',  ':set spell!<CR>')
