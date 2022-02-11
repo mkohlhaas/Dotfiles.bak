@@ -1,7 +1,8 @@
 local lsp_installer = require("nvim-lsp-installer")
 
 -- Use an on_attach function to only map the following keys after the language server attaches to the current buffer
-local on_attach = function(client, bufnr)
+-- local on_attach = function(client, bufnr)
+local on_attach = function(_, bufnr)
   local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
   local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
 
@@ -38,8 +39,15 @@ lsp_installer.on_server_ready(function(server)
 
     if server.name == "purescriptls" then
         opts = { settings = { purescript = { formatter = "purs-tidy", }, },
-                 on_attach = on_attach}
-        -- opts.root_dir = function() ... end
+                 on_attach = on_attach }
+    end
+
+    if server.name == "sumneko_lua" then
+        opts = { settings = { Lua = { runtime = { version = "LuaJIT", },
+                                      diagnostics = { globals = {'vim'}, },
+                                      workspace = { library = vim.api.nvim_get_runtime_file("", true), },
+                                      telemetry = { enable = false, },},},
+                 on_attach = on_attach }
     end
 
     -- This setup() function is exactly the same as lspconfig's setup function.

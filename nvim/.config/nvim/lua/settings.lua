@@ -1,14 +1,14 @@
 -- https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/
 
-local utils = require('utils')
+-- local utils = require('nvimutils')
 
 local cmd = vim.cmd
 local g   = vim.g     -- global variables
-local o   = vim.o     -- general settings
-local wo  = vim.wo    -- window-scoped options
-local bo  = vim.bo    -- buffer-scoped options
 local set = vim.opt   -- acts like the :set command in vimscript; set global, window and buffer settings
-local fn  = vim.fn
+-- local o   = vim.o     -- general settings
+-- local wo  = vim.wo    -- window-scoped options
+-- local bo  = vim.bo    -- buffer-scoped options
+-- local fn  = vim.fn
 
 -- Map leader to space
 g.mapleader      = ' '

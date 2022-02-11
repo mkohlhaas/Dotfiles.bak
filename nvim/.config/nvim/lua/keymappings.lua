@@ -1,14 +1,14 @@
-local utils = require('utils')
+local utils = require('nvimutils')
 
 utils.map('n', '<Leader>ff', '<cmd>Telescope find_files<cr>')
 utils.map('n', '<Leader>fg', '<cmd>Telescope live_grep<cr>')
 utils.map('n', '<Leader>fb', '<cmd>Telescope buffers<cr>')
 utils.map('n', '<Leader>fh', '<cmd>Telescope help_tags<cr>')
 -- Move to next and previous buffers.
-utils.map('n', '<M-l>', ':bn<CR>')
-utils.map('n', '<M-h>',  ':bp<CR>')
-utils.map('n', '<M-Right>', ':bn<CR>')
-utils.map('n', '<M-Left>',  ':bp<CR>')
+utils.map('n', '<M-Left>', ':bn<CR>')
+utils.map('n', '<M-Right>',  ':bp<CR>')
+utils.map('n', '<M-j>', ':bn<CR>')
+utils.map('n', '<M-k>',  ':bp<CR>')
 -- reselect pasted text
 utils.map('n', 'gp', '`[v`]')
 
@@ -28,3 +28,4 @@ vim.cmd [[nmap <C-n> <Plug>(grammarous-move-to-next-error)]]
 vim.cmd [[nmap <C-p> <Plug>(grammarous-move-to-previous-error)]]
 
 utils.map('n', '<C-s>',  ':set spell!<CR>')
+utils.map('n', '<Leader>w',  ':w<CR>')

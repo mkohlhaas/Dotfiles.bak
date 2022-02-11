@@ -1,7 +1,7 @@
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- Packer can manage itself
-  use {'williamboman/nvim-lsp-installer'}
-  use {'neovim/nvim-lspconfig'} -- LSP config
+  use { 'williamboman/nvim-lsp-installer' }
+  use { 'neovim/nvim-lspconfig' }
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
@@ -9,7 +9,14 @@ return require('packer').startup(function(use)
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/vim-vsnip'
   use 'hrsh7th/cmp-vsnip'
-  use { 'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'}} } -- File Manager
+
+  -- Highly extendable fuzzy finder
+  -- :checkhealth telescope
+  -- sudo xbps-install rg fd
+  use { 'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} } }
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+
   use 'NLKNguyen/papercolor-theme'
   use 'arcticicestudio/nord-vim'            -- An arctic, north-bluish clean and elegant Vim color theme.
   use 'nelstrom/vim-visual-star-search'     -- Start a * or # search from a visual block.
@@ -25,7 +32,7 @@ return require('packer').startup(function(use)
       -- refer to the configuration section below
     } end }
   use 'rhysd/vim-grammarous'                -- powerful grammar checker for Vim
-  if packer_bootstrap then
+  if PackerBootstrap then
     require('packer').sync()
   end
 end)

@@ -2,11 +2,16 @@
 local cmp = require'cmp'
 local lspkind = require('lspkind')
 
+-- sign define LspDiagnosticsSignError text=🔴
+-- sign define LspDiagnosticsSignWarning text=🟠
+-- sign define LspDiagnosticsSignInformation text=🔵
+-- sign define LspDiagnosticsSignHint text=🟢
 -- local signs = { Error = ' ', Warn = ' ', Hint = ' ', Info = ' ' }
--- for type, icon in pairs(signs) do
---   local hl = 'DiagnosticSign' .. type
---   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = '' })
--- end
+local signs = { Error = '🔴', Warn = '🟠', Hint = '🟢', Info = '🔵' }
+for type, icon in pairs(signs) do
+  local hl = 'DiagnosticSign' .. type
+  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = '' })
+end
 
 cmp.setup({
   formatting = {
