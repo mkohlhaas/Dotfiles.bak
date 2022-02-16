@@ -163,6 +163,9 @@ export PATH=$PATH:$HOME/.pub-cache/bin
 # Android Studio SDK
 export PATH=$PATH:$HOME/Android-Studio/bin
 
+# Git fuzzy support
+export PATH=$PATH:$HOME/bin/git-fuzzy/bin
+
 # Purescript support
 export PATH=$HOME/.npm/bin:$PATH
 export PATH=./node_modules/.bin/:$PATH

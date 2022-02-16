@@ -22,6 +22,8 @@ utils.map('n', 'gR', '<cmd>Trouble lsp_references<cr>')
 utils.map('n', 'k', 'kzz')
 utils.map('n', 'j', 'jzz')
 utils.map('n', 'G', 'Gzz')
+utils.map('n', 'n', 'nzz')
+utils.map('n', 'N', 'Nzz')
 
 vim.cmd [[nmap <C-j> <Plug>(grammarous-open-info-window)]]
 vim.cmd [[nmap <C-n> <Plug>(grammarous-move-to-next-error)]]
