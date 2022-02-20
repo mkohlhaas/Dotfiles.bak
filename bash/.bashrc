@@ -117,11 +117,11 @@ export VISUAL="vim-huge"
 # bind -m vi-insert "\C-l.":clear-screen
 
 # FZF completion
-if [ -f /usr/share/doc/fzf/completion.bash ]; then
-  source /usr/share/doc/fzf/completion.bash
+if [ -f /usr/share/fzf/completion.bash ]; then
+  source /usr/share/fzf/completion.bash
 fi
-if [ -f /usr/share/doc/fzf/key-bindings.bash ]; then
-  source /usr/share/doc/fzf/key-bindings.bash
+if [ -f /usr/share/fzf/key-bindings.bash ]; then
+  source /usr/share/fzf/key-bindings.bash
 fi
 
 # mpc - Music Player Client - completions
