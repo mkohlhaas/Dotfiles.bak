@@ -5,10 +5,10 @@ utils.map('n', '<Leader>fg', '<cmd>Telescope live_grep<cr>')
 utils.map('n', '<Leader>fb', '<cmd>Telescope buffers<cr>')
 utils.map('n', '<Leader>fh', '<cmd>Telescope help_tags<cr>')
 -- Move to next and previous buffers.
-utils.map('n', '<M-Left>', ':bn<CR>')
-utils.map('n', '<M-Right>',  ':bp<CR>')
-utils.map('n', '<M-j>', ':bn<CR>')
-utils.map('n', '<M-k>',  ':bp<CR>')
+utils.map('n', '<M-Left>', ':bn<CR>zz')
+utils.map('n', '<M-Right>',  ':bp<CR>zz')
+utils.map('n', '<M-j>', ':bn<CR>zz')
+utils.map('n', '<M-k>',  ':bp<CR>zz')
 -- reselect pasted text
 utils.map('n', 'gp', '`[v`]')
 
@@ -25,6 +25,8 @@ utils.map('n', 'G', 'Gzz')
 utils.map('n', 'n', 'nzz')
 utils.map('n', 'N', 'Nzz')
 
+vim.cmd [[nmap <C-o> <C-o>zz]]
+vim.cmd [[nmap <C-i> <C-i>zz]]
 vim.cmd [[nmap <C-j> <Plug>(grammarous-open-info-window)]]
 vim.cmd [[nmap <C-n> <Plug>(grammarous-move-to-next-error)]]
 vim.cmd [[nmap <C-p> <Plug>(grammarous-move-to-previous-error)]]

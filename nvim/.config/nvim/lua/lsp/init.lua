@@ -1,4 +1,5 @@
 local lsp_installer = require("nvim-lsp-installer")
+local util = require 'lspconfig.util'
 
 -- Use an on_attach function to only map the following keys after the language server attaches to the current buffer
 -- local on_attach = function(client, bufnr)
@@ -30,7 +31,6 @@ local on_attach = function(_, bufnr)
   buf_set_keymap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
   buf_set_keymap('n', '<space>q', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
   buf_set_keymap("n", "<space>f", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
-
 end
 
 -- Register a handler that will be called for all installed servers.
@@ -38,16 +38,33 @@ lsp_installer.on_server_ready(function(server)
     local opts = { on_attach = on_attach }
 
     if server.name == "purescriptls" then
-        opts = { settings = { purescript = { formatter = "purs-tidy", }, },
-                 on_attach = on_attach }
+      -- vim.api.nvim_command('echom "purescriptls starting..."')
+        vim.lsp.set_log_level('debug')
+        opts = { settings = {
+                   purescript = {
+                     formatter = "purs-tidy",
+                     -- addNpmPath = true,
+                     -- addSpagoSources = false
+                   },
+                 },
+                 on_attach = on_attach,
+                 -- This workaround makes it work:
+                 -- root_dir = util.root_pattern('output')
+               }
     end
 
     if server.name == "sumneko_lua" then
-        opts = { settings = { Lua = { runtime = { version = "LuaJIT", },
-                                      diagnostics = { globals = {'vim'}, },
-                                      workspace = { library = vim.api.nvim_get_runtime_file("", true), },
-                                      telemetry = { enable = false, },},},
-                 on_attach = on_attach }
+        opts = { settings =
+                  { Lua =
+                    { runtime =
+                      { version = "LuaJIT", },
+                        diagnostics = { globals = {'vim'}, },
+                        workspace = { library = vim.api.nvim_get_runtime_file("", true), },
+                        telemetry = { enable = false, },
+                    },
+                  },
+                 on_attach = on_attach
+               }
     end
 
     -- This setup() function is exactly the same as lspconfig's setup function.
