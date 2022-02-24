@@ -10,6 +10,12 @@ return require('packer').startup(function(use)
   use 'hrsh7th/vim-vsnip'
   use 'hrsh7th/cmp-vsnip'
 
+  -- Neovim Lua Debugger
+  -- use 'jbyuki/one-small-step-for-vimkind'
+  -- use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+  -- use 'Pocco81/DAPInstall.nvim'
+  -- use 'mfussenegger/nvim-dap'
+
   -- Highly extendable fuzzy finder
   -- :checkhealth telescope
   -- sudo xbps-install rg fd
@@ -25,7 +31,7 @@ return require('packer').startup(function(use)
   use 'purescript-contrib/purescript-vim'   -- Purescript language support providing syntax highlighting and indentation
   use 'onsails/lspkind-nvim'                -- This plugin adds vscode-like pictograms to neovim's built-in lsp.
   use { 'numToStr/Comment.nvim', config = function() require('Comment').setup() end }
-  use { 'blackCauldron7/surround.nvim', config = function() require"surround".setup {mappings_style = "sandwich"} end }
+  use { 'Mephistophiles/surround.nvim', config = function() require"surround".setup {mappings_style = "sandwich"} end }
   use { 'folke/trouble.nvim', requires = "kyazdani42/nvim-web-devicons", config = function() require("trouble").setup {
       -- your configuration comes here
       -- or leave it empty to use the default settings

@@ -49,7 +49,7 @@ lsp_installer.on_server_ready(function(server)
                  },
                  on_attach = on_attach,
                  -- This workaround makes it work:
-                 -- root_dir = util.root_pattern('output')
+                 root_dir = util.root_pattern('output')
                }
     end
 
