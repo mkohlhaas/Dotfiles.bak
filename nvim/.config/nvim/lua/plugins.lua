@@ -10,12 +10,6 @@ return require('packer').startup(function(use)
   use 'hrsh7th/vim-vsnip'
   use 'hrsh7th/cmp-vsnip'
 
-  -- Neovim Lua Debugger
-  -- use 'jbyuki/one-small-step-for-vimkind'
-  -- use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
-  -- use 'Pocco81/DAPInstall.nvim'
-  -- use 'mfussenegger/nvim-dap'
-
   -- Highly extendable fuzzy finder
   -- :checkhealth telescope
   -- sudo xbps-install rg fd
@@ -38,6 +32,9 @@ return require('packer').startup(function(use)
       -- refer to the configuration section below
     } end }
   use 'rhysd/vim-grammarous'                -- powerful grammar checker for Vim
+
+  use 'tjdevries/vlog.nvim'                 -- logger for neovim
+
   if PackerBootstrap then
     require('packer').sync()
   end
