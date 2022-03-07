@@ -130,6 +130,8 @@ source /usr/share/doc/mpc/contrib/mpc-completion.bash
 # source /usr/share/bash-completion/completions/mpv
 # uftrace command completions
 source /usr/share/bash-completion/completions/uftrace
+# Haskell stack completions
+source <(stack --bash-completion-script $(which stack))
 
 # Activate extended globs
 shopt -s extglob
