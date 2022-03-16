@@ -180,7 +180,9 @@ source /usr/share/bash-completion/completions/uftrace
 # Haskell stack completions
 source <(stack --bash-completion-script $(which stack))
 # Cabal completions - https://github.com/haskell/cabal/blob/master/cabal-install/bash-completion/cabal
-source $HOME/Dotfiles/bash/completions/cabal
+source $HOME/.completions/cabal
+# GHC completions - https://github.com/ghc/ghc/tree/master/utils/completion
+source $HOME/.completions/ghc.bash
 
 new-purescript-proj () {
   [[ ! -d "$PURESCRIPT_PROJECTS_DIR/$1" ]] &&
