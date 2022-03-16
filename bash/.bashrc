@@ -116,25 +116,6 @@ export VISUAL="vim-huge"
 # bind -m vi-command ".":insert-last-argument
 # bind -m vi-insert "\C-l.":clear-screen
 
-# FZF completion
-if [ -f /usr/share/fzf/completion.bash ]; then
-  source /usr/share/fzf/completion.bash
-fi
-if [ -f /usr/share/fzf/key-bindings.bash ]; then
-  source /usr/share/fzf/key-bindings.bash
-fi
-
-# mpc - Music Player Client - completions
-source /usr/share/doc/mpc/contrib/mpc-completion.bash
-# mpv - Media playser completions
-# source /usr/share/bash-completion/completions/mpv
-# uftrace command completions
-source /usr/share/bash-completion/completions/uftrace
-# Haskell stack completions
-source <(stack --bash-completion-script $(which stack))
-# Cabal completions - https://github.com/haskell/cabal/blob/master/cabal-install/bash-completion/cabal
-source $HOME/Dotfiles/bash/completions/cabal
-
 # Activate extended globs
 shopt -s extglob
 
@@ -179,6 +160,28 @@ export CDPATH="$PURESCRIPT_PROJECTS_DIR:$CDPATH"
 # Cabal/Haskell support
 export PATH=$HOME/.cabal/bin:$PATH
 
+# Haskell GHCup integration - https://www.haskell.org/ghcup/
+[ -f "/home/schmidh/.ghcup/env" ] && source "/home/schmidh/.ghcup/env" # ghcup-env
+
+# FZF completion
+if [ -f /usr/share/fzf/completion.bash ]; then
+  source /usr/share/fzf/completion.bash
+fi
+if [ -f /usr/share/fzf/key-bindings.bash ]; then
+  source /usr/share/fzf/key-bindings.bash
+fi
+
+# mpc - Music Player Client - completions
+source /usr/share/doc/mpc/contrib/mpc-completion.bash
+# mpv - Media playser completions
+# source /usr/share/bash-completion/completions/mpv
+# uftrace command completions
+source /usr/share/bash-completion/completions/uftrace
+# Haskell stack completions
+source <(stack --bash-completion-script $(which stack))
+# Cabal completions - https://github.com/haskell/cabal/blob/master/cabal-install/bash-completion/cabal
+source $HOME/Dotfiles/bash/completions/cabal
+
 new-purescript-proj () {
   [[ ! -d "$PURESCRIPT_PROJECTS_DIR/$1" ]] &&
   mkdir -p "$PURESCRIPT_PROJECTS_DIR/$1" &&
@@ -210,6 +213,3 @@ sc () {
 # BEGIN_KITTY_SHELL_INTEGRATION
 if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
 # END_KITTY_SHELL_INTEGRATION
-
-# Haskell GHCup integration - https://www.haskell.org/ghcup/
-[ -f "/home/schmidh/.ghcup/env" ] && source "/home/schmidh/.ghcup/env" # ghcup-env
