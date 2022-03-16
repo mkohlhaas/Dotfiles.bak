@@ -174,6 +174,9 @@ export PATH=./node_modules/.bin/:$PATH
 export PURESCRIPT_PROJECTS_DIR="$HOME/Gitrepos"
 export CDPATH="$PURESCRIPT_PROJECTS_DIR:$CDPATH"
 
+# Cabal/Haskell support
+export PATH=$HOME/.cabal/bin:$PATH
+
 new-purescript-proj () {
   [[ ! -d "$PURESCRIPT_PROJECTS_DIR/$1" ]] &&
   mkdir -p "$PURESCRIPT_PROJECTS_DIR/$1" &&
