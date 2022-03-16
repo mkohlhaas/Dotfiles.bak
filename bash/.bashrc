@@ -132,6 +132,8 @@ source /usr/share/doc/mpc/contrib/mpc-completion.bash
 source /usr/share/bash-completion/completions/uftrace
 # Haskell stack completions
 source <(stack --bash-completion-script $(which stack))
+# Cabal completions - https://github.com/haskell/cabal/blob/master/cabal-install/bash-completion/cabal
+source $HOME/Dotfiles/bash/completions/cabal
 
 # Activate extended globs
 shopt -s extglob
@@ -208,3 +210,6 @@ sc () {
 # BEGIN_KITTY_SHELL_INTEGRATION
 if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
 # END_KITTY_SHELL_INTEGRATION
+
+# Haskell GHCup integration - https://www.haskell.org/ghcup/
+[ -f "/home/schmidh/.ghcup/env" ] && source "/home/schmidh/.ghcup/env" # ghcup-env
