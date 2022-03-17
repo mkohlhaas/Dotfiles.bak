@@ -183,6 +183,9 @@ source <(stack --bash-completion-script $(which stack))
 source $HOME/.completions/cabal
 # GHC completions - https://github.com/ghc/ghc/tree/master/utils/completion
 source $HOME/.completions/ghc.bash
+# Summoner completions - https://kowainik.github.io/projects/summoner
+# Summoner is a tool for scaffolding fully configured batteries-included production-level Haskell projects.
+source <(summon --bash-completion-script `which summon`)
 
 new-purescript-proj () {
   [[ ! -d "$PURESCRIPT_PROJECTS_DIR/$1" ]] &&
