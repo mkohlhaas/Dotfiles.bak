@@ -7,8 +7,8 @@ utils.map('n', '<Leader>fb', '<cmd>Telescope buffers<cr>')
 utils.map('n', '<Leader>fh', '<cmd>Telescope help_tags<cr>')
 --
 -- Move to next and previous buffers.
-utils.map('n', '<M-Left>', ':bn<CR>zz')
-utils.map('n', '<M-Right>', ':bp<CR>zz')
+utils.map('n', '<M-Right>', ':bn<CR>zz')
+utils.map('n', '<M-Left>', ':bp<CR>zz')
 utils.map('n', '<M-j>', ':bn<CR>zz')
 utils.map('n', '<M-k>',  ':bp<CR>zz')
 
