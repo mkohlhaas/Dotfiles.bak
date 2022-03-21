@@ -186,6 +186,8 @@ source $HOME/.completions/ghc.bash
 # Summoner completions - https://kowainik.github.io/projects/summoner
 # Summoner is a tool for scaffolding fully configured batteries-included production-level Haskell projects.
 source <(summon --bash-completion-script `which summon`)
+# npm completion - https://docs.npmjs.com/cli/v6/commands/npm-completion
+source <(npm completion)
 
 new-purescript-proj () {
   [[ ! -d "$PURESCRIPT_PROJECTS_DIR/$1" ]] &&
