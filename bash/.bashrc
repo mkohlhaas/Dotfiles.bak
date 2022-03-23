@@ -189,6 +189,8 @@ source <(summon --bash-completion-script `which summon`)
 # npm completion - https://docs.npmjs.com/cli/v6/commands/npm-completion
 source <(npm completion)
 
+export PAGER=nvimpager
+
 new-purescript-proj () {
   [[ ! -d "$PURESCRIPT_PROJECTS_DIR/$1" ]] &&
   mkdir -p "$PURESCRIPT_PROJECTS_DIR/$1" &&

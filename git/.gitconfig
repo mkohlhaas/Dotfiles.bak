@@ -10,8 +10,8 @@
 	he = help
 	cl = clone
 [core]
-	pager = bat
-	editor = vim
+	; pager = bat
+	editor = nvim
 [diff]
 	tool = meld
 [difftool]
