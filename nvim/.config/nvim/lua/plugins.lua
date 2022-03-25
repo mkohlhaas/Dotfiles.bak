@@ -10,6 +10,8 @@ return require('packer').startup(function(use)
   use 'hrsh7th/vim-vsnip'
   use 'hrsh7th/cmp-vsnip'
 
+  use { 'inkarkat/vim-AdvancedSorters', requires = 'inkarkat/vim-ingo-library' }
+
   -- Highly extendable fuzzy finder
   -- :checkhealth telescope
   -- sudo xbps-install rg fd
