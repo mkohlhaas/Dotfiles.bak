@@ -32,6 +32,9 @@ utils.map('n', 'N', 'Nzz')
 vim.cmd [[nmap <C-o> <C-o>zz]]
 vim.cmd [[nmap <C-i> <C-i>zz]]
 
+-- Escape easily from insert mode
+utils.map('i', 'jk', '<Esc>')
+
 -- Grammarous
 vim.cmd [[nmap <C-j> <Plug>(grammarous-open-info-window)]]
 vim.cmd [[nmap <C-n> <Plug>(grammarous-move-to-next-error)]]
