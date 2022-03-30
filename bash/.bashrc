@@ -188,20 +188,22 @@ source $HOME/.completions/ghc.bash
 source <(summon --bash-completion-script `which summon`)
 # npm completion - https://docs.npmjs.com/cli/v6/commands/npm-completion
 source <(npm completion)
+# spago completion
+source <(spago --bash-completion-script $(which spago))
 
 export PAGER=nvimpager
 
 new-purescript-proj () {
   [[ ! -d "$PURESCRIPT_PROJECTS_DIR/$1" ]] &&
   mkdir -p "$PURESCRIPT_PROJECTS_DIR/$1" &&
-  cd  $1 &&
+  cd $1 &&
   npm init -y &&
-  npm install --save-dev spago purescript purty purs-tidy purescript-language-server &&
+  # npm install --save-dev spago purescript purty purs-tidy purescript-language-server &&
   spago init -C &&
   spago run &&
-  echo -e "Add spago bash completion:\n\`\`\`shell\nsource <(spago --bash-completion-script \$(which spago))\n\`\`\`\n" >> README.md &&
+  # echo -e "Add spago bash completion:\n\`\`\`shell\nsource <(spago --bash-completion-script \$(which spago))\n\`\`\`\n" >> README.md &&
   echo -e "Automatic rebuild:\n\`\`\`shell\nspago build --watch\n\`\`\`\n" >> README.md &&
-  sed -i '/node_modules/d' .gitignore &&
+  # sed -i '/node_modules/d' .gitignore &&
   git init &&
   git add . &&
   git commit -m 'initializes repository.'
