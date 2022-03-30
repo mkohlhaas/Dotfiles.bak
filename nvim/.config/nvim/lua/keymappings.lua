@@ -35,6 +35,9 @@ vim.cmd [[nmap <C-i> <C-i>zz]]
 -- Escape easily from insert mode
 utils.map('i', 'jk', '<Esc>')
 
+-- Delete current buffer
+utils.map('n', '<leader>b', ':bd<CR>')
+
 -- Grammarous
 vim.cmd [[nmap <C-j> <Plug>(grammarous-open-info-window)]]
 vim.cmd [[nmap <C-n> <Plug>(grammarous-move-to-next-error)]]
