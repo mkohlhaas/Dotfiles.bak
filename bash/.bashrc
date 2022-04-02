@@ -198,12 +198,12 @@ new-purescript-proj () {
   mkdir -p "$PURESCRIPT_PROJECTS_DIR/$1" &&
   cd $1 &&
   npm init -y &&
-  # npm install --save-dev spago purescript purty purs-tidy purescript-language-server &&
+  npm install --save-dev spago purescript purty purs-tidy purescript-language-server &&
   spago init -C &&
   spago run &&
-  # echo -e "Add spago bash completion:\n\`\`\`shell\nsource <(spago --bash-completion-script \$(which spago))\n\`\`\`\n" >> README.md &&
+  echo -e "Add spago bash completion:\n\`\`\`shell\nsource <(spago --bash-completion-script \$(which spago))\n\`\`\`\n" >> README.md &&
   echo -e "Automatic rebuild:\n\`\`\`shell\nspago build --watch\n\`\`\`\n" >> README.md &&
-  # sed -i '/node_modules/d' .gitignore &&
+  sed -i '/node_modules/d' .gitignore &&
   git init &&
   git add . &&
   git commit -m 'initializes repository.'
