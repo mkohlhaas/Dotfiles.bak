@@ -36,6 +36,7 @@ return require('packer').startup(function(use)
   use 'rhysd/vim-grammarous'                -- powerful grammar checker for Vim
   use 'tjdevries/vlog.nvim'                 -- logger for neovim
   use 'mbbill/undotree'
+  use 'tidalcycles/vim-tidal'
 
   if PackerBootstrap then
     require('packer').sync()

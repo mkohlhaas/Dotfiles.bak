@@ -14,6 +14,8 @@ local set = vim.opt   -- acts like the :set command in vimscript; set global, wi
 g.mapleader      = ' '
 g.maplocalleader = ','
 
+g.tidal_target = "terminal"  -- use built-in terminal instead of tmux
+
 -- automatic compile when plugins.lua changes
 cmd([[
   augroup packer_user_config
