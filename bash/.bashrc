@@ -198,7 +198,7 @@ new-purescript-proj () {
   mkdir -p "$PURESCRIPT_PROJECTS_DIR/$1" &&
   cd $1 &&
   npm init -y &&
-  npm install --save-dev spago purescript purty purs-tidy purescript-language-server &&
+  npm install --save-dev spago purescript purescript-psa purty purs-tidy purescript-language-server &&
   spago init -C &&
   spago run &&
   echo -e "Add spago bash completion:\n\`\`\`shell\nsource <(spago --bash-completion-script \$(which spago))\n\`\`\`\n" >> README.md &&
