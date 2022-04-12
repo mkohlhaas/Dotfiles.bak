@@ -9,6 +9,7 @@ end
 
 require('plugins')
 require('telescope').load_extension('fzf')
+require('telescope').load_extension('hoogle')
 require('settings')
 require('keymappings')
 require('lsp')

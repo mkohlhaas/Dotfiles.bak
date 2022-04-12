@@ -17,6 +17,7 @@ return require('packer').startup(function(use)
   -- sudo xbps-install rg fd
   use { 'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} } }
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use { 'psiska/telescope-hoogle.nvim' }
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
   use 'NLKNguyen/papercolor-theme'
