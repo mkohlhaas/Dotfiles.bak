@@ -38,6 +38,7 @@ return require('packer').startup(function(use)
   use 'tjdevries/vlog.nvim'                 -- logger for neovim
   use 'mbbill/undotree'
   use 'tidalcycles/vim-tidal'
+  use 'vimwiki/vimwiki'
 
   if PackerBootstrap then
     require('packer').sync()
