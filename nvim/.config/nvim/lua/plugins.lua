@@ -2,13 +2,13 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- Packer can manage itself
   use 'williamboman/nvim-lsp-installer'
   use 'neovim/nvim-lspconfig'
-  use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/vim-vsnip'
-  use 'hrsh7th/cmp-vsnip'
+  -- use 'hrsh7th/cmp-buffer'
+  -- use 'hrsh7th/cmp-path'
+  -- use 'hrsh7th/cmp-cmdline'
+  -- use 'hrsh7th/cmp-vsnip'
 
   use { 'inkarkat/vim-AdvancedSorters', requires = 'inkarkat/vim-ingo-library' }
 
@@ -28,12 +28,12 @@ return require('packer').startup(function(use)
   use 'purescript-contrib/purescript-vim'   -- Purescript language support providing syntax highlighting and indentation
   use 'onsails/lspkind-nvim'                -- This plugin adds vscode-like pictograms to neovim's built-in lsp.
   use { 'numToStr/Comment.nvim', config = function() require('Comment').setup() end }
-  -- use { 'Mephistophiles/surround.nvim', config = function() require"surround".setup {mappings_style = "sandwich"} end }
-  -- use { 'folke/trouble.nvim', requires = "kyazdani42/nvim-web-devicons", config = function() require("trouble").setup {
+  use { 'Mephistophiles/surround.nvim', config = function() require"surround".setup {mappings_style = "sandwich"} end }
+  use { 'folke/trouble.nvim', requires = "kyazdani42/nvim-web-devicons", config = function() require("trouble").setup {
       -- your configuration comes here
       -- or leave it empty to use the default settings
       -- refer to the configuration section below
-  --  } end }
+   } end }
   use 'rhysd/vim-grammarous'                -- powerful grammar checker for Vim
   use 'tjdevries/vlog.nvim'                 -- logger for neovim
   use 'mbbill/undotree'
