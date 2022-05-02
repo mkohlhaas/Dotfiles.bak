@@ -47,4 +47,4 @@ vim.cmd [[nmap <C-n> <Plug>(grammarous-move-to-next-error)]]
 vim.cmd [[nmap <C-p> <Plug>(grammarous-move-to-previous-error)]]
 
 utils.map('n', '<C-s>',  ':set spell!<CR>')
-utils.map('n', '<Leader>w',  ':w<CR>')
+utils.map('n', '<Leader>ww',  ':w<CR>')

@@ -16,6 +16,13 @@ g.maplocalleader = ','
 
 g.tidal_target = "terminal"  -- use built-in terminal instead of tmux
 
+cmd([[
+  augroup purescript_fold
+    autocmd!
+    autocmd Filetype purescript setlocal foldmethod=syntax
+  augroup end
+]])
+
 -- automatic compile when plugins.lua changes
 cmd([[
   augroup packer_user_config
