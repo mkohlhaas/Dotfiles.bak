@@ -171,6 +171,10 @@ if [ -f /usr/share/fzf/key-bindings.bash ]; then
   source /usr/share/fzf/key-bindings.bash
 fi
 
+# Odin
+# Odin only supports straight path names, no ~, no softlinks, ...'
+export PATH=$HOME/Odin:$PATH
+
 # mpc - Music Player Client - completions
 source /usr/share/doc/mpc/contrib/mpc-completion.bash
 # mpv - Media playser completions
