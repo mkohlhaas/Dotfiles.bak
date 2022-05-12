@@ -72,6 +72,8 @@ lsp_installer.on_server_ready(function(server)
     server:setup(opts)
 end)
 
+require'lspconfig'.ols.setup{ on_attach = on_attach }
+
 -- Disable the annoying LSP virtual text
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
