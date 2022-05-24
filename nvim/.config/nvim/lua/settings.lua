@@ -34,6 +34,7 @@ cmd([[
 cmd 'syntax enable'
 cmd 'filetype plugin indent on'
 cmd 'colorscheme PaperColor'
+-- cmd 'colorscheme nord'
 cmd [[match errorMsg /\s\+$/]]  -- show trailing whitespace
 -- o.termguicolors    = true
 -- cmd 'colorscheme nord'

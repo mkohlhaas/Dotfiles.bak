@@ -40,6 +40,8 @@ return require('packer').startup(function(use)
   use 'tidalcycles/vim-tidal'
   use 'Tetralux/odin.vim'
 
+  use { 'glts/vim-textobj-comment', requires = 'kana/vim-textobj-user' }
+
   if PackerBootstrap then
     require('packer').sync()
   end
