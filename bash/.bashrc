@@ -157,9 +157,6 @@ export PATH=./node_modules/.bin/:$PATH
 export PURESCRIPT_PROJECTS_DIR="$HOME/Gitrepos"
 export CDPATH="$PURESCRIPT_PROJECTS_DIR:$CDPATH"
 
-# Cabal/Haskell support
-export PATH=$HOME/.cabal/bin:$PATH
-
 # Haskell GHCup integration - https://www.haskell.org/ghcup/
 [ -f "/home/schmidh/.ghcup/env" ] && source "/home/schmidh/.ghcup/env" # ghcup-env
 
@@ -182,14 +179,14 @@ source /usr/share/doc/mpc/contrib/mpc-completion.bash
 # uftrace command completions
 source /usr/share/bash-completion/completions/uftrace
 # Haskell stack completions
-# source <(stack --bash-completion-script $(which stack))
+source <(stack --bash-completion-script $(which stack))
 # Cabal completions - https://github.com/haskell/cabal/blob/master/cabal-install/bash-completion/cabal
-# source $HOME/.completions/cabal
+source $HOME/.completions/cabal
 # GHC completions - https://github.com/ghc/ghc/tree/master/utils/completion
-# source $HOME/.completions/ghc.bash
+source $HOME/.completions/ghc.bash
 # Summoner completions - https://kowainik.github.io/projects/summoner
 # Summoner is a tool for scaffolding fully configured batteries-included production-level Haskell projects.
-# source <(summon --bash-completion-script `which summon`)
+source <(summon --bash-completion-script `which summon`)
 # npm completion - https://docs.npmjs.com/cli/v6/commands/npm-completion
 source <(npm completion)
 # spago completion
