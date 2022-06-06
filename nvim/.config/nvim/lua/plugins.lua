@@ -20,6 +20,8 @@ return require('packer').startup(function(use)
   -- use { 'psiska/telescope-hoogle.nvim' }
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
 
+  use 'agude/vim-eldar'                     -- A dark color scheme for vim based on Elflord.
+  use 'romainl/Apprentice'                  -- A dark, low-contrast, Vim colorscheme.
   use 'NLKNguyen/papercolor-theme'
   use 'arcticicestudio/nord-vim'            -- An arctic, north-bluish clean and elegant Vim color theme.
   use 'nelstrom/vim-visual-star-search'     -- Start a * or # search from a visual block.
@@ -41,6 +43,8 @@ return require('packer').startup(function(use)
   use 'Tetralux/odin.vim'
 
   use { 'glts/vim-textobj-comment', requires = 'kana/vim-textobj-user' }
+
+  use 'neovimhaskell/haskell-vim'
 
   if PackerBootstrap then
     require('packer').sync()
