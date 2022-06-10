@@ -12,6 +12,8 @@ syntax on                                         " Enable syntax highlighting
 set hidden                                        " If the active buffer is modified, Vim will automatically hide it when we navigate away from it.
 
 call plug#begin()                                 " Load plugins.
+Plug 'agude/vim-eldar'
+Plug 'lifepillar/vim-colortemplate'
 Plug 'easymotion/vim-easymotion'                  " Highlighs all possible choices and allows you to press one key to jump directly to the target. Type <space> twice then movement key like w, f, t, b, e ,k, j etc. to invoke EasyMotion.
 Plug 'junegunn/vim-plug'                          " Documentation for the plugin manager.
 Plug 'simnalamburt/vim-mundo'                     " Vim undo tree visualizer.

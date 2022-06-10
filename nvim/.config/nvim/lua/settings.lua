@@ -33,14 +33,10 @@ cmd([[
 
 cmd 'syntax enable'
 cmd 'filetype plugin indent on'
--- cmd 'colorscheme PaperColor'
-g.eldar_text        = "#D3D3D3"
-g.eldar_background  = "#2B2B2B"
-cmd 'colorscheme eldar'
--- cmd 'colorscheme nord'
+cmd 'colorscheme gruvbox'
 cmd [[match errorMsg /\s\+$/]]  -- show trailing whitespace
+cmd [[autocmd FileType haskell,purescript autocmd BufWritePre <buffer> %s/\s\+$//e]] -- remove trailing whitespace when saving
 -- o.termguicolors    = true
--- cmd 'colorscheme nord'
 -- set.background     = 'light'
 
 set.completeopt    = 'menu,menuone,noselect'
