@@ -105,6 +105,7 @@ source $OSH/oh-my-bash.sh
 alias l1='ls -1l'
 alias vim='vim-huge'
 alias gaap='git add .; git commit --amend --no-edit ; git push --force'
+alias upda='sudo xbps-install -Suy'
 
 export VISUAL="vim-huge"
 # set -o vi
