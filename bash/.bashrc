@@ -195,6 +195,7 @@ source <(spago --bash-completion-script $(which spago))
 
 export PAGER=nvimpager
 
+# Use n for installing node - https://github.com/tj/n
 new-purescript-proj () {
   [[ ! -d "$PURESCRIPT_PROJECTS_DIR/$1" ]] &&
   mkdir -p "$PURESCRIPT_PROJECTS_DIR/$1" &&
