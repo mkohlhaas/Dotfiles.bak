@@ -39,7 +39,7 @@ lsp_installer.on_server_ready(function(server)
 
     if server.name == "purescriptls" then
       -- vim.api.nvim_command('echom "purescriptls starting..."')
-        vim.lsp.set_log_level('debug')
+        -- vim.lsp.set_log_level('debug')
         opts = { settings = {
                    purescript = {
                      formatter = "purs-tidy",
@@ -52,6 +52,17 @@ lsp_installer.on_server_ready(function(server)
                  root_dir = util.root_pattern('output')
                }
     end
+
+    -- if server.name == "hls" then
+    --     vim.lsp.set_log_level('debug') -- see which plugins are loaded
+    --     opts = { settings = {
+    --                haskell = {
+    --                  formattingProvider = "ormolu",
+    --                },
+    --              },
+    --              on_attach = on_attach,
+    --            }
+    -- end
 
     if server.name == "sumneko_lua" then
         opts = { settings =
