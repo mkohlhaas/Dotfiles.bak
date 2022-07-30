@@ -222,7 +222,7 @@ source ~/.local/share/icons-in-terminal/icons_bash.sh
 
 # Select TV channel
 sc () {
-  curl -s http://192.168.0.47:22000/play/sundtek.m3u | grep 22000 | dmenu -i -l 10 | xargs -r mpv & disown
+  curl -s http://192.168.178.20:22000/play/sundtek.m3u | grep 22000 | dmenu -i -l 10 | xargs -r mpv & disown
 }
 
 # BEGIN_KITTY_SHELL_INTEGRATION
