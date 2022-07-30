@@ -31,6 +31,8 @@ local on_attach = function(_, bufnr)
   buf_set_keymap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
   buf_set_keymap('n', '<space>qq', '<cmd>lua vim.diagnostic.setloclist()<CR>', opts)
   buf_set_keymap("n", "<space>fo", "<cmd>lua vim.lsp.buf.formatting()<CR>", opts)
+  buf_set_keymap("n", "<leader>cl","<cmd>lua vim.lsp.codelens.refresh()<CR>", opts)
+  buf_set_keymap("n", "<leader>cc", "<cmd>lua vim.lsp.codelens.run()<CR>", opts)
 end
 
 -- Register a handler that will be called for all installed servers.
