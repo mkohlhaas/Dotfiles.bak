@@ -41,6 +41,9 @@ utils.map('n', '<leader>b', ':bd<CR>')
 -- Activate/deactivate undo tree
 utils.map('n', '<F5>', ':UndotreeToggle<CR>')
 
+-- Replace with Unicode variants for Haskell/PureScript source code
+utils.map('n', '<leader>sh', ':%s/forall/∀/ge | %s/->/→/ge | %s/<-/←/ge | %s/::/∷/ge | %s/=>/⇒/ge | %s/<=/⇐/ge<cr>')
+
 -- Grammarous
 vim.cmd [[nmap <C-j> <Plug>(grammarous-open-info-window)]]
 vim.cmd [[nmap <C-n> <Plug>(grammarous-move-to-next-error)]]
