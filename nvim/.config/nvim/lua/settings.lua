@@ -16,6 +16,9 @@ g.maplocalleader = ','
 
 g.tidal_target = "terminal"  -- use built-in terminal instead of tmux
 
+-- Clipboard integration; also install xclip: `xbps-install xclip`
+cmd 'set clipboard+=unnamedplus'
+
 cmd([[
   augroup purescript_fold
     autocmd!
