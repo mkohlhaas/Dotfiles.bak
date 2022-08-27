@@ -193,6 +193,8 @@ source <(summon --bash-completion-script `which summon`)
 source <(npm completion)
 # spago completion
 source <(spago --bash-completion-script $(which spago))
+# yt-dlp completions
+source /home/schmidh/.completions/yt-dlp
 
 export PAGER=nvimpager
 
