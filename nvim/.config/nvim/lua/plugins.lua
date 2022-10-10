@@ -41,7 +41,7 @@ return require('packer').startup(function(use)
 
   use { 'glts/vim-textobj-comment', requires = 'kana/vim-textobj-user' }
 
-  use 'neovimhaskell/haskell-vim'
+  use 'wenzel-hoffman/haskell-with-unicode.vim'
 
   if PackerBootstrap then
     require('packer').sync()
