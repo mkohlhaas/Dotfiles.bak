@@ -42,7 +42,8 @@ utils.map('n', '<leader>b', ':bd<CR>')
 utils.map('n', '<F5>', ':UndotreeToggle<CR>')
 
 -- Replace with Unicode variants for Haskell/PureScript source code
-utils.map('n', '<leader>sh', ':%s/forall/∀/ge | %s/->/→/ge | %s/<-/←/ge | %s/::/∷/ge | %s/=>/⇒/ge | %s/<=/⇐/ge<cr>')
+utils.map('n', '<leader>sh', ':%s/\\s\\+->\\s\\+/ → /ge | %s/\\s\\+<-\\s\\+/ ← /ge | %s/\\s\\+::\\s\\+/ ∷ /ge | %s/\\s\\+=>\\s\\+/ ⇒ /ge | %s/\\s\\+<=\\s\\+/ ⇐ /ge | %s/\\<forall\\>/∀/ge<cr>')
+-- utils.map('n', '<leader>sh', ':%s/\\s\\+<=\\s\\+/ ⇐ /ge<cr>')
 
 -- Grammarous
 vim.cmd [[nmap <C-j> <Plug>(grammarous-open-info-window)]]
