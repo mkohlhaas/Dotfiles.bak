@@ -43,8 +43,6 @@ return require('packer').startup(function(use)
 
   use 'wenzel-hoffman/haskell-with-unicode.vim'
 
-  use 'msuperdock/vim-agda'
-
   if PackerBootstrap then
     require('packer').sync()
   end
