@@ -50,6 +50,7 @@ set.breakindent    = true
 set.number         = true
 set.relativenumber = true
 set.cursorline     = true
+set.wrap           = false
 set.shiftwidth     = 2     -- set shift width to 4 spaces.
 set.tabstop        = 2     -- set tab width to 4 columns.
 set.expandtab      = true  -- Use space characters instead of tabs.
