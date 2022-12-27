@@ -36,8 +36,6 @@ return require('packer').startup(function(use)
   use 'rhysd/vim-grammarous'                -- powerful grammar checker for Vim
   use 'tjdevries/vlog.nvim'                 -- logger for neovim
   use 'mbbill/undotree'
-  use 'tidalcycles/vim-tidal'
-  use 'Tetralux/odin.vim'
 
   use { 'glts/vim-textobj-comment', requires = 'kana/vim-textobj-user' }
 
