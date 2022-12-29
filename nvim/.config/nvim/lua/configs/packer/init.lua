@@ -1,25 +1,10 @@
-return require('packer').startup(function(use)
-  use 'wbthomason/packer.nvim' -- Packer can manage itself
-  use 'williamboman/nvim-lsp-installer'
-  use 'neovim/nvim-lspconfig'
-  use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/vim-vsnip'
-  -- use 'hrsh7th/cmp-buffer'
-  -- use 'hrsh7th/cmp-path'
-  -- use 'hrsh7th/cmp-cmdline'
-  -- use 'hrsh7th/cmp-vsnip'
-
-  use { 'inkarkat/vim-AdvancedSorters', requires = 'inkarkat/vim-ingo-library' }
-
+return require("packer").startup(function()
+  use("wbthomason/packer.nvim") --> packer plugin manager
   -- Highly extendable fuzzy finder
   -- :checkhealth telescope
-  -- sudo xbps-install rg fd
+  -- sudo xbps-install ripgrep fd
   use { 'nvim-telescope/telescope.nvim', requires = { {'nvim-lua/plenary.nvim'} } }
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-  -- use { 'psiska/telescope-hoogle.nvim' }
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-
   use 'gruvbox-community/gruvbox'
   use 'nelstrom/vim-visual-star-search'        -- Start a * or # search from a visual block.
   use 'romainl/vim-cool'                       -- A very simple plugin that makes hlsearch more useful.
@@ -36,12 +21,21 @@ return require('packer').startup(function(use)
   use 'rhysd/vim-grammarous'                -- powerful grammar checker for Vim
   use 'tjdevries/vlog.nvim'                 -- logger for neovim
   use 'mbbill/undotree'
-
   use { 'glts/vim-textobj-comment', requires = 'kana/vim-textobj-user' }
-
   use 'wenzel-hoffman/haskell-with-unicode.vim'
-
-  if PackerBootstrap then
-    require('packer').sync()
-  end
+  use({
+      "glepnir/lspsaga.nvim",
+      branch = "main",
+      config = function()
+          local saga = require("lspsaga")
+          saga.init_lsp_saga({
+              -- your configuration
+          })
+      end,
+  })
+  use {
+      "williamboman/mason.nvim",
+      "williamboman/mason-lspconfig.nvim",
+      "neovim/nvim-lspconfig",
+  }
 end)

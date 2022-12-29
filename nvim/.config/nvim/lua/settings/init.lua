@@ -1,20 +1,14 @@
--- https://vonheikemen.github.io/devlog/tools/configuring-neovim-using-lua/
-
--- local utils = require('nvimutils')
-
 local cmd = vim.cmd
 local g   = vim.g     -- global variables
 local set = vim.opt   -- acts like the :set command in vimscript; set global, window and buffer settings
--- local o   = vim.o     -- general settings
--- local wo  = vim.wo    -- window-scoped options
--- local bo  = vim.bo    -- buffer-scoped options
--- local fn  = vim.fn
+local o   = vim.o     -- general settings
+local wo  = vim.wo    -- window-scoped options
+local bo  = vim.bo    -- buffer-scoped options
+local fn  = vim.fn
 
 -- Map leader to space
 g.mapleader      = ' '
 g.maplocalleader = ','
-
-g.tidal_target = "terminal"  -- use built-in terminal instead of tmux
 
 -- Clipboard integration; also install xclip: `xbps-install xclip`
 cmd 'set clipboard+=unnamedplus'
@@ -26,11 +20,11 @@ cmd([[
   augroup end
 ]])
 
--- automatic compile when plugins.lua changes
+-- automatic compile when packer file changes
 cmd([[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+    autocmd BufWritePost "packer-config/init.lua" source <afile> | PackerCompile
   augroup end
 ]])
 
@@ -39,12 +33,9 @@ cmd 'filetype plugin indent on'
 cmd 'colorscheme gruvbox'
 cmd [[match errorMsg /\s\+$/]]  -- show trailing whitespace
 cmd [[autocmd FileType haskell,purescript autocmd BufWritePre <buffer> %s/\s\+$//e]] -- remove trailing whitespace when saving
--- o.termguicolors    = true
--- set.background     = 'light'
 
 set.completeopt    = 'menu,menuone,noselect'
 set.signcolumn     = 'yes'
--- set.spell          = true
 set.hidden         = true
 set.breakindent    = true
 set.number         = true

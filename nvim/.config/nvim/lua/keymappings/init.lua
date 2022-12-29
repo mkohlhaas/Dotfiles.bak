@@ -39,7 +39,7 @@ utils.map('i', 'jk', '<Esc>')
 utils.map('n', '<leader>b', ':bd<CR>')
 
 -- Activate/deactivate undo tree
-utils.map('n', '<F5>', ':UndotreeToggle<CR>')
+utils.map('n', '<F3>', ':UndotreeToggle<CR>')
 
 -- Replace with Unicode variants for Haskell/PureScript source code
 utils.map('n', '<leader>sh', ':%s/\\s\\+->\\s\\+/ → /ge | %s/\\s\\+<-\\s\\+/ ← /ge | %s/\\s\\+::\\s\\+/ ∷ /ge | %s/\\s\\+=>\\s\\+/ ⇒ /ge | %s/\\s\\+<=\\s\\+/ ⇐ /ge | %s/\\<forall\\>/∀/ge<cr>')

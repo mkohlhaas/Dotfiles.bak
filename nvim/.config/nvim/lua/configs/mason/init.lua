@@ -1,8 +1,3 @@
-local lsp_installer = require("nvim-lsp-installer")
-local util = require 'lspconfig.util'
-
--- Use an on_attach function to only map the following keys after the language server attaches to the current buffer
--- local on_attach = function(client, bufnr)
 local on_attach = function(_, bufnr)
   local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
   local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
@@ -35,57 +30,13 @@ local on_attach = function(_, bufnr)
   buf_set_keymap("n", "<leader>cc", "<cmd>lua vim.lsp.codelens.run()<CR>", opts)
 end
 
--- Register a handler that will be called for all installed servers.
-lsp_installer.on_server_ready(function(server)
-    local opts = { on_attach = on_attach }
-
-    if server.name == "purescriptls" then
-      -- vim.api.nvim_command('echom "purescriptls starting..."')
-        -- vim.lsp.set_log_level('debug')
-        opts = { settings = {
-                   purescript = {
-                     formatter = "purs-tidy",
-                     -- addNpmPath = true,
-                     -- addSpagoSources = false
-                   },
-                 },
-                 on_attach = on_attach,
-                 -- This workaround makes it work:
-                 root_dir = util.root_pattern('output')
-               }
-    end
-
-    -- if server.name == "hls" then
-    --     vim.lsp.set_log_level('debug') -- see which plugins are loaded
-    --     opts = { settings = {
-    --                haskell = {
-    --                  formattingProvider = "ormolu",
-    --                },
-    --              },
-    --              on_attach = on_attach,
-    --            }
-    -- end
-
-    if server.name == "sumneko_lua" then
-        opts = { settings =
-                  { Lua =
-                    { runtime =
-                      { version = "LuaJIT", },
-                        diagnostics = { globals = {'vim'}, },
-                        workspace = { library = vim.api.nvim_get_runtime_file("", true), },
-                        telemetry = { enable = false, },
-                    },
-                  },
-                 on_attach = on_attach
-               }
-    end
-
-    -- This setup() function is exactly the same as lspconfig's setup function.
-    -- Refer to https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
-    server:setup(opts)
-end)
-
-require'lspconfig'.ols.setup{ on_attach = on_attach }
+require("mason").setup()
+require("mason-lspconfig").setup()
+require("mason-lspconfig").setup_handlers {
+    function (server_name)
+        require("lspconfig")[server_name].setup { on_attach = on_attach }
+    end,
+}
 
 -- Disable the annoying LSP virtual text
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
