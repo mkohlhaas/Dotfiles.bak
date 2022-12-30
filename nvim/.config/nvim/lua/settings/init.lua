@@ -24,7 +24,7 @@ cmd([[
 cmd([[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost "packer-config/init.lua" source <afile> | PackerCompile
+    autocmd BufWritePost lua/configs/packer/init.lua source <afile> | PackerCompile
   augroup end
 ]])
 
