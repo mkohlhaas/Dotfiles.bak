@@ -10,7 +10,6 @@ return require("packer").startup(function()
   use 'romainl/vim-cool'                       -- A very simple plugin that makes hlsearch more useful.
   use 'machakann/vim-highlightedyank'          -- Make the yanked region apparent!
   use 'purescript-contrib/purescript-vim'      -- Purescript language support providing syntax highlighting and indentation
-  use 'onsails/lspkind-nvim'                   -- This plugin adds vscode-like pictograms to neovim's built-in lsp.
   use { 'numToStr/Comment.nvim', config = function() require('Comment').setup() end }
   use { 'Mephistophiles/surround.nvim', config = function() require"surround".setup { mappings_style = "sandwich" } end }
   use { 'folke/trouble.nvim', requires = "kyazdani42/nvim-web-devicons", config = function() require("trouble").setup {
