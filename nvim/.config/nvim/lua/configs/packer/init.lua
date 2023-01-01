@@ -17,8 +17,8 @@ return require("packer").startup(function()
       -- or leave it empty to use the default settings
       -- refer to the configuration section below
    } end }
-  use 'rhysd/vim-grammarous'                -- powerful grammar checker for Vim
-  use 'tjdevries/vlog.nvim'                 -- logger for neovim
+  use 'rhysd/vim-grammarous'                   -- powerful grammar checker for Vim
+  use 'tjdevries/vlog.nvim'                    -- logger for neovim
   use 'mbbill/undotree'
   use { 'glts/vim-textobj-comment', requires = 'kana/vim-textobj-user' }
   use 'wenzel-hoffman/haskell-with-unicode.vim'
@@ -37,4 +37,5 @@ return require("packer").startup(function()
       "williamboman/mason-lspconfig.nvim",
       "neovim/nvim-lspconfig",
   }
+  use 'derekelkins/agda-vim'                   -- just for syntax highlighting
 end)
