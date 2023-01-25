@@ -15,6 +15,12 @@
 (load-file (let ((coding-system-for-read 'utf-8))
                 (shell-command-to-string "agda-mode locate")))
 
+(setq initial-frame-alist
+  (append initial-frame-alist
+    '((top    .   1)
+      (width  . 120)
+      (height .  68))))
+
 (load-theme 'adwaita)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
