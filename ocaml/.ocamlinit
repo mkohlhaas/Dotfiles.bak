@@ -1,0 +1,2 @@
+#require "base";;
+#utop_prompt_fancy_light;;
