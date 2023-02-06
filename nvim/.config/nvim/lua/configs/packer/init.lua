@@ -38,4 +38,13 @@ return require("packer").startup(function()
       "neovim/nvim-lspconfig",
   }
   use 'derekelkins/agda-vim'                   -- just for syntax highlighting
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
+  use 'SirVer/ultisnips'
+  use 'quangnguyen30192/cmp-nvim-ultisnips'
+  use 'honza/vim-snippets'
 end)
+

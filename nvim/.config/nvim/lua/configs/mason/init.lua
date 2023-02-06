@@ -30,15 +30,20 @@ local on_attach = function(_, bufnr)
   buf_set_keymap("n", "<leader>cc", "<cmd>lua vim.lsp.codelens.run()<CR>", opts)
 end
 
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 require("mason").setup()
 require("mason-lspconfig").setup()
 require("mason-lspconfig").setup_handlers {
     function (server_name)
-        require("lspconfig")[server_name].setup { on_attach = on_attach }
+        require("lspconfig")[server_name].setup {
+          on_attach = on_attach,
+          capabilities = capabilities,
+        }
     end,
 }
 
--- Disable the annoying LSP virtual text
+-- Disable the annoying LSP virtual text.
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
     virtual_text = false,
