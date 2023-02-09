@@ -159,6 +159,9 @@ export PATH=./node_modules/.bin/:$PATH
 export PURESCRIPT_PROJECTS_DIR="$HOME/Gitrepos"
 export CDPATH="$PURESCRIPT_PROJECTS_DIR:$CDPATH"
 
+# .NET support
+export PATH=$HOME/.dotnet:$PATH
+
 # Haskell GHCup integration - https://www.haskell.org/ghcup/
 [ -f "/home/schmidh/.ghcup/env" ] && source "/home/schmidh/.ghcup/env" # ghcup-env
 
@@ -169,10 +172,6 @@ fi
 if [ -f /usr/share/fzf/key-bindings.bash ]; then
   source /usr/share/fzf/key-bindings.bash
 fi
-
-# Odin
-# Odin only supports straight path names, no ~, no softlinks, ...'
-export PATH=$HOME/Odin:$PATH
 
 # mpc - Music Player Client - completions
 source /usr/share/doc/mpc/contrib/mpc-completion.bash
