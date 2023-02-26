@@ -32,7 +32,7 @@ cmd 'syntax enable'
 cmd 'filetype plugin indent on'
 cmd 'colorscheme gruvbox'
 cmd [[match errorMsg /\s\+$/]]  -- show trailing whitespace
-cmd [[autocmd FileType haskell,purescript,agda,ocaml autocmd BufWritePre <buffer> %s/\s\+$//e]] -- remove trailing whitespace when saving
+cmd [[autocmd FileType haskell,purescript,agda,ocaml,erlang autocmd BufWritePre <buffer> %s/\s\+$//e]] -- remove trailing whitespace when saving
 
 set.completeopt    = 'menu,menuone,noselect'
 set.signcolumn     = 'yes'
