@@ -194,6 +194,8 @@ source <(npm completion)
 source <(spago --bash-completion-script $(which spago))
 # yt-dlp completions
 source /home/schmidh/.completions/yt-dlp
+#erlang.mk completions
+source /home/schmidh/.completions/erlang_mk
 
 export PAGER=nvimpager
 
