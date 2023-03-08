@@ -196,6 +196,10 @@ source <(spago --bash-completion-script $(which spago))
 source /home/schmidh/.completions/yt-dlp
 #erlang.mk completions
 source /home/schmidh/.completions/erlang_mk
+#rustup
+source /home/schmidh/.completions/rustup
+#cargo
+source /home/schmidh/.completions/cargo
 
 export PAGER=nvimpager
 
@@ -230,3 +234,4 @@ if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integr
 # opam configuration
 test -r /home/schmidh/.opam/opam-init/init.sh && . /home/schmidh/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
+. "$HOME/.cargo/env"
