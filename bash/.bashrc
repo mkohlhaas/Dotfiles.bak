@@ -220,6 +220,24 @@ new-purescript-proj () {
   git commit -m 'initializes repository.'
 }
 
+new-erl-purescript-proj () {
+  [[ ! -d "$PURESCRIPT_PROJECTS_DIR/$1" ]] &&
+  mkdir -p "$PURESCRIPT_PROJECTS_DIR/$1" &&
+  cd $1 &&
+  npm init -y &&
+  npm install --save-dev spago purescript@0.15.7 purescript-psa purty purs-tidy purescript-language-server &&
+  spago init -C &&
+  curl -O https://gist.githubusercontent.com/mkohlhaas/6e108ca75ea1947a8b71d0d09aaf68f7/raw/19509f1222617687dfda661aac518af677939a71/packages.dhall
+  sed -i '2i , backend = "purerl"' spago.dhall
+  spago run &&
+  echo -e "Add spago bash completion:\n\`\`\`shell\nsource <(spago --bash-completion-script \$(which spago))\n\`\`\`\n" >> README.md &&
+  echo -e "Automatic rebuild:\n\`\`\`shell\nspago build --watch\n\`\`\`\n" >> README.md &&
+  sed -i '/node_modules/d' .gitignore &&
+  git init &&
+  git add . &&
+  git commit -m 'initializes repository.'
+}
+
 # Local binaries
 export PATH=$PATH:$HOME/bin:$HOME/local/bin:$HOME/.local/bin
 
