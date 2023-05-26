@@ -197,6 +197,8 @@ source <(spago --bash-completion-script $(which spago))
 source /home/schmidh/.completions/yt-dlp
 #erlang.mk completions
 source /home/schmidh/.completions/erlang_mk
+# kerl completions - kerl is a build tool for building Erlang itself
+source /home/schmidh/.completions/kerl
 #rustup
 source /home/schmidh/.completions/rustup
 #cargo
