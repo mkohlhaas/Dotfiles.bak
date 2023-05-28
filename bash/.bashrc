@@ -160,6 +160,9 @@ export PATH=./bin/:$PATH
 export PURESCRIPT_PROJECTS_DIR="$HOME/Gitrepos"
 export CDPATH="$PURESCRIPT_PROJECTS_DIR:$CDPATH"
 
+# rebar3
+export PATH=$HOME/.cache/rebar3/bin:$PATH
+
 # .NET support
 export PATH=$HOME/.dotnet:$PATH
 
