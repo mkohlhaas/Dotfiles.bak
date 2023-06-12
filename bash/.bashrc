@@ -160,8 +160,17 @@ export PATH=./bin/:$PATH
 export PURESCRIPT_PROJECTS_DIR="$HOME/Gitrepos"
 export CDPATH="$PURESCRIPT_PROJECTS_DIR:$CDPATH"
 
-# rebar3
+# Erlang & rebar3
 export PATH=$HOME/.cache/rebar3/bin:$PATH
+export ERL_AFLAGS="+pc unicode -kernel shell_history enabled"
+export KERL_DOC_TARGETS="man html pdf chunks"
+export KERL_INSTALL_MANPAGES=yes
+export KERL_BUILD_DOCS=yes
+export KERL_BUILD_BACKEND=tarball
+. ~/Kerl/26.0/activate
+
+#rebar3 completions
+source /home/schmidh/.completions/rebar3
 
 # .NET support
 export PATH=$HOME/.dotnet:$PATH
