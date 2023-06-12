@@ -155,8 +155,8 @@ export PATH=$PATH:$HOME/bin/git-fuzzy/bin
 
 # Purescript support
 export PATH=$HOME/.npm/bin:$PATH
-export PATH=./node_modules/.bin/:$PATH
-export PATH=./bin/:$PATH
+export PATH=$HOME/node_modules/.bin/:$PATH
+export PATH=$HOME/bin/:$PATH
 export PURESCRIPT_PROJECTS_DIR="$HOME/Gitrepos"
 export CDPATH="$PURESCRIPT_PROJECTS_DIR:$CDPATH"
 
