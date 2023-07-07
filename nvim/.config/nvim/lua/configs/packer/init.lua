@@ -21,31 +21,14 @@ return require("packer").startup(function()
   use 'tjdevries/vlog.nvim'                    -- logger for neovim
   use 'mbbill/undotree'
   use { 'glts/vim-textobj-comment', requires = 'kana/vim-textobj-user' }
-  use 'wenzel-hoffman/haskell-with-unicode.vim'
-  -- use({
-  --     "glepnir/lspsaga.nvim",
-  --     branch = "main",
-  --     config = function()
-  --         local saga = require("lspsaga")
-  --         saga.init_lsp_saga({
-  --             -- your configuration
-  --         })
-  --     end,
-  -- })
   use {
       "williamboman/mason.nvim",
       "williamboman/mason-lspconfig.nvim",
       "neovim/nvim-lspconfig",
   }
-  use 'derekelkins/agda-vim'                   -- just for syntax highlighting
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
-  use 'SirVer/ultisnips'
-  use 'quangnguyen30192/cmp-nvim-ultisnips'
-  use 'honza/vim-snippets'
-  use 'fatih/vim-go'
 end)
-

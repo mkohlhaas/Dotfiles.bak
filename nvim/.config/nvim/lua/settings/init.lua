@@ -9,6 +9,7 @@ local fn  = vim.fn
 -- Map leader to space
 g.mapleader      = ' '
 g.maplocalleader = ','
+g.UltiSnipsSnippetDirectories="[$HOME.'/.config/nvim/UltiSnips']"
 
 -- Clipboard integration; also install xclip: `xbps-install xclip`
 cmd 'set clipboard+=unnamedplus'
