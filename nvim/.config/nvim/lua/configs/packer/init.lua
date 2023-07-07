@@ -46,5 +46,6 @@ return require("packer").startup(function()
   use 'SirVer/ultisnips'
   use 'quangnguyen30192/cmp-nvim-ultisnips'
   use 'honza/vim-snippets'
+  use 'fatih/vim-go'
 end)
 
