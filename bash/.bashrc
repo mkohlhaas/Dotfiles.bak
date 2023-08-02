@@ -137,11 +137,6 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib64/pkgconfig
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib64
 
-# Golang support
-mkdir -p $HOME/Golang
-export GOPATH=$HOME/Golang
-export PATH=$PATH:$GOPATH/bin
-
 # Dart & Flutter support
 export PATH=$PATH:$HOME/Gitrepos/flutter/bin
 export CHROME_EXECUTABLE=/usr/bin/chromium
@@ -249,3 +244,5 @@ if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integr
 # opam configuration
 test -r /home/schmidh/.opam/opam-init/init.sh && . /home/schmidh/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
+export GOPATH="$HOME/go"; export GOROOT="$HOME/.go"; export PATH="$GOPATH/bin:$PATH"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
+alias ggg="$GOPATH/bin/g"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
