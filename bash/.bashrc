@@ -52,6 +52,7 @@ completions=(
   composer
   ssh
   tmux
+  go
 )
 
 # Which aliases would you like to load? (aliases can be found in ~/.oh-my-bash/aliases/*)
@@ -70,6 +71,7 @@ aliases=(
 plugins=(
   git
   npm
+  golang
 )
 
 source $OSH/oh-my-bash.sh
