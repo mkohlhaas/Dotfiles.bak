@@ -69,7 +69,6 @@ aliases=(
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  bashmarks
   npm
 )
 
@@ -245,4 +244,4 @@ if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integr
 test -r /home/schmidh/.opam/opam-init/init.sh && . /home/schmidh/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
 export GOPATH="$HOME/go"; export GOROOT="$HOME/.go"; export PATH="$GOPATH/bin:$PATH"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
-alias ggg="$GOPATH/bin/g"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
+alias g="$GOPATH/bin/g"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
