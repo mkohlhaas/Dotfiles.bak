@@ -108,7 +108,6 @@ alias vim='vim-huge'
 alias gaap='git add .; git commit --amend --no-edit ; git push --force'
 alias upda='sudo xbps-install -Suy'
 alias shs='stylish-haskell -i app/**/*.hs'
-alias bcd=bitcoind -datadir=/run/media/schmidh/0c954391-4861-4eb5-856e-1a42345e6c0c/Bitcoin
 
 export VISUAL="vim-huge"
 # set -o vi
@@ -171,6 +170,9 @@ source /home/schmidh/.completions/rebar3
 
 # .NET support
 export PATH=$HOME/.dotnet:$PATH
+
+# bcc = Bitcoin Core support
+export PATH=$HOME/bcc/bitcoin-25.0/bin:$PATH
 
 # Haskell GHCup integration - https://www.haskell.org/ghcup/
 [ -f "/home/schmidh/.ghcup/env" ] && source "/home/schmidh/.ghcup/env" # ghcup-env
