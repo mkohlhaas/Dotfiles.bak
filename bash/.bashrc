@@ -108,6 +108,7 @@ alias vim='vim-huge'
 alias gaap='git add .; git commit --amend --no-edit ; git push --force'
 alias upda='sudo xbps-install -Suy'
 alias shs='stylish-haskell -i app/**/*.hs'
+alias bcd=bitcoind -datadir=/run/media/schmidh/0c954391-4861-4eb5-856e-1a42345e6c0c/Bitcoin
 
 export VISUAL="vim-huge"
 # set -o vi
