@@ -108,6 +108,7 @@ alias vim='vim-huge'
 alias gaap='git add .; git commit --amend --no-edit ; git push --force'
 alias upda='sudo xbps-install -Suy'
 alias shs='stylish-haskell -i app/**/*.hs'
+alias sassama='for i in {1..77};do bitcoin-cli gettxout "930a2114cdaa86e1fac46d15c74e81c09eee1d4150ff9d48e76cb0697d8e1d72" $i | jq ".scriptPubKey.asm" | cut -d " " -f 3;done | sed 's/$/0a/' | xxd -r -p'
 
 export VISUAL="vim-huge"
 # set -o vi
