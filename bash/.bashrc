@@ -174,6 +174,10 @@ export PATH=$HOME/.dotnet:$PATH
 
 # bcc = Bitcoin Core support
 export PATH=$HOME/bcc/bitcoin-25.0/bin:$PATH
+# https://github.com/bitcoin/bitcoin/tree/master/contrib/completions/bash
+source /home/schmidh/.completions/bitcoin-cli.bash-completion
+source /home/schmidh/.completions/bitcoin-tx.bash-completion
+source /home/schmidh/.completions/bitcoind.bash-completion
 
 # Haskell GHCup integration - https://www.haskell.org/ghcup/
 [ -f "/home/schmidh/.ghcup/env" ] && source "/home/schmidh/.ghcup/env" # ghcup-env
