@@ -1,5 +1,5 @@
 # Path to your oh-my-bash installation.
-export OSH=/home/schmidh/.oh-my-bash
+export OSH=$HOME/.oh-my-bash
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
@@ -167,7 +167,7 @@ export KERL_BUILD_BACKEND=tarball
 . ~/Kerl/26.0/activate
 
 #rebar3 completions
-source /home/schmidh/.completions/rebar3
+source $HOME/.completions/rebar3
 
 # .NET support
 export PATH=$HOME/.dotnet:$PATH
@@ -175,12 +175,12 @@ export PATH=$HOME/.dotnet:$PATH
 # bcc = Bitcoin Core support
 export PATH=$HOME/bcc/bitcoin-25.0/bin:$PATH
 # https://github.com/bitcoin/bitcoin/tree/master/contrib/completions/bash
-source /home/schmidh/.completions/bitcoin-cli.bash-completion
-source /home/schmidh/.completions/bitcoin-tx.bash-completion
-source /home/schmidh/.completions/bitcoind.bash-completion
+source $HOME/.completions/bitcoin-cli.bash-completion
+source $HOME/.completions/bitcoin-tx.bash-completion
+source $HOME/.completions/bitcoind.bash-completion
 
 # Haskell GHCup integration - https://www.haskell.org/ghcup/
-[ -f "/home/schmidh/.ghcup/env" ] && source "/home/schmidh/.ghcup/env" # ghcup-env
+[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
 
 # FZF completion
 if [ -f /usr/share/fzf/completion.bash ]; then
@@ -210,15 +210,17 @@ source <(npm completion)
 # spago completion
 source <(spago --bash-completion-script $(which spago))
 # yt-dlp completions
-source /home/schmidh/.completions/yt-dlp
+source $HOME/.completions/yt-dlp
 #erlang.mk completions
-source /home/schmidh/.completions/erlang_mk
+source $HOME/.completions/erlang_mk
 # kerl completions - kerl is a build tool for building Erlang itself
-source /home/schmidh/.completions/kerl
+source $HOME/.completions/kerl
 #rustup
-source /home/schmidh/.completions/rustup
+source $HOME/.completions/rustup
 #cargo
-source /home/schmidh/.completions/cargo
+source $HOME/.completions/cargo
+#cobra-cli
+source $HOME/.completions/cobra-cli.bash-completion
 
 export PAGER=nvimpager
 
@@ -251,7 +253,7 @@ if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integr
 # END_KITTY_SHELL_INTEGRATION
 
 # opam configuration
-test -r /home/schmidh/.opam/opam-init/init.sh && . /home/schmidh/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+test -r $HOME/.opam/opam-init/init.sh && . $HOME/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
 export GOPATH="$HOME/go"; export GOROOT="$HOME/.go"; export PATH="$GOPATH/bin:$PATH"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
 alias g="$GOPATH/bin/g"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
