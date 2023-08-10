@@ -221,6 +221,8 @@ source $HOME/.completions/rustup
 source $HOME/.completions/cargo
 #cobra-cli
 source $HOME/.completions/cobra-cli.bash-completion
+# jq
+source /home/schmidh/.completions/jq.bash-completion
 
 export PAGER=nvimpager
 
