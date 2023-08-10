@@ -1,4 +1,4 @@
-function jq() {                                                                                   
+function jq() {
 if [ -f $1 ]; then
   FILE=$1; shift
   # Move FILE at the end as expected by native jq
