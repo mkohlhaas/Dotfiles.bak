@@ -1,0 +1,46 @@
+2023-08-13 14:26:58.566 [INF] BTCD: Version 0.23.3-beta
+2023-08-13 14:26:58.567 [INF] BTCD: Loading block database from '/run/media/schmidh/0c954391-4861-4eb5-856e-1a42345e6c0c/BTCD/mainnet/blocks_ffldb'
+2023-08-13 14:26:59.239 [INF] BTCD: Block database loaded
+2023-08-13 14:26:59.252 [INF] INDX: Transaction index is enabled
+2023-08-13 14:26:59.252 [INF] INDX: Committed filter index is enabled
+2023-08-13 14:26:59.254 [INF] INDX: Catching up indexes from height -1 to 0
+2023-08-13 14:26:59.254 [INF] INDX: Indexes caught up to height 0
+2023-08-13 14:26:59.254 [INF] CHAN: Chain state (height 0, hash 000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f, totaltx 1, work 4295032833)
+2023-08-13 14:26:59.254 [INF] RPCS: Generating TLS certificates...
+2023-08-13 14:26:59.304 [INF] RPCS: Done generating TLS certificates
+2023-08-13 14:26:59.305 [INF] RPCS: RPC server listening on [::1]:8334
+2023-08-13 14:26:59.305 [INF] RPCS: RPC server listening on 127.0.0.1:8334
+2023-08-13 14:26:59.305 [INF] AMGR: Loaded 0 addresses from file '/run/media/schmidh/0c954391-4861-4eb5-856e-1a42345e6c0c/BTCD/mainnet/peers.json'
+2023-08-13 14:26:59.305 [INF] CMGR: Server listening on 0.0.0.0:8333
+2023-08-13 14:26:59.305 [INF] CMGR: Server listening on [::]:8333
+2023-08-13 14:26:59.310 [INF] CMGR: 36 addresses found from DNS seed dnsseed.bitcoin.dashjr.org
+2023-08-13 14:26:59.316 [INF] CMGR: 39 addresses found from DNS seed seed.bitcoin.sipa.be
+2023-08-13 14:26:59.318 [INF] CMGR: 37 addresses found from DNS seed seed.bitcoin.jonasschnelli.ch
+2023-08-13 14:26:59.342 [INF] CMGR: 37 addresses found from DNS seed seed.bitcoinstats.com
+2023-08-13 14:26:59.476 [INF] CMGR: 31 addresses found from DNS seed dnsseed.bluematt.me
+2023-08-13 14:27:00.535 [INF] CMGR: 40 addresses found from DNS seed seed.bitnodes.io
+2023-08-13 14:27:04.349 [INF] SYNC: New valid peer 185.119.118.68:8333 (outbound) (/Satoshi:24.0.1/)
+2023-08-13 14:27:04.349 [INF] SYNC: Syncing to block height 802954 from peer 185.119.118.68:8333
+2023-08-13 14:27:04.349 [INF] SYNC: Downloading headers for blocks 1 to 11111 from peer 185.119.118.68:8333
+2023-08-13 14:27:04.382 [INF] SYNC: New valid peer 135.181.232.139:8333 (outbound) (/Satoshi:24.0.0/)
+2023-08-13 14:27:04.382 [INF] SYNC: New valid peer [2a02:578:85ce:1600:1e1b:dff:fee3:774b]:8333 (outbound) (/Satoshi:24.0.1/)
+2023-08-13 14:27:04.647 [INF] SYNC: New valid peer 198.48.132.237:8333 (outbound) (/Satoshi:24.0.1/)
+2023-08-13 14:27:04.705 [INF] SYNC: New valid peer 45.45.27.233:8333 (outbound) (/Satoshi:24.0.1/)
+2023-08-13 14:27:04.705 [INF] SYNC: New valid peer 41.72.154.66:8333 (outbound) (/Satoshi:24.0.1/)
+2023-08-13 14:27:04.746 [INF] SYNC: Verified downloaded block header against checkpoint at height 11111/hash 0000000069e244f73d78e8fd29ba2fd2ed618bd6fa2ee92559f542fdb26e7c1d
+2023-08-13 14:27:04.746 [INF] SYNC: Received 11111 block headers: Fetching blocks
+2023-08-13 14:27:04.858 [INF] SYNC: New valid peer [240f:3c:b06b:1:642:1aff:fe09:2667]:8333 (outbound) (/Satoshi:25.0.0/)
+2023-08-13 14:27:04.942 [INF] SYNC: Lost peer 198.48.132.237:8333 (outbound)
+2023-08-13 14:27:05.171 [INF] SYNC: New valid peer 50.47.86.191:8333 (outbound) (/Satoshi:25.0.0/)
+2023-08-13 14:27:05.181 [INF] SYNC: Lost peer 45.45.27.233:8333 (outbound)
+2023-08-13 14:27:05.355 [INF] SYNC: New valid peer 213.190.213.219:8333 (outbound) (/Satoshi:24.0.1/)
+2023-08-13 14:27:05.500 [INF] SYNC: New valid peer 35.200.95.220:8333 (outbound) (/Satoshi:0.20.1/)
+2023-08-13 14:27:08.100 [INF] CHAN: Verified checkpoint at height 11111/block 0000000069e244f73d78e8fd29ba2fd2ed618bd6fa2ee92559f542fdb26e7c1d
+2023-08-13 14:27:08.101 [INF] SYNC: Downloading headers for blocks 11112 to 33333 from peer 185.119.118.68:8333
+2023-08-13 14:27:08.768 [INF] SYNC: Verified downloaded block header against checkpoint at height 33333/hash 000000002dd5588a74784eaa7ab0507a18ad16a236e7b1ce69f00d7ddfb5d0a6
+2023-08-13 14:27:08.768 [INF] SYNC: Received 22222 block headers: Fetching blocks
+2023-08-13 14:27:17.742 [INF] CHAN: Verified checkpoint at height 33333/block 000000002dd5588a74784eaa7ab0507a18ad16a236e7b1ce69f00d7ddfb5d0a6
+2023-08-13 14:27:17.742 [INF] SYNC: Downloading headers for blocks 33334 to 74000 from peer 185.119.118.68:8333
+2023-08-13 14:27:18.982 [INF] SYNC: Verified downloaded block header against checkpoint at height 74000/hash 0000000000573993a3c9e41ce34471c079dcf5f52a0e824a81e7f953b8661a20
+2023-08-13 14:27:18.983 [INF] SYNC: Received 40667 block headers: Fetching blocks
+2023-08-13 14:27:29.429 [INF] SYNC: Processed 45671 blocks in the last 10.44s (46152 transactions, height 45671, 2010-03-17 20:45:45 +0100 CET)
