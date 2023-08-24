@@ -175,9 +175,9 @@ export PATH=$HOME/.dotnet:$PATH
 # bcc = Bitcoin Core support
 export PATH=$HOME/bcc/bitcoin-25.0/bin:$PATH
 # https://github.com/bitcoin/bitcoin/tree/master/contrib/completions/bash
-source $HOME/.completions/bitcoin-cli.bash-completion
-source $HOME/.completions/bitcoin-tx.bash-completion
-source $HOME/.completions/bitcoind.bash-completion
+source "$HOME/.completions/bitcoin-cli.bash-completion"
+source "$HOME/.completions/bitcoin-tx.bash-completion"
+source "$HOME/.completions/bitcoind.bash-completion"
 
 # Haskell GHCup integration - https://www.haskell.org/ghcup/
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
@@ -199,9 +199,9 @@ source /usr/share/bash-completion/completions/uftrace
 # Haskell stack completions
 # source <(stack --bash-completion-script $(which stack))
 # Cabal completions - https://github.com/haskell/cabal/blob/master/cabal-install/bash-completion/cabal
-source $HOME/.completions/cabal
+source "$HOME/.completions/cabal"
 # GHC completions - https://github.com/ghc/ghc/tree/master/utils/completion
-source $HOME/.completions/ghc.bash
+source "$HOME/.completions/ghc.bash"
 # Summoner completions - https://kowainik.github.io/projects/summoner
 # Summoner is a tool for scaffolding fully configured batteries-included production-level Haskell projects.
 # source <(summon --bash-completion-script `which summon`)
@@ -210,17 +210,17 @@ source <(npm completion)
 # spago completion
 source <(spago --bash-completion-script $(which spago))
 # yt-dlp completions
-source $HOME/.completions/yt-dlp
+source "$HOME/.completions/yt-dlp"
 #erlang.mk completions
-source $HOME/.completions/erlang_mk
+source "$HOME/.completions/erlang_mk"
 # kerl completions - kerl is a build tool for building Erlang itself
-source $HOME/.completions/kerl
+source "$HOME/.completions/kerl"
 #rustup
-source $HOME/.completions/rustup
+source "$HOME/.completions/rustup"
 #cargo
-source $HOME/.completions/cargo
+source "$HOME/.completions/cargo"
 #cobra-cli
-source $HOME/.completions/cobra-cli.bash-completion
+source "$HOME/.completions/cobra-cli.bash-completion"
 # jq - does not work
 # source $HOME/.completions/jq.bash
 # source $HOME/.completions/jq.bash-completion
@@ -231,7 +231,7 @@ export PAGER=nvimpager
 new-purescript-proj () {
   [[ ! -d "$PURESCRIPT_PROJECTS_DIR/$1" ]] &&
   mkdir -p "$PURESCRIPT_PROJECTS_DIR/$1" &&
-  cd $1 &&
+  cd "$1" &&
   npm init -y &&
   npm install --save-dev spago purescript purescript-psa purty purs-tidy purescript-language-server &&
   spago init -C &&
@@ -260,3 +260,7 @@ test -r $HOME/.opam/opam-init/init.sh && . $HOME/.opam/opam-init/init.sh > /dev/
 
 export GOPATH="$HOME/go"; export GOROOT="$HOME/.go"; export PATH="$GOPATH/bin:$PATH"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
 alias g="$GOPATH/bin/g"; # g-install: do NOT edit, see https://github.com/stefanmaric/g
+
+# temp directory for rr debugger (https://rr-project.org/)
+export RR_TMPDIR=/tmp/rr
+export _RR_TRACE_DIR=/tmp/rr
