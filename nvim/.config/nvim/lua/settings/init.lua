@@ -7,9 +7,10 @@ local bo  = vim.bo    -- buffer-scoped options
 local fn  = vim.fn
 
 -- Map leader to space
-g.mapleader      = ' '
-g.maplocalleader = ','
-g.UltiSnipsSnippetDirectories="[$HOME.'/.config/nvim/UltiSnips']"
+g.mapleader                   = ' '
+g.maplocalleader              = ','
+-- g.UltiSnipsSnippetDirectories = "[$HOME.'/.config/nvim/UltiSnips']"
+g.tagbar_ctags_bin            = 'ctags'
 
 -- Clipboard integration; also install xclip: `xbps-install xclip`
 cmd 'set clipboard+=unnamedplus'
@@ -56,3 +57,4 @@ set.showmode       = true  -- Show the mode you are on the last line.
 set.showmatch      = true  -- Show matching words during a search.
 set.hlsearch       = true  -- Use highlighting when doing a search.
 set.history        = 1000  -- Set the commands to save in history default number is 20.
+set.updatetime     = 100

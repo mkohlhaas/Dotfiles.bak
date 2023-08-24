@@ -26,12 +26,17 @@ return require("packer").startup(function()
       "williamboman/mason-lspconfig.nvim",
       "neovim/nvim-lspconfig",
   }
+  use 'honza/vim-snippets'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
-  use 'L3MON4D3/LuaSnip'
+  use 'dcampos/nvim-snippy'
+  use 'dcampos/cmp-snippy'
+
   use 'Joakker/vim-antlr4'
   use 'fatih/vim-go'
+  use 'preservim/tagbar'
+  use 'airblade/vim-gitgutter'
 end)

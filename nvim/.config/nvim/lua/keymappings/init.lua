@@ -41,6 +41,9 @@ utils.map('n', '<leader>b', ':bd<CR>')
 -- Activate/deactivate undo tree
 utils.map('n', '<F3>', ':UndotreeToggle<CR>')
 
+-- Activate/deactivate tag bar
+utils.map('n', '<F8>', ':TagbarToggle<CR>')
+
 -- Replace with Unicode variants for Haskell/PureScript source code
 utils.map('n', '<leader>sh', ':%s/\\s\\+->\\s\\+/ → /ge | %s/\\s\\+<-\\s\\+/ ← /ge | %s/\\s\\+::\\s\\+/ ∷ /ge | %s/\\s\\+=>\\s\\+/ ⇒ /ge | %s/\\s\\+<=\\s\\+/ ⇐ /ge | %s/\\<forall\\>/∀/ge<cr>')
 -- utils.map('n', '<leader>sh', ':%s/\\s\\+<=\\s\\+/ ⇐ /ge<cr>')
