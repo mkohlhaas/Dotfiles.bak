@@ -9,7 +9,6 @@ return require("packer").startup(function()
   use 'nelstrom/vim-visual-star-search'        -- Start a * or # search from a visual block.
   use 'romainl/vim-cool'                       -- A very simple plugin that makes hlsearch more useful.
   use 'machakann/vim-highlightedyank'          -- Make the yanked region apparent!
-  use 'purescript-contrib/purescript-vim'      -- Purescript language support providing syntax highlighting and indentation
   use { 'numToStr/Comment.nvim', config = function() require('Comment').setup() end }
   use { 'Mephistophiles/surround.nvim', config = function() require"surround".setup { mappings_style = "sandwich" } end }
   use { 'folke/trouble.nvim', requires = "kyazdani42/nvim-web-devicons", config = function() require("trouble").setup {
@@ -26,6 +25,7 @@ return require("packer").startup(function()
       "williamboman/mason-lspconfig.nvim",
       "neovim/nvim-lspconfig",
   }
+
   use 'honza/vim-snippets'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
