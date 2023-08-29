@@ -164,13 +164,16 @@ export KERL_DOC_TARGETS="man html pdf chunks"
 export KERL_INSTALL_MANPAGES=yes
 export KERL_BUILD_DOCS=yes
 export KERL_BUILD_BACKEND=tarball
-. ~/Kerl/26.0/activate
+source "$HOME/Kerl/26.0/activate"
 
 #rebar3 completions
 source $HOME/.completions/rebar3
 
 # .NET support
 export PATH=$HOME/.dotnet:$PATH
+
+# YAMLfix - https://lyz-code.github.io/yamlfix/
+export YAMLFIX_CONFIG_PATH=$HOME/.yamlfix/
 
 # bcc = Bitcoin Core support
 export PATH=$HOME/bcc/bitcoin-25.0/bin:$PATH
@@ -224,6 +227,9 @@ source "$HOME/.completions/cobra-cli.bash-completion"
 # jq - does not work
 # source $HOME/.completions/jq.bash
 # source $HOME/.completions/jq.bash-completion
+# task - https://taskfile.dev/
+# installation: npm install -g @go-task/cli
+source "$HOME/.completions/task.bash"
 
 export PAGER=nvimpager
 
