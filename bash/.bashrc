@@ -271,3 +271,6 @@ alias g="$GOPATH/bin/g"; # g-install: do NOT edit, see https://github.com/stefan
 # temp directory for rr debugger (https://rr-project.org/)
 export RR_TMPDIR=/tmp/rr
 export _RR_TRACE_DIR=/tmp/rr
+
+export ANDROID_HOME=$HOME/Android_SDK/
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin/
