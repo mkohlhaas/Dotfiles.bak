@@ -32,6 +32,28 @@ end
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+-- Dart comes with language server built-in
+-- https://github.com/williamboman/mason-lspconfig.nvim/issues/46#issuecomment-1523066371
+require("lspconfig").dartls.setup({
+            cmd = { "dart", "language-server", "--protocol=lsp" },
+            filetypes = { "dart" },
+            init_options = {
+                closingLabels = true,
+                flutterOutline = true,
+                onlyAnalyzeProjectsWithOpenFiles = true,
+                outline = true,
+                suggestFromUnimportedLibraries = true,
+            },
+            -- root_dir = root_pattern("pubspec.yaml"),
+            settings = {
+                dart = {
+                    completeFunctionCalls = true,
+                    showTodos = true,
+                },
+            },
+            on_attach = on_attach,
+        })
+
 require("mason").setup()
 require("mason-lspconfig").setup()
 require("mason-lspconfig").setup_handlers {

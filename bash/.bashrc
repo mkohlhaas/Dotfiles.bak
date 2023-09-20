@@ -140,13 +140,23 @@ export LESS_TERMCAP_us=$'\e[1;4;31m'
 export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib64/pkgconfig
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib64
 
+# Homebrew for Linux
+# https://brew.sh/
+export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
+
 # Dart & Flutter support
-export PATH=$PATH:$HOME/Gitrepos/flutter/bin
-export CHROME_EXECUTABLE=/usr/bin/chromium
-export PATH=$PATH:$HOME/.pub-cache/bin
+# export PATH=$PATH:$HOME/Gitrepos/flutter/bin
+# export CHROME_EXECUTABLE=/usr/bin/chromium
+# export PATH=$PATH:$HOME/.pub-cache/bin
+
+# For Dart we use dvm and for Flutter fvm (https://fvm.app/) !
+#
+# Dart Version Manager
+# https://github.com/cbracken/dvm
+source "$HOME/.dvm/scripts/dvm"
 
 # Android Studio SDK
-export PATH=$PATH:$HOME/Android-Studio/bin
+# export PATH=$PATH:$HOME/Android-Studio/bin
 
 # Git fuzzy support
 export PATH=$PATH:$HOME/bin/git-fuzzy/bin
@@ -168,7 +178,7 @@ export KERL_BUILD_BACKEND=tarball
 source "$HOME/Kerl/26.0/activate"
 
 #rebar3 completions
-source $HOME/.completions/rebar3
+source "$HOME/.completions/rebar3"
 
 # .NET support
 export PATH=$HOME/.dotnet:$PATH

@@ -34,7 +34,7 @@ cmd 'syntax enable'
 cmd 'filetype plugin indent on'
 cmd 'colorscheme gruvbox'
 cmd [[match errorMsg /\s\+$/]]  -- show trailing whitespace
-cmd [[autocmd FileType haskell,purescript,agda,ocaml,erlang,go,antlr4,markdown autocmd BufWritePre <buffer> %s/\s\+$//e]] -- remove trailing whitespace when saving
+cmd [[autocmd FileType haskell,purescript,agda,ocaml,erlang,go,antlr4,markdown,dart autocmd BufWritePre <buffer> %s/\s\+$//e]] -- remove trailing whitespace when saving
 cmd [[autocmd FileType yaml autocmd BufWritePost <buffer> silent !yamlfix <afile>]] -- autoformat YAML files on save
 
 set.completeopt    = 'menu,menuone,noselect'

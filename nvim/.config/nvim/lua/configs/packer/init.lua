@@ -39,4 +39,6 @@ return require("packer").startup(function()
   use 'fatih/vim-go'
   use 'preservim/tagbar'
   use 'airblade/vim-gitgutter'
+
+  -- use 'dart-lang/dart-vim-plugin'
 end)
