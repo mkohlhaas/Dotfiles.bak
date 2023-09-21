@@ -146,15 +146,8 @@ export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 
 # Dart & Flutter support
 export CHROME_EXECUTABLE=/usr/bin/chromium
-
-# For Dart we use dvm and for Flutter fvm (https://fvm.app/) !
-#
-# Dart Version Manager
-# https://github.com/cbracken/dvm
-source "$HOME/.dvm/scripts/dvm"
-
-# Android Studio SDK
-# export PATH=$PATH:$HOME/Android-Studio/bin
+source "$HOME/.completions/flutter.bash-completion"
+source "$HOME/.completions/dart.bash-completion"
 
 # Git fuzzy support
 export PATH=$PATH:$HOME/bin/git-fuzzy/bin

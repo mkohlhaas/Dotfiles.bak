@@ -44,6 +44,13 @@ utils.map('n', '<F3>', ':UndotreeToggle<CR>')
 -- Activate/deactivate tag bar
 utils.map('n', '<F8>', ':TagbarToggle<CR>')
 
+-- Flutter
+utils.map('n', '<leader>fa', ':FlutterRun<CR>')
+utils.map('n', '<leader>fq', ':FlutterQuit<CR>')
+utils.map('n', '<leader>fr', ':FlutterHotReload<CR>')
+utils.map('n', '<leader>fR', ':FlutterHotRestart<CR>')
+utils.map('n', '<leader>fD', ':FlutterVisualDebug<CR>')
+
 -- Replace with Unicode variants for Haskell/PureScript source code
 utils.map('n', '<leader>sh', ':%s/\\s\\+->\\s\\+/ → /ge | %s/\\s\\+<-\\s\\+/ ← /ge | %s/\\s\\+::\\s\\+/ ∷ /ge | %s/\\s\\+=>\\s\\+/ ⇒ /ge | %s/\\s\\+<=\\s\\+/ ⇐ /ge | %s/\\<forall\\>/∀/ge<cr>')
 -- utils.map('n', '<leader>sh', ':%s/\\s\\+<=\\s\\+/ ⇐ /ge<cr>')

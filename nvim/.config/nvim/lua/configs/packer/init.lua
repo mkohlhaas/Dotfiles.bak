@@ -41,4 +41,5 @@ return require("packer").startup(function()
   use 'airblade/vim-gitgutter'
 
   -- use 'dart-lang/dart-vim-plugin'
+  use 'thosakwe/vim-flutter'
 end)
