@@ -145,9 +145,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib64
 export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
 
 # Dart & Flutter support
-# export PATH=$PATH:$HOME/Gitrepos/flutter/bin
-# export CHROME_EXECUTABLE=/usr/bin/chromium
-# export PATH=$PATH:$HOME/.pub-cache/bin
+export CHROME_EXECUTABLE=/usr/bin/chromium
 
 # For Dart we use dvm and for Flutter fvm (https://fvm.app/) !
 #
@@ -284,3 +282,7 @@ export _RR_TRACE_DIR=/tmp/rr
 
 export ANDROID_HOME=$HOME/Android_SDK/
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin/
+
+# asdf (installed with brew!)
+. "/home/linuxbrew/.linuxbrew/opt/asdf/libexec/asdf.sh"
+. "/home/linuxbrew/.linuxbrew/opt/asdf/etc/bash_completion.d/asdf.bash"
