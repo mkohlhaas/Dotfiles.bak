@@ -32,10 +32,12 @@ end
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+string.format('document.querySelectorAll("a[title*=further]")[%s]', myVar)
+
 -- Dart comes with language server built-in
 -- https://github.com/williamboman/mason-lspconfig.nvim/issues/46#issuecomment-1523066371
 require("lspconfig").dartls.setup({
-            cmd = { "dart", "language-server", "--protocol=lsp" },
+            cmd = { "dart", "language-server", "--protocol=lsp", string.format('--packages=%s/.dart_tool/package_config.json', vim.fn.getcwd()) },
             filetypes = { "dart" },
             init_options = {
                 closingLabels = true,
