@@ -1,5 +1,6 @@
 return require("packer").startup(function()
   use("wbthomason/packer.nvim") --> packer plugin manager
+  use 'nvim-treesitter/nvim-treesitter'
   -- Highly extendable fuzzy finder
   -- :checkhealth telescope
   -- sudo xbps-install ripgrep fd
