@@ -12,4 +12,4 @@ export PATH="$PATH:$HOME/.local/bin"
 . "$HOME/.cargo/env"
 
 # https://wiki.wireshark.org/TLS#using-the-pre-master-secret
-export SSLKEYLOGFILE=$HOME/sslkey.log
+# export SSLKEYLOGFILE=$HOME/sslkey.log
