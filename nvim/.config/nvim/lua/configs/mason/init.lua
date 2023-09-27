@@ -37,16 +37,15 @@ string.format('document.querySelectorAll("a[title*=further]")[%s]', myVar)
 -- Dart comes with language server built-in
 -- https://github.com/williamboman/mason-lspconfig.nvim/issues/46#issuecomment-1523066371
 require("lspconfig").dartls.setup({
-            cmd = { "dart", "language-server", "--protocol=lsp", string.format('--packages=%s/.dart_tool/package_config.json', vim.fn.getcwd()) },
+            cmd = { "dart", "language-server", "--protocol=lsp" },
             filetypes = { "dart" },
             init_options = {
                 closingLabels = true,
                 flutterOutline = true,
-                onlyAnalyzeProjectsWithOpenFiles = true,
+                onlyAnalyzeProjectsWithOpenFiles = false,
                 outline = true,
                 suggestFromUnimportedLibraries = true,
             },
-            -- root_dir = root_pattern("pubspec.yaml"),
             settings = {
                 dart = {
                     completeFunctionCalls = true,
