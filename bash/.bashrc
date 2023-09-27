@@ -161,16 +161,16 @@ export PURESCRIPT_PROJECTS_DIR="$HOME/Gitrepos"
 export CDPATH="$PURESCRIPT_PROJECTS_DIR:$CDPATH"
 
 # Erlang & rebar3
-export PATH=$HOME/.cache/rebar3/bin:$PATH
-export ERL_AFLAGS="+pc unicode -kernel shell_history enabled"
-export KERL_DOC_TARGETS="man html pdf chunks"
-export KERL_INSTALL_MANPAGES=yes
-export KERL_BUILD_DOCS=yes
-export KERL_BUILD_BACKEND=tarball
-source "$HOME/Kerl/26.0/activate"
+# export PATH=$HOME/.cache/rebar3/bin:$PATH
+# export ERL_AFLAGS="+pc unicode -kernel shell_history enabled"
+# export KERL_DOC_TARGETS="man html pdf chunks"
+# export KERL_INSTALL_MANPAGES=yes
+# export KERL_BUILD_DOCS=yes
+# export KERL_BUILD_BACKEND=tarball
+# source "$HOME/Kerl/26.0/activate"
 
 #rebar3 completions
-source "$HOME/.completions/rebar3"
+# source "$HOME/.completions/rebar3"
 
 # .NET support
 export PATH=$HOME/.dotnet:$PATH
@@ -214,7 +214,7 @@ source "$HOME/.completions/ghc.bash"
 # npm completion - https://docs.npmjs.com/cli/v6/commands/npm-completion
 source <(npm completion)
 # spago completion
-source <(spago --bash-completion-script $(which spago))
+# source <(spago --bash-completion-script $(which spago))
 # yt-dlp completions
 source "$HOME/.completions/yt-dlp"
 #erlang.mk completions
