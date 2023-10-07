@@ -280,3 +280,6 @@ export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin/
 # asdf (installed with brew!)
 . "/home/linuxbrew/.linuxbrew/opt/asdf/libexec/asdf.sh"
 . "/home/linuxbrew/.linuxbrew/opt/asdf/etc/bash_completion.d/asdf.bash"
+
+# ruby version manager 'rbenv'
+eval "$(rbenv init - bash)"
