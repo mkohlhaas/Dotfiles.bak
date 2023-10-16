@@ -41,7 +41,7 @@ require("lspconfig").dartls.setup({
             filetypes = { "dart" },
             init_options = {
                 closingLabels = true,
-                flutterOutline = true,
+                flutterOutline = false,
                 onlyAnalyzeProjectsWithOpenFiles = false,
                 outline = true,
                 suggestFromUnimportedLibraries = true,

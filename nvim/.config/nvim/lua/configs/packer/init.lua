@@ -43,4 +43,5 @@ return require("packer").startup(function()
 
   -- use 'dart-lang/dart-vim-plugin'
   use 'thosakwe/vim-flutter'
+  use 'natecraddock/workspaces.nvim'
 end)
