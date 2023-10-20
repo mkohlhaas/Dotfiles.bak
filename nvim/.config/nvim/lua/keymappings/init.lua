@@ -38,6 +38,9 @@ utils.map('i', 'jk', '<Esc>')
 -- Delete current buffer
 utils.map('n', '<leader>dd', ':bd<CR>')
 
+-- Remove trailing whitespace
+utils.map('n', '<leader>rw', ":%s/\\v\\s+$// | ''<CR>")
+
 -- Activate/deactivate undo tree
 utils.map('n', '<F3>', ':UndotreeToggle<CR>')
 
