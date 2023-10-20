@@ -36,13 +36,16 @@ vim.cmd [[nmap <C-i> <C-i>zz]]
 utils.map('i', 'jk', '<Esc>')
 
 -- Delete current buffer
-utils.map('n', '<leader>b', ':bd<CR>')
+utils.map('n', '<leader>dd', ':bd<CR>')
 
 -- Activate/deactivate undo tree
 utils.map('n', '<F3>', ':UndotreeToggle<CR>')
 
 -- Activate/deactivate tag bar
 utils.map('n', '<F8>', ':TagbarToggle<CR>')
+
+-- cd into the directory of current open file
+utils.map('n', '<leader>cd', ':cd %:p:h<CR>')
 
 -- Flutter
 utils.map('n', '<leader>fa', ':FlutterRun<CR>')
