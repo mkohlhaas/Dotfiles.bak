@@ -50,6 +50,10 @@ utils.map('n', '<F8>', ':TagbarToggle<CR>')
 -- cd into the directory of current open file
 utils.map('n', '<leader>cd', ':cd %:p:h<CR>')
 
+-- show character information under cursor
+--nmap ga <Plug>(UnicodeGA)
+vim.cmd [[nmap <ga> <Plug>(UnicodeGA)]]
+
 -- Flutter
 utils.map('n', '<leader>fa', ':FlutterRun<CR>')
 utils.map('n', '<leader>fq', ':FlutterQuit<CR>')
