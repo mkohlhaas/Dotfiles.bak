@@ -50,7 +50,7 @@ require("lspconfig").dartls.setup({
                 dart = {
                     completeFunctionCalls = true,
                     showTodos = true,
-                    lineLength = 120,
+                    lineLength = 150,
                 },
             },
             on_attach = on_attach,
