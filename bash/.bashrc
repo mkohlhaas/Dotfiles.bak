@@ -283,3 +283,5 @@ export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin/
 
 # ruby version manager 'rbenv'
 eval "$(rbenv init - bash)"
+
+dropbox start
