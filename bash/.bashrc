@@ -45,10 +45,10 @@ alias l1='ls -1l'
 alias gaap='git add .; git commit --amend --no-edit ; git push --force'
 alias upda='sudo xbps-install -Suy'
 alias treed='tree --dirsfirst'
-alias ard="mpv --audio-device='pulse/alsa_output.usb-1395_Sennheiser_BTD_500_USB-00.analog-stereo' https://www.ardmediathek.de/live/Y3JpZDovL2Rhc2Vyc3RlLmRlL2xpdmUvY2xpcC9hYmNhMDdhMy0zNDc2LTQ4NTEtYjE2Mi1mZGU4ZjY0NmQ0YzQ?xtor=CS1-322-[navi]-[all]-[content]-[text]" & disown
-alias zdf="mpv --audio-device='pulse/alsa_output.usb-1395_Sennheiser_BTD_500_USB-00.analog-stereo' https://www.zdf.de/sender/zdf/zdf-live-beitrag-100.html" & disown
-alias welt="mpv --audio-device='pulse/alsa_output.usb-1395_Sennheiser_BTD_500_USB-00.analog-stereo' https://broadcast.welt.personalstream.tv/v1/manifest/e237d596efe8bf8a700f8f91f1de8bbe03e0fe29/welttv-broadcast-prod/41702952-205c-4194-b2ac-f45ac3985d26/6.m3u8" & disown
-alias swr3="mpv --audio-device='pulse/alsa_output.usb-1395_Sennheiser_BTD_500_USB-00.analog-stereo' https://liveradio.swr.de/sw282p3/swr3/play.mp3" & disown
+alias ard="mpv --audio-device='pulse/alsa_output.usb-1395_Sennheiser_BTD_500_USB-00.analog-stereo' https://www.ardmediathek.de/live/Y3JpZDovL2Rhc2Vyc3RlLmRlL2xpdmUvY2xpcC9hYmNhMDdhMy0zNDc2LTQ4NTEtYjE2Mi1mZGU4ZjY0NmQ0YzQ?xtor=CS1-322-[navi]-[all]-[content]-[text]"
+alias zdf="mpv --audio-device='pulse/alsa_output.usb-1395_Sennheiser_BTD_500_USB-00.analog-stereo' https://www.zdf.de/sender/zdf/zdf-live-beitrag-100.html"
+alias welt="mpv --audio-device='pulse/alsa_output.usb-1395_Sennheiser_BTD_500_USB-00.analog-stereo' https://broadcast.welt.personalstream.tv/v1/manifest/e237d596efe8bf8a700f8f91f1de8bbe03e0fe29/welttv-broadcast-prod/41702952-205c-4194-b2ac-f45ac3985d26/6.m3u8"
+alias swr3="mpv --audio-device='pulse/alsa_output.usb-1395_Sennheiser_BTD_500_USB-00.analog-stereo' https://liveradio.swr.de/sw282p3/swr3/play.mp3"
 
 export VISUAL="nvim"
 
