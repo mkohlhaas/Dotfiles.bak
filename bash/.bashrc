@@ -68,8 +68,8 @@ export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 # Support for local raylib installation
-export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib64/pkgconfig
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib64
+export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/home/linuxbrew/.linuxbrew/lib/pkgconfig
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/linuxbrew/.linuxbrew/lib
 
 # Homebrew for Linux
 # https://brew.sh/
