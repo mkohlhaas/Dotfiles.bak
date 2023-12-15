@@ -73,7 +73,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/linuxbrew/.linuxbrew/lib
 
 # Homebrew for Linux
 # https://brew.sh/
-export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin
+export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin
 
 # Dart & Flutter support
 export CHROME_EXECUTABLE=/usr/bin/chromium
