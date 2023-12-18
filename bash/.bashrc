@@ -162,3 +162,5 @@ eval "$(rbenv init - bash)"
 # or use e.g. from the command line
 # feh --bg-file Pictures/3YmdDls.jpg
 
+# [CMAKE]: for language server - create compilation database
+export CMAKE_EXPORT_COMPILE_COMMANDS=1
