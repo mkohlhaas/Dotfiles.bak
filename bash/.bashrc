@@ -81,6 +81,9 @@ source "$HOME/.completions/flutter.bash-completion"
 source "$HOME/.completions/dart.bash-completion"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 
+# Vulkan SDK
+source "$HOME/VulkanSDK/setup-env.sh"
+
 # Git fuzzy support
 export PATH=$PATH:$HOME/bin/git-fuzzy/bin
 
