@@ -68,12 +68,12 @@ export LESS_TERMCAP_ue=$'\e[0m'
 export LESS_TERMCAP_us=$'\e[1;4;31m'
 
 # Support for local raylib installation
-export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/home/linuxbrew/.linuxbrew/lib/pkgconfig
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/linuxbrew/.linuxbrew/lib
+# export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/home/linuxbrew/.linuxbrew/lib/pkgconfig
+# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/linuxbrew/.linuxbrew/lib
 
 # Homebrew for Linux
 # https://brew.sh/
-export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin
+# export PATH=$PATH:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin
 
 # Dart & Flutter support
 export CHROME_EXECUTABLE=/usr/bin/chromium
@@ -153,11 +153,11 @@ export ANDROID_HOME=$HOME/Android_SDK/
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin/
 
 # asdf (installed with brew!)
-. "/home/linuxbrew/.linuxbrew/opt/asdf/libexec/asdf.sh"
-. "/home/linuxbrew/.linuxbrew/opt/asdf/etc/bash_completion.d/asdf.bash"
+# . "/home/linuxbrew/.linuxbrew/opt/asdf/libexec/asdf.sh"
+# . "/home/linuxbrew/.linuxbrew/opt/asdf/etc/bash_completion.d/asdf.bash"
 
 # ruby version manager 'rbenv'
-eval "$(rbenv init - bash)"
+# eval "$(rbenv init - bash)"
 
 # set background picture in this file
 # nitrogen itself is configured in .xsession
