@@ -47,4 +47,7 @@ return require("packer").startup(function()
 
   -- Unicode
   use 'chrisbra/unicode.vim'
+
+  -- GLSL
+  use 'tikhomirov/vim-glsl'
 end)

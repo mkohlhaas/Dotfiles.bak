@@ -34,37 +34,42 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 string.format('document.querySelectorAll("a[title*=further]")[%s]', myVar)
 
+-- GLSL https://github.com/nolanderc/glsl_analyzer
+require("lspconfig").glsl_analyzer.setup({
+  on_attach = on_attach,
+})
+
 -- Dart comes with language server built-in
 -- https://github.com/williamboman/mason-lspconfig.nvim/issues/46#issuecomment-1523066371
 require("lspconfig").dartls.setup({
-            cmd = { "dart", "language-server", "--protocol=lsp" },
-            filetypes = { "dart" },
-            init_options = {
-                closingLabels = true,
-                flutterOutline = false,
-                onlyAnalyzeProjectsWithOpenFiles = false,
-                outline = true,
-                suggestFromUnimportedLibraries = true,
-            },
-            settings = {
-                dart = {
-                    completeFunctionCalls = true,
-                    showTodos = true,
-                    lineLength = 150,
-                },
-            },
-            on_attach = on_attach,
-        })
+  cmd = { "dart", "language-server", "--protocol=lsp" },
+  filetypes = { "dart" },
+  init_options = {
+      closingLabels = true,
+      flutterOutline = false,
+      onlyAnalyzeProjectsWithOpenFiles = false,
+      outline = true,
+      suggestFromUnimportedLibraries = true,
+  },
+  settings = {
+      dart = {
+          completeFunctionCalls = true,
+          showTodos = true,
+          lineLength = 150,
+      },
+  },
+  on_attach = on_attach,
+})
 
 require("mason").setup()
 require("mason-lspconfig").setup()
 require("mason-lspconfig").setup_handlers {
-    function (server_name)
-        require("lspconfig")[server_name].setup {
-          on_attach = on_attach,
-          capabilities = capabilities,
-        }
-    end,
+  function (server_name)
+      require("lspconfig")[server_name].setup {
+        on_attach = on_attach,
+        capabilities = capabilities,
+      }
+  end,
 }
 
 -- Disable the annoying LSP virtual text.
